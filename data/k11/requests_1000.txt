@@ -1,0 +1,4 @@
+# Żądania do zadania 4.5 dla repo_1000.json (instalacja do pustego środowiska)
+httpx
+ansimarkup-orchid
+lumen-sdk

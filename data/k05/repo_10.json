@@ -1,0 +1,77 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 5, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 5, "packages": 10},
+  "packages": {
+    "attrs": {"versions": {
+      "24.1.0": {},
+      "24.2.0": {},
+      "24.3.0": {},
+      "25.1.0": {},
+      "25.2.0": {},
+      "25.3.0": {},
+      "25.4.0": {},
+      "26.1.0": {}
+    }},
+    "cffi": {"versions": {
+      "1.15.1": {"requires": ["pycparser"]},
+      "1.16.0": {"requires": ["pycparser"]},
+      "1.17.0": {"requires": ["pycparser"]},
+      "1.17.1": {"requires": ["pycparser"]},
+      "2.0.0": {"requires": ["pycparser"]},
+      "2.1.0": {"requires": ["pycparser"]},
+      "2.1.1": {"requires": ["pycparser"]}
+    }},
+    "cryptography": {"versions": {
+      "47.0.0": {"requires": ["cffi>=2.0.0"]},
+      "48.0.0": {"requires": ["cffi>=2.0.0"]},
+      "48.0.1": {"requires": ["cffi>=2.0.0"]},
+      "49.0.0": {"requires": ["cffi>=2.0.0"]},
+      "50.0.0": {"requires": ["cffi>=2.0.0"]},
+      "50.0.1": {"requires": ["cffi>=2.0.0"]},
+      "50.0.2": {"requires": ["cffi>=2.0.0"]}
+    }},
+    "jmespath": {"versions": {
+      "0.10.0": {},
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {}
+    }},
+    "pycparser": {"versions": {
+      "2.22": {},
+      "2.23": {},
+      "3.0": {},
+      "3.1": {},
+      "3.11": {}
+    }},
+    "pygments": {"versions": {
+      "2.19.1": {},
+      "2.19.2": {},
+      "2.20.0": {},
+      "2.21.0": {}
+    }},
+    "tomli": {"versions": {
+      "2.3.1": {},
+      "2.3.2": {},
+      "2.4.0": {},
+      "2.4.1": {},
+      "2.5.0": {}
+    }},
+    "Comet.Utils_Lib": {"versions": {
+      "1.9": {},
+      "1.10": {},
+      "2.0.1": {"requires": ["no-such-pkg"]},
+      "1.2": {},
+      "2": {}
+    }},
+    "falcon-tools": {"versions": {
+      "1.0": {"requires": ["COMET-UTILS-LIB >= 1.9"]},
+      "1.1": {"requires": ["comet_utils_lib>=1.10, !=2"]}
+    }},
+    "fjord-compat": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["cryptography"]},
+      "1.2": {"requires": ["cryptography >=999"]},
+      "1.3": {"requires": ["cryptography >=2.0 <1.0"]},
+      "2.0": {"requires": ["fjord-native"]}
+    }}
+  }
+}

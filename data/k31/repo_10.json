@@ -1,0 +1,67 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 31, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 31, "packages": 10},
+  "packages": {
+    "boto3": {"versions": {
+      "1.43.107": {"requires": ["botocore<1.44.0,>=1.43.107", "jmespath<2.0.0,>=0.7.1", "s3transfer<0.20.0,>=0.19.0"]},
+      "1.43.108": {"requires": ["botocore<1.44.0,>=1.43.108", "jmespath<2.0.0,>=0.7.1", "s3transfer<0.20.0,>=0.19.0"]},
+      "1.43.109": {"requires": ["botocore<1.44.0,>=1.43.109", "jmespath<2.0.0,>=0.7.1", "s3transfer<0.20.0,>=0.19.0"]},
+      "1.43.110": {"requires": ["botocore<1.44.0,>=1.43.110", "jmespath<2.0.0,>=0.7.1", "s3transfer<0.20.0,>=0.19.0"]},
+      "1.43.111": {"requires": ["botocore<1.44.0,>=1.43.111", "jmespath<2.0.0,>=0.7.1", "s3transfer<0.20.0,>=0.19.0"]},
+      "1.43.112": {"requires": ["botocore<1.44.0,>=1.43.112", "jmespath<2.0.0,>=0.7.1", "s3transfer<0.20.0,>=0.19.0"]},
+      "1.43.113": {"requires": ["botocore<1.44.0,>=1.43.113", "jmespath<2.0.0,>=0.7.1", "s3transfer<0.20.0,>=0.19.0"]},
+      "1.43.114": {"requires": ["botocore<1.44.0,>=1.43.114", "jmespath<2.0.0,>=0.7.1", "s3transfer<0.20.0,>=0.19.0"]}
+    }},
+    "botocore": {"versions": {
+      "1.43.111": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.112": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.113": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.114": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]}
+    }},
+    "jmespath": {"versions": {
+      "0.9.4": {},
+      "0.9.5": {},
+      "0.10.0": {},
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {}
+    }},
+    "python-dateutil": {"versions": {
+      "2.8.2": {"requires": ["six>=1.5"]},
+      "2.9.0": {"requires": ["six>=1.5"]},
+      "2.9.0.1": {"requires": ["six>=1.5"]}
+    }},
+    "s3transfer": {"versions": {
+      "0.17.0": {"requires": ["botocore"]},
+      "0.17.1": {"requires": ["botocore"]},
+      "0.18.0": {"requires": ["botocore"]},
+      "0.19.0": {"requires": ["botocore"]},
+      "0.19.1": {"requires": ["botocore"]},
+      "0.19.2": {"requires": ["botocore"]}
+    }},
+    "six": {"versions": {
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "urllib3": {"versions": {
+      "2.6.3": {},
+      "2.7.0": {},
+      "2.8.0": {}
+    }},
+    "ember-compat": {"versions": {
+      "1.0": {"requires": ["krypton-tools <2.0"]},
+      "2.0": {"requires": ["krypton-tools>=2.0"]}
+    }},
+    "krypton-tools": {"versions": {
+      "1.0": {"requires": ["ember-compat==1.0"]},
+      "2.0": {"requires": ["ember-compat >=2.0"]}
+    }},
+    "maple-compat": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["urllib3"]},
+      "1.2": {"requires": ["urllib3 >=999"]},
+      "1.3": {"requires": ["urllib3 >=2.0 <1.0"]},
+      "2.0": {"requires": ["maple-native"]}
+    }}
+  }
+}

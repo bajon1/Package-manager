@@ -1,0 +1,231 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 37, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 37, "packages": 30},
+  "packages": {
+    "appdirs": {"versions": {
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.4.4": {}
+    }},
+    "attrs": {"versions": {
+      "22.1.0": {},
+      "22.2.0": {},
+      "23.1.0": {},
+      "23.2.0": {},
+      "24.1.0": {},
+      "24.2.0": {},
+      "24.3.0": {},
+      "25.1.0": {},
+      "25.2.0": {},
+      "25.3.0": {},
+      "25.4.0": {},
+      "26.1.0": {}
+    }},
+    "dragonmapper": {"versions": {
+      "0.1": {},
+      "0.2": {},
+      "0.2.1": {},
+      "0.2.2": {},
+      "0.2.3": {},
+      "0.2.4": {},
+      "0.2.5": {},
+      "0.2.6": {},
+      "0.2.7": {"requires": ["hanzidentifier>=1.2,<2", "zhon>=2.0,<3"]},
+      "0.3.0": {"requires": ["hanzidentifier>=1.2,<2", "zhon>=2.0,<3"]}
+    }},
+    "hanzidentifier": {"versions": {
+      "1.0.1": {},
+      "1.0.2": {},
+      "1.1.0": {"requires": ["zhon>=1.1.3"]},
+      "1.2.0": {"requires": ["zhon>=2.0,<3"]},
+      "1.3.0": {"requires": ["zhon>=2.1,<3"]}
+    }},
+    "hpack": {"versions": {
+      "2.1.0": {},
+      "2.1.1": {},
+      "2.2.0": {},
+      "2.3.0": {},
+      "3.0.0": {},
+      "4.0.0": {},
+      "4.1.0": {},
+      "4.2.0": {}
+    }},
+    "hstspreload": {"versions": {
+      "2024.9.1": {},
+      "2024.10.1": {},
+      "2024.11.1": {},
+      "2024.12.1": {},
+      "2025.1.1": {}
+    }},
+    "hyperframe": {"versions": {
+      "5.1.0": {},
+      "5.2.0": {},
+      "6.0.0": {},
+      "6.0.1": {},
+      "6.1.0": {}
+    }},
+    "packaging": {"versions": {
+      "24.2": {},
+      "25.0": {},
+      "26.0": {},
+      "26.1": {},
+      "26.2": {},
+      "26.3": {}
+    }},
+    "pyparsing": {"versions": {
+      "3.1.1": {},
+      "3.1.2": {},
+      "3.1.3": {},
+      "3.1.4": {},
+      "3.2.0": {},
+      "3.2.1": {},
+      "3.2.2": {},
+      "3.2.3": {},
+      "3.2.4": {},
+      "3.2.5": {},
+      "3.3.0": {},
+      "3.3.1": {},
+      "3.3.2": {},
+      "3.3.3": {}
+    }},
+    "pyrsistent": {"versions": {
+      "0.18.1": {},
+      "0.19.1": {},
+      "0.19.2": {},
+      "0.19.3": {},
+      "0.20.0": {}
+    }},
+    "python-dotenv": {"versions": {
+      "1.2.0": {},
+      "1.2.1": {},
+      "1.2.2": {},
+      "1.2.3": {},
+      "1.2.4": {}
+    }},
+    "referencing": {"versions": {
+      "0.32.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0"]},
+      "0.32.1": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0"]},
+      "0.33.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0"]},
+      "0.34.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0"]},
+      "0.35.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0"]},
+      "0.35.1": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0"]},
+      "0.36.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0", "typing-extensions"]},
+      "0.36.1": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0", "typing-extensions>=4.4.0"]},
+      "0.36.2": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0", "typing-extensions>=4.4.0"]},
+      "0.37.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0", "typing-extensions>=4.4.0"]}
+    }},
+    "rpds-py": {"versions": {
+      "0.23.1": {},
+      "0.24.0": {},
+      "0.25.0": {},
+      "0.25.1": {},
+      "0.26.0": {},
+      "0.27.0": {},
+      "0.27.1": {},
+      "0.28.0": {},
+      "0.29.0": {},
+      "0.30.0": {},
+      "2026.5.1": {},
+      "2026.6.3": {},
+      "2026.9.1": {}
+    }},
+    "six": {"versions": {
+      "1.10.0": {},
+      "1.11.0": {},
+      "1.12.0": {},
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "sniffio": {"versions": {
+      "0.0.0": {},
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.3.1": {}
+    }},
+    "typing": {"versions": {
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "zhon": {"versions": {
+      "1.1": {},
+      "1.1.1": {},
+      "1.1.2": {},
+      "1.1.3": {},
+      "1.1.4": {},
+      "1.1.5": {},
+      "2.0.0": {"requires": ["appdirs"]},
+      "2.0.1": {},
+      "2.0.2": {},
+      "2.1.1": {}
+    }},
+    "mosaic-compat": {"versions": {
+      "1.0": {"requires": ["mosaic-x1", "mosaic-x2", "mosaic-x3", "mosaic-x4", "mosaic-x5", "mosaic-x6", "mosaic-x3==2.0 | mosaic-x2==2.0 | mosaic-x5==1.0", "mosaic-x3==1.0 | mosaic-x1==2.0 | mosaic-x2==1.0", "mosaic-x4==2.0 | mosaic-x1==1.0 | mosaic-x6==1.0", "mosaic-x3==1.0 | mosaic-x1==1.0 | mosaic-x2==1.0", "mosaic-x2==1.0 | mosaic-x4==2.0 | mosaic-x6==2.0", "mosaic-x4==2.0 | mosaic-x2==2.0 | mosaic-x6==2.0", "mosaic-x2==2.0 | mosaic-x1==1.0 | mosaic-x5==1.0", "mosaic-x2==2.0 | mosaic-x4==2.0 | mosaic-x1==1.0", "mosaic-x2==1.0 | mosaic-x1==1.0 | mosaic-x3==1.0", "mosaic-x6==1.0 | mosaic-x1==1.0 | mosaic-x5==2.0", "mosaic-x1==2.0 | mosaic-x6==1.0 | mosaic-x3==1.0", "mosaic-x1==1.0 | mosaic-x5==1.0 | mosaic-x4==1.0", "mosaic-x2==1.0 | mosaic-x5==1.0 | mosaic-x1==1.0", "mosaic-x4==1.0 | mosaic-x3==2.0 | mosaic-x1==1.0", "mosaic-x4==2.0 | mosaic-x3==1.0 | mosaic-x6==2.0", "mosaic-x6==2.0 | mosaic-x3==2.0 | mosaic-x2==2.0", "mosaic-x1==1.0 | mosaic-x3==2.0 | mosaic-x2==1.0", "mosaic-x3==2.0 | mosaic-x1==1.0 | mosaic-x2==2.0", "mosaic-x2==2.0 | mosaic-x4==1.0 | mosaic-x5==2.0", "mosaic-x4==2.0 | mosaic-x3==1.0 | mosaic-x1==2.0", "mosaic-x3==1.0 | mosaic-x4==2.0 | mosaic-x2==2.0", "mosaic-x4==2.0 | mosaic-x2==1.0 | mosaic-x5==1.0", "mosaic-x6==2.0 | mosaic-x4==2.0 | mosaic-x1==1.0", "mosaic-x5==2.0 | mosaic-x1==1.0 | mosaic-x3==1.0", "mosaic-x4==2.0 | mosaic-x3==2.0 | mosaic-x5==1.0", "mosaic-x2==2.0 | mosaic-x1==1.0 | mosaic-x5==2.0"]}
+    }},
+    "mosaic-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "mosaic-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "mosaic-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "mosaic-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "mosaic-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "mosaic-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "nova-client": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["pyrsistent"]},
+      "1.2": {"requires": ["pyrsistent >=999"]},
+      "1.3": {"requires": ["pyrsistent >=2.0 <1.0"]},
+      "2.0": {"requires": ["nova-native"]}
+    }},
+    "prism-tools": {"versions": {
+      "1.0": {"requires": ["xenon-tools <2.0"]},
+      "2.0": {"requires": ["xenon-tools>=2.0"]}
+    }},
+    "xenon-tools": {"versions": {
+      "1.0": {"requires": ["prism-tools==1.0"]},
+      "2.0": {"requires": ["prism-tools >=2.0"]}
+    }},
+    "glyph-core": {"versions": {
+      "1.0": {"requires": ["pyrsistent==0.18.1"]}
+    }},
+    "thistle-kit": {"versions": {
+      "1.0": {"requires": ["pyrsistent >=0.20.0"]}
+    }}
+  }
+}

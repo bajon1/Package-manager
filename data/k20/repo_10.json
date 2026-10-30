@@ -1,0 +1,72 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 20, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 20, "packages": 10},
+  "packages": {
+    "appdirs": {"versions": {
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.4.4": {}
+    }},
+    "async-generator": {"versions": {
+      "1.7": {},
+      "1.8": {},
+      "1.9": {},
+      "1.10": {}
+    }},
+    "dragonmapper": {"versions": {
+      "0.2.2": {},
+      "0.2.3": {},
+      "0.2.4": {},
+      "0.2.5": {},
+      "0.2.6": {},
+      "0.2.7": {"requires": ["hanzidentifier>=1.2,<2", "zhon>=2.0,<3"]},
+      "0.3.0": {"requires": ["hanzidentifier>=1.2,<2", "zhon>=2.0,<3"]}
+    }},
+    "hanzidentifier": {"versions": {
+      "1.0.1": {},
+      "1.0.2": {},
+      "1.1.0": {"requires": ["zhon>=1.1.3"]},
+      "1.2.0": {"requires": ["zhon>=2.0,<3"]},
+      "1.3.0": {"requires": ["zhon>=2.1,<3"]}
+    }},
+    "pyjwt": {"versions": {
+      "2.11.0": {},
+      "2.12.0": {},
+      "2.12.1": {},
+      "2.13.0": {},
+      "2.14.0": {},
+      "2.15.0": {},
+      "2.15.1": {}
+    }},
+    "six": {"versions": {
+      "1.11.0": {},
+      "1.12.0": {},
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "zhon": {"versions": {
+      "2.0.0": {"requires": ["appdirs"]},
+      "2.0.1": {},
+      "2.0.2": {},
+      "2.1.1": {}
+    }},
+    "basalt-kit": {"versions": {
+      "1.0": {},
+      "1.1": {},
+      "2.0": {"requires": ["nova-compat <2.0"]}
+    }},
+    "nova-compat": {"versions": {
+      "1.0": {},
+      "2.0": {"requires": ["basalt-kit <2.0"]}
+    }},
+    "delta-compat": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["pyjwt"]},
+      "1.2": {"requires": ["pyjwt >=999"]},
+      "1.3": {"requires": ["pyjwt >=2.0 <1.0"]},
+      "2.0": {"requires": ["delta-native"]}
+    }}
+  }
+}

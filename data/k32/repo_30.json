@@ -1,0 +1,278 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 32, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 32, "packages": 30},
+  "packages": {
+    "aiohappyeyeballs": {"versions": {
+      "2.4.4": {},
+      "2.4.5": {},
+      "2.4.6": {},
+      "2.4.7": {},
+      "2.4.8": {},
+      "2.5.0": {},
+      "2.6.0": {},
+      "2.6.1": {},
+      "2.6.2": {},
+      "2.7.1": {}
+    }},
+    "anyio": {"versions": {
+      "4.6.2.2": {"requires": ["idna>=2.8", "sniffio>=1.1"]},
+      "4.7.0": {"requires": ["idna>=2.8", "sniffio>=1.1", "typing_extensions>=4.5"]},
+      "4.8.0": {"requires": ["idna>=2.8", "sniffio>=1.1", "typing_extensions>=4.5"]},
+      "4.9.0": {"requires": ["idna>=2.8", "sniffio>=1.1", "typing_extensions>=4.5"]},
+      "4.10.0": {"requires": ["idna>=2.8", "sniffio>=1.1", "typing_extensions>=4.5"]},
+      "4.11.0": {"requires": ["idna>=2.8", "sniffio>=1.1", "typing_extensions>=4.5"]},
+      "4.12.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.12.1": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.13.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.1": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.2": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.15.0": {"requires": ["idna>=2.8", "typing_extensions>=4.16.0"]},
+      "4.15.1": {"requires": ["idna>=2.8", "typing_extensions>=4.16.0"]}
+    }},
+    "async-generator": {"versions": {
+      "0.0.1": {},
+      "1.0": {},
+      "1.1": {},
+      "1.2": {},
+      "1.3": {},
+      "1.4": {},
+      "1.5": {},
+      "1.6": {},
+      "1.7": {},
+      "1.8": {},
+      "1.9": {},
+      "1.10": {}
+    }},
+    "certifi": {"versions": {
+      "2025.10.5": {},
+      "2025.11.12": {},
+      "2026.1.4": {},
+      "2026.2.25": {},
+      "2026.4.22": {},
+      "2026.5.20": {},
+      "2026.6.17": {},
+      "2026.7.22": {}
+    }},
+    "h11": {"versions": {
+      "0.5.0": {},
+      "0.6.0": {},
+      "0.7.0": {},
+      "0.8.0": {},
+      "0.8.1": {},
+      "0.9.0": {},
+      "0.10.0": {},
+      "0.11.0": {},
+      "0.12.0": {},
+      "0.13.0": {},
+      "0.14.0": {},
+      "0.15.0": {},
+      "0.16.0": {}
+    }},
+    "h2": {"versions": {
+      "2.6.1": {"requires": ["hyperframe!=4.0.0,<6,>=3.1", "hpack>=2.2,<3"]},
+      "2.6.2": {"requires": ["hyperframe!=4.0.0,<6,>=3.1", "hpack>=2.2,<4"]},
+      "3.0.0": {"requires": ["hyperframe<6,>=5.0", "hpack<3,>=2.3"]},
+      "3.0.1": {"requires": ["hyperframe<6,>=5.0", "hpack<4,>=2.3"]},
+      "3.1.0": {"requires": ["hyperframe<6,>=5.2.0", "hpack<4,>=2.3"]},
+      "3.1.1": {"requires": ["hyperframe<6,>=5.2.0", "hpack<4,>=2.3"]},
+      "3.2.0": {"requires": ["hyperframe<6,>=5.2.0", "hpack<4,>=3.0"]},
+      "4.0.0": {"requires": ["hyperframe<7,>=6.0", "hpack<5,>=4.0"]},
+      "4.1.0": {"requires": ["hyperframe<7,>=6.0", "hpack<5,>=4.0"]},
+      "4.2.0": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.1"]},
+      "4.3.0": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.1"]},
+      "4.4.0": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.2"]},
+      "4.4.1": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.2"]}
+    }},
+    "hpack": {"versions": {
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {},
+      "2.0.0": {},
+      "2.0.1": {},
+      "2.1.0": {},
+      "2.1.1": {},
+      "2.2.0": {},
+      "2.3.0": {},
+      "3.0.0": {},
+      "4.0.0": {},
+      "4.1.0": {},
+      "4.2.0": {}
+    }},
+    "httpcore": {"versions": {
+      "1.0.2": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.3": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.4": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.5": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.6": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.7": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.8": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.9": {"requires": ["certifi", "h11>=0.16"]}
+    }},
+    "hyperframe": {"versions": {
+      "4.0.0": {},
+      "4.0.1": {},
+      "4.0.2": {},
+      "5.0.0": {},
+      "5.1.0": {},
+      "5.2.0": {},
+      "6.0.0": {},
+      "6.0.1": {},
+      "6.1.0": {}
+    }},
+    "idna": {"versions": {
+      "3.8": {},
+      "3.9": {},
+      "3.10": {},
+      "3.11": {},
+      "3.12": {},
+      "3.13": {},
+      "3.14": {},
+      "3.15": {},
+      "3.16": {},
+      "3.17": {},
+      "3.18": {},
+      "3.19": {},
+      "3.20": {}
+    }},
+    "multidict": {"versions": {
+      "6.4.4": {},
+      "6.5.1": {},
+      "6.6.2": {},
+      "6.6.3": {},
+      "6.6.4": {},
+      "6.7.0": {},
+      "6.7.1": {},
+      "6.8.0": {},
+      "6.9.0": {},
+      "6.9.1": {},
+      "7.0.0": {},
+      "7.1.0": {}
+    }},
+    "pyjwt": {"versions": {
+      "2.6.0": {},
+      "2.7.0": {},
+      "2.8.0": {},
+      "2.9.0": {},
+      "2.10.0": {},
+      "2.10.1": {},
+      "2.11.0": {},
+      "2.12.0": {},
+      "2.12.1": {},
+      "2.13.0": {},
+      "2.14.0": {},
+      "2.15.0": {},
+      "2.15.1": {}
+    }},
+    "pyparsing": {"versions": {
+      "3.2.4": {},
+      "3.2.5": {},
+      "3.3.0": {},
+      "3.3.1": {},
+      "3.3.2": {},
+      "3.3.3": {}
+    }},
+    "rpds-py": {"versions": {
+      "0.27.0": {},
+      "0.27.1": {},
+      "0.28.0": {},
+      "0.29.0": {},
+      "0.30.0": {},
+      "2026.5.1": {},
+      "2026.6.3": {},
+      "2026.9.1": {}
+    }},
+    "sniffio": {"versions": {
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.3.1": {}
+    }},
+    "typing": {"versions": {
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.8.0": {},
+      "4.9.0": {},
+      "4.10.0": {},
+      "4.11.0": {},
+      "4.12.0": {},
+      "4.12.1": {},
+      "4.12.2": {},
+      "4.13.0": {},
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "urllib3": {"versions": {
+      "2.5.0": {},
+      "2.6.0": {},
+      "2.6.1": {},
+      "2.6.2": {},
+      "2.6.3": {},
+      "2.7.0": {},
+      "2.8.0": {}
+    }},
+    "heron-core": {"versions": {
+      "1.0": {"requires": ["heron-x1", "heron-x2", "heron-x3", "heron-x4", "heron-x5", "heron-x6", "heron-x1==2.0 | heron-x4==2.0 | heron-x2==2.0", "heron-x6==1.0 | heron-x1==2.0 | heron-x5==1.0", "heron-x2==2.0 | heron-x1==2.0 | heron-x6==2.0", "heron-x3==2.0 | heron-x1==2.0 | heron-x6==2.0", "heron-x6==2.0 | heron-x3==2.0 | heron-x2==1.0", "heron-x6==1.0 | heron-x4==2.0 | heron-x5==1.0", "heron-x2==1.0 | heron-x1==2.0 | heron-x5==2.0", "heron-x4==2.0 | heron-x6==1.0 | heron-x1==2.0", "heron-x3==2.0 | heron-x6==1.0 | heron-x2==1.0", "heron-x1==1.0 | heron-x5==1.0 | heron-x3==2.0", "heron-x2==2.0 | heron-x5==2.0 | heron-x3==2.0", "heron-x2==2.0 | heron-x5==1.0 | heron-x1==2.0", "heron-x6==1.0 | heron-x4==1.0 | heron-x3==2.0", "heron-x2==1.0 | heron-x4==1.0 | heron-x3==1.0", "heron-x6==2.0 | heron-x4==1.0 | heron-x3==2.0", "heron-x5==2.0 | heron-x1==1.0 | heron-x6==1.0", "heron-x5==1.0 | heron-x4==1.0 | heron-x2==1.0", "heron-x1==2.0 | heron-x5==2.0 | heron-x2==2.0", "heron-x3==2.0 | heron-x2==2.0 | heron-x5==2.0", "heron-x3==2.0 | heron-x6==2.0 | heron-x5==2.0", "heron-x4==2.0 | heron-x3==2.0 | heron-x5==1.0", "heron-x4==1.0 | heron-x1==1.0 | heron-x2==1.0", "heron-x5==1.0 | heron-x3==1.0 | heron-x6==2.0", "heron-x5==2.0 | heron-x6==1.0 | heron-x2==2.0", "heron-x2==1.0 | heron-x3==2.0 | heron-x5==1.0", "heron-x5==1.0 | heron-x6==2.0 | heron-x1==2.0"]}
+    }},
+    "heron-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "heron-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "heron-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "heron-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "heron-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "heron-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "Jasper.Api_Lib": {"versions": {
+      "1.9": {},
+      "1.10": {},
+      "2.0.1": {"requires": ["no-such-pkg"]},
+      "1.2": {},
+      "2": {}
+    }},
+    "glyph-kit": {"versions": {
+      "1.0": {"requires": ["JASPER-API-LIB >= 1.9"]},
+      "1.1": {"requires": ["jasper_api_lib>=1.10, !=2"]}
+    }},
+    "raven-sdk": {"versions": {
+      "1.0": {},
+      "1.1": {},
+      "2.0": {"requires": ["sierra-client <2.0"]}
+    }},
+    "sierra-client": {"versions": {
+      "1.0": {},
+      "2.0": {"requires": ["raven-sdk <2.0"]}
+    }},
+    "nimbus-sdk": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["aiohappyeyeballs"]},
+      "1.2": {"requires": ["aiohappyeyeballs >=999"]},
+      "1.3": {"requires": ["aiohappyeyeballs >=2.0 <1.0"]},
+      "2.0": {"requires": ["nimbus-native"]}
+    }}
+  }
+}

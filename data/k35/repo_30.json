@@ -1,0 +1,262 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 35, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 35, "packages": 30},
+  "packages": {
+    "aiohappyeyeballs": {"versions": {
+      "2.4.7": {},
+      "2.4.8": {},
+      "2.5.0": {},
+      "2.6.0": {},
+      "2.6.1": {},
+      "2.6.2": {},
+      "2.7.1": {}
+    }},
+    "annotated-types": {"versions": {
+      "0.1.0": {},
+      "0.2.0": {},
+      "0.3.0": {},
+      "0.3.1": {},
+      "0.4.0": {},
+      "0.5.0": {},
+      "0.6.0": {},
+      "0.7.0": {},
+      "0.8.0": {}
+    }},
+    "ansimarkup": {"versions": {
+      "0.4.0": {},
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.4.1": {"requires": ["colorama"]},
+      "1.5.0": {"requires": ["colorama"]},
+      "2.0.0": {"requires": ["colorama"]},
+      "2.1.0": {"requires": ["colorama"]},
+      "2.2.0": {"requires": ["colorama"]}
+    }},
+    "appdirs": {"versions": {
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.4.4": {}
+    }},
+    "colorama": {"versions": {
+      "0.3.8": {},
+      "0.3.9": {},
+      "0.4.0": {},
+      "0.4.1": {},
+      "0.4.3": {},
+      "0.4.4": {},
+      "0.4.5": {},
+      "0.4.6": {}
+    }},
+    "h11": {"versions": {
+      "0.7.0": {},
+      "0.8.0": {},
+      "0.8.1": {},
+      "0.9.0": {},
+      "0.10.0": {},
+      "0.11.0": {},
+      "0.12.0": {},
+      "0.13.0": {},
+      "0.14.0": {},
+      "0.15.0": {},
+      "0.16.0": {}
+    }},
+    "hanzidentifier": {"versions": {
+      "1.0.1": {},
+      "1.0.2": {},
+      "1.1.0": {"requires": ["zhon>=1.1.3"]},
+      "1.2.0": {"requires": ["zhon>=2.0,<3"]},
+      "1.3.0": {"requires": ["zhon>=2.1,<3"]}
+    }},
+    "hstspreload": {"versions": {
+      "2024.2.1": {},
+      "2024.3.1": {},
+      "2024.4.1": {},
+      "2024.5.1": {},
+      "2024.6.1": {},
+      "2024.7.1": {},
+      "2024.8.1": {},
+      "2024.9.1": {},
+      "2024.10.1": {},
+      "2024.11.1": {},
+      "2024.12.1": {},
+      "2025.1.1": {}
+    }},
+    "multidict": {"versions": {
+      "6.4.2": {},
+      "6.4.3": {},
+      "6.4.4": {},
+      "6.5.1": {},
+      "6.6.2": {},
+      "6.6.3": {},
+      "6.6.4": {},
+      "6.7.0": {},
+      "6.7.1": {},
+      "6.8.0": {},
+      "6.9.0": {},
+      "6.9.1": {},
+      "7.0.0": {},
+      "7.1.0": {}
+    }},
+    "py": {"versions": {
+      "1.5.1": {},
+      "1.5.2": {},
+      "1.5.3": {},
+      "1.5.4": {},
+      "1.6.0": {},
+      "1.7.0": {},
+      "1.8.0": {},
+      "1.8.1": {},
+      "1.8.2": {},
+      "1.9.0": {},
+      "1.10.0": {},
+      "1.11.0": {}
+    }},
+    "pycparser": {"versions": {
+      "2.13": {},
+      "2.14": {},
+      "2.15": {},
+      "2.16": {},
+      "2.17": {},
+      "2.18": {},
+      "2.19": {},
+      "2.20": {},
+      "2.21": {},
+      "2.22": {},
+      "2.23": {},
+      "3.0": {},
+      "3.1": {},
+      "3.11": {}
+    }},
+    "pydantic": {"versions": {
+      "2.12.3": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.41.4", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.12.4": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.41.5", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.12.5": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.41.5", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.0": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.0", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.1": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.1", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.2": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.2", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.3": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.3", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.4": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.4", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.5": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.5", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.14.0": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.50.0", "typing-extensions>=4.16.0", "typing-inspection>=0.4.4"]},
+      "2.14.1": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.50.1", "typing-extensions>=4.16.0", "typing-inspection>=0.4.4"]}
+    }},
+    "pydantic-core": {"versions": {
+      "2.47.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.48.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.49.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.1": {"requires": ["typing-extensions>=4.16.0"]}
+    }},
+    "typing": {"versions": {
+      "3.5.0.1": {},
+      "3.5.1.0": {},
+      "3.5.2": {},
+      "3.5.3.0": {},
+      "3.6.1": {},
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.10.0": {},
+      "4.11.0": {},
+      "4.12.0": {},
+      "4.12.1": {},
+      "4.12.2": {},
+      "4.13.0": {},
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "typing-inspection": {"versions": {
+      "0.0.0": {},
+      "0.1.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.2.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.3.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.3.1": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.1": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.2": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.3": {"requires": ["typing-extensions>=4.15.0"]},
+      "0.4.4": {"requires": ["typing-extensions>=4.15.0"]}
+    }},
+    "tzdata": {"versions": {
+      "2025.2": {},
+      "2025.3": {},
+      "2026.1": {},
+      "2026.2": {},
+      "2026.3": {},
+      "2026.4": {},
+      "2026.5": {}
+    }},
+    "zhon": {"versions": {
+      "1.1": {},
+      "1.1.1": {},
+      "1.1.2": {},
+      "1.1.3": {},
+      "1.1.4": {},
+      "1.1.5": {},
+      "2.0.0": {"requires": ["appdirs"]},
+      "2.0.1": {},
+      "2.0.2": {},
+      "2.1.1": {}
+    }},
+    "xenon-compat": {"versions": {
+      "1.0": {"requires": ["xenon-x1", "xenon-x2", "xenon-x3", "xenon-x4", "xenon-x5", "xenon-x6", "xenon-x5==1.0 | xenon-x6==1.0 | xenon-x1==2.0", "xenon-x1==2.0 | xenon-x3==2.0 | xenon-x5==2.0", "xenon-x6==2.0 | xenon-x4==2.0 | xenon-x5==1.0", "xenon-x1==1.0 | xenon-x3==2.0 | xenon-x4==1.0", "xenon-x6==2.0 | xenon-x1==1.0 | xenon-x3==1.0", "xenon-x4==1.0 | xenon-x2==1.0 | xenon-x5==2.0", "xenon-x6==2.0 | xenon-x5==1.0 | xenon-x3==1.0", "xenon-x3==1.0 | xenon-x6==1.0 | xenon-x2==2.0", "xenon-x5==2.0 | xenon-x3==1.0 | xenon-x1==2.0", "xenon-x3==2.0 | xenon-x5==1.0 | xenon-x6==2.0", "xenon-x6==2.0 | xenon-x2==2.0 | xenon-x3==2.0", "xenon-x6==1.0 | xenon-x5==2.0 | xenon-x4==2.0", "xenon-x6==2.0 | xenon-x3==2.0 | xenon-x1==1.0", "xenon-x3==2.0 | xenon-x5==2.0 | xenon-x4==2.0", "xenon-x4==2.0 | xenon-x6==2.0 | xenon-x5==2.0", "xenon-x5==1.0 | xenon-x2==1.0 | xenon-x1==2.0", "xenon-x6==2.0 | xenon-x2==1.0 | xenon-x3==1.0", "xenon-x1==2.0 | xenon-x2==1.0 | xenon-x5==2.0", "xenon-x6==2.0 | xenon-x3==1.0 | xenon-x5==2.0", "xenon-x1==1.0 | xenon-x3==1.0 | xenon-x2==2.0", "xenon-x1==2.0 | xenon-x4==2.0 | xenon-x2==1.0", "xenon-x4==1.0 | xenon-x5==2.0 | xenon-x1==2.0", "xenon-x4==2.0 | xenon-x1==1.0 | xenon-x5==1.0", "xenon-x3==2.0 | xenon-x2==1.0 | xenon-x5==1.0", "xenon-x1==2.0 | xenon-x5==2.0 | xenon-x2==2.0", "xenon-x3==1.0 | xenon-x5==2.0 | xenon-x6==1.0"]}
+    }},
+    "xenon-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "xenon-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "xenon-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "xenon-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "xenon-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "xenon-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lumen-client": {"versions": {
+      "1.0": {"requires": ["tundra-tools"]},
+      "2.0": {"requires": ["iris-compat", "jasper-tools"]}
+    }},
+    "iris-compat": {"versions": {
+      "1.0": {"requires": ["saffron-sdk ==1.0"]},
+      "1.1": {"requires": ["saffron-sdk<2"]}
+    }},
+    "jasper-tools": {"versions": {
+      "1.0": {"requires": ["saffron-sdk >=2.0"]}
+    }},
+    "saffron-sdk": {"versions": {
+      "1.0": {},
+      "2.0": {},
+      "2.1": {}
+    }},
+    "tundra-tools": {"versions": {
+      "1.0": {"conflicts": ["lumen-client <2.0"]}
+    }}
+  }
+}

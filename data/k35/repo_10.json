@@ -1,0 +1,71 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 35, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 35, "packages": 10},
+  "packages": {
+    "botocore": {"versions": {
+      "1.43.111": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.112": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.113": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.114": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]}
+    }},
+    "hpack": {"versions": {
+      "2.1.1": {},
+      "2.2.0": {},
+      "2.3.0": {},
+      "3.0.0": {},
+      "4.0.0": {},
+      "4.1.0": {},
+      "4.2.0": {}
+    }},
+    "jmespath": {"versions": {
+      "0.9.4": {},
+      "0.9.5": {},
+      "0.10.0": {},
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {}
+    }},
+    "propcache": {"versions": {
+      "0.5.2": {},
+      "0.5.3": {},
+      "0.5.4": {}
+    }},
+    "python-dateutil": {"versions": {
+      "2.7.5": {"requires": ["six>=1.5"]},
+      "2.8.0": {"requires": ["six>=1.5"]},
+      "2.8.1": {"requires": ["six>=1.5"]},
+      "2.8.2": {"requires": ["six>=1.5"]},
+      "2.9.0": {"requires": ["six>=1.5"]},
+      "2.9.0.1": {"requires": ["six>=1.5"]}
+    }},
+    "six": {"versions": {
+      "1.12.0": {},
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "urllib3": {"versions": {
+      "2.5.0": {},
+      "2.6.0": {},
+      "2.6.1": {},
+      "2.6.2": {},
+      "2.6.3": {},
+      "2.7.0": {},
+      "2.8.0": {}
+    }},
+    "zephyr-utils": {"versions": {
+      "1.0": {"requires": ["thistle-utils | vortex-api"]},
+      "2.0": {"requires": ["thistle-utils >=2.0 | vortex-api >=1.1"], "conflicts": ["hpack <4.2.0"]}
+    }},
+    "thistle-utils": {"versions": {
+      "1.0": {"conflicts": ["vortex-api"]},
+      "2.0": {"requires": ["hpack==4.2.0"], "conflicts": ["vortex-api"]}
+    }},
+    "vortex-api": {"versions": {
+      "0.9": {},
+      "1.0": {},
+      "1.1": {"conflicts": ["hpack >=4.2.0"]}
+    }}
+  }
+}

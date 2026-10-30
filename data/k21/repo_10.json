@@ -1,0 +1,68 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 21, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 21, "packages": 10},
+  "packages": {
+    "hyperframe": {"versions": {
+      "6.0.0": {},
+      "6.0.1": {},
+      "6.1.0": {}
+    }},
+    "idna": {"versions": {
+      "3.14": {},
+      "3.15": {},
+      "3.16": {},
+      "3.17": {},
+      "3.18": {},
+      "3.19": {},
+      "3.20": {}
+    }},
+    "multidict": {"versions": {
+      "6.7.1": {},
+      "6.8.0": {},
+      "6.9.0": {},
+      "6.9.1": {},
+      "7.0.0": {},
+      "7.1.0": {}
+    }},
+    "pathspec": {"versions": {
+      "1.0.3": {},
+      "1.0.4": {},
+      "1.1.0": {},
+      "1.1.1": {}
+    }},
+    "propcache": {"versions": {
+      "0.3.2": {},
+      "0.4.1": {},
+      "0.5.2": {},
+      "0.5.3": {},
+      "0.5.4": {}
+    }},
+    "pyyaml": {"versions": {
+      "5.4": {},
+      "5.4.1": {},
+      "6.0": {},
+      "6.0.1": {},
+      "6.0.2": {},
+      "6.0.3": {}
+    }},
+    "yarl": {"versions": {
+      "1.24.2": {"requires": ["idna>=2.0", "multidict>=4.0", "propcache>=0.2.1"]},
+      "1.24.5": {"requires": ["idna>=2.0", "multidict>=4.0", "propcache>=0.2.1"]},
+      "1.25.1": {"requires": ["idna>=2.0", "multidict>=4.0", "propcache>=0.2.1"]}
+    }},
+    "jasper-sdk": {"versions": {
+      "1.0": {"requires": ["willow-cli <2.0"]},
+      "2.0": {"requires": ["willow-cli>=2.0"]}
+    }},
+    "willow-cli": {"versions": {
+      "1.0": {"requires": ["jasper-sdk==1.0"]},
+      "2.0": {"requires": ["jasper-sdk >=2.0"]}
+    }},
+    "umbra-tools": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["idna"]},
+      "1.2": {"requires": ["idna >=999"]},
+      "1.3": {"requires": ["idna >=2.0 <1.0"]},
+      "2.0": {"requires": ["umbra-native"]}
+    }}
+  }
+}

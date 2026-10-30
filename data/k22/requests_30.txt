@@ -1,0 +1,4 @@
+# Żądania do zadania 4.5 dla repo_30.json (instalacja do pustego środowiska)
+hanzidentifier
+pycparser
+quill-cli

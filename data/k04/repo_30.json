@@ -1,0 +1,266 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 4, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 4, "packages": 30},
+  "packages": {
+    "aioitertools": {"versions": {
+      "0.7.1": {"requires": ["typing_extensions>=3.7"]},
+      "0.8.0": {},
+      "0.9.0": {},
+      "0.10.0": {},
+      "0.11.0": {},
+      "0.12.0": {},
+      "0.13.0": {}
+    }},
+    "aiosignal": {"versions": {
+      "1.1.2": {"requires": ["frozenlist>=1.1.0"]},
+      "1.2.0": {"requires": ["frozenlist>=1.1.0"]},
+      "1.3.1": {"requires": ["frozenlist>=1.1.0"]},
+      "1.3.2": {"requires": ["frozenlist>=1.1.0"]},
+      "1.4.0": {"requires": ["frozenlist>=1.1.0", "typing-extensions>=4.2"]}
+    }},
+    "anyio": {"versions": {
+      "4.10.0": {"requires": ["idna>=2.8", "sniffio>=1.1", "typing_extensions>=4.5"]},
+      "4.11.0": {"requires": ["idna>=2.8", "sniffio>=1.1", "typing_extensions>=4.5"]},
+      "4.12.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.12.1": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.13.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.1": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.2": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.15.0": {"requires": ["idna>=2.8", "typing_extensions>=4.16.0"]},
+      "4.15.1": {"requires": ["idna>=2.8", "typing_extensions>=4.16.0"]}
+    }},
+    "async-generator": {"versions": {
+      "1.1": {},
+      "1.2": {},
+      "1.3": {},
+      "1.4": {},
+      "1.5": {},
+      "1.6": {},
+      "1.7": {},
+      "1.8": {},
+      "1.9": {},
+      "1.10": {}
+    }},
+    "certifi": {"versions": {
+      "2026.2.25": {},
+      "2026.4.22": {},
+      "2026.5.20": {},
+      "2026.6.17": {},
+      "2026.7.22": {}
+    }},
+    "frozenlist": {"versions": {
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.5.0": {},
+      "1.6.0": {},
+      "1.6.2": {},
+      "1.7.0": {},
+      "1.8.0": {}
+    }},
+    "h11": {"versions": {
+      "0.5.0": {},
+      "0.6.0": {},
+      "0.7.0": {},
+      "0.8.0": {},
+      "0.8.1": {},
+      "0.9.0": {},
+      "0.10.0": {},
+      "0.11.0": {},
+      "0.12.0": {},
+      "0.13.0": {},
+      "0.14.0": {},
+      "0.15.0": {},
+      "0.16.0": {}
+    }},
+    "h2": {"versions": {
+      "2.5.4": {"requires": ["hyperframe!=4.0.0,<6,>=3.1", "hpack>=2.2,<4"]},
+      "2.6.0": {"requires": ["hyperframe<5,>=3.1,!=4.0.0", "hpack>=2.2,<3"]},
+      "2.6.1": {"requires": ["hyperframe!=4.0.0,<6,>=3.1", "hpack>=2.2,<3"]},
+      "2.6.2": {"requires": ["hyperframe!=4.0.0,<6,>=3.1", "hpack>=2.2,<4"]},
+      "3.0.0": {"requires": ["hyperframe<6,>=5.0", "hpack<3,>=2.3"]},
+      "3.0.1": {"requires": ["hyperframe<6,>=5.0", "hpack<4,>=2.3"]},
+      "3.1.0": {"requires": ["hyperframe<6,>=5.2.0", "hpack<4,>=2.3"]},
+      "3.1.1": {"requires": ["hyperframe<6,>=5.2.0", "hpack<4,>=2.3"]},
+      "3.2.0": {"requires": ["hyperframe<6,>=5.2.0", "hpack<4,>=3.0"]},
+      "4.0.0": {"requires": ["hyperframe<7,>=6.0", "hpack<5,>=4.0"]},
+      "4.1.0": {"requires": ["hyperframe<7,>=6.0", "hpack<5,>=4.0"]},
+      "4.2.0": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.1"]},
+      "4.3.0": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.1"]},
+      "4.4.0": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.2"]},
+      "4.4.1": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.2"]}
+    }},
+    "hpack": {"versions": {
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {},
+      "2.0.0": {},
+      "2.0.1": {},
+      "2.1.0": {},
+      "2.1.1": {},
+      "2.2.0": {},
+      "2.3.0": {},
+      "3.0.0": {},
+      "4.0.0": {},
+      "4.1.0": {},
+      "4.2.0": {}
+    }},
+    "httpcore": {"versions": {
+      "1.0.0": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.1": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.2": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.3": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.4": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.5": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.6": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.7": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.8": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.9": {"requires": ["certifi", "h11>=0.16"]}
+    }},
+    "hyperframe": {"versions": {
+      "4.0.1": {},
+      "4.0.2": {},
+      "5.0.0": {},
+      "5.1.0": {},
+      "5.2.0": {},
+      "6.0.0": {},
+      "6.0.1": {},
+      "6.1.0": {}
+    }},
+    "idna": {"versions": {
+      "3.9": {},
+      "3.10": {},
+      "3.11": {},
+      "3.12": {},
+      "3.13": {},
+      "3.14": {},
+      "3.15": {},
+      "3.16": {},
+      "3.17": {},
+      "3.18": {},
+      "3.19": {},
+      "3.20": {}
+    }},
+    "pydantic-core": {"versions": {
+      "2.41.4": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.41.5": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.42.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.45.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.1": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.2": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.3": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.4": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.5": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.47.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.48.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.49.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.1": {"requires": ["typing-extensions>=4.16.0"]}
+    }},
+    "pygments": {"versions": {
+      "2.17.1": {},
+      "2.17.2": {},
+      "2.18.0": {},
+      "2.19.0": {},
+      "2.19.1": {},
+      "2.19.2": {},
+      "2.20.0": {},
+      "2.21.0": {}
+    }},
+    "rfc3986": {"versions": {
+      "1.3.0": {},
+      "1.3.1": {},
+      "1.3.2": {},
+      "1.4.0": {},
+      "1.5.0": {},
+      "2.0.0": {}
+    }},
+    "sniffio": {"versions": {
+      "0.0.0": {},
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.3.1": {}
+    }},
+    "typing": {"versions": {
+      "3.5.1.0": {},
+      "3.5.2": {},
+      "3.5.3.0": {},
+      "3.6.1": {},
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.8.0": {},
+      "4.9.0": {},
+      "4.10.0": {},
+      "4.11.0": {},
+      "4.12.0": {},
+      "4.12.1": {},
+      "4.12.2": {},
+      "4.13.0": {},
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "dune-client": {"versions": {
+      "1.0": {"requires": ["dune-x1", "dune-x2", "dune-x3", "dune-x4", "dune-x5", "dune-x6", "dune-x4==2.0 | dune-x5==2.0 | dune-x1==2.0", "dune-x2==2.0 | dune-x3==2.0 | dune-x4==1.0", "dune-x6==1.0 | dune-x5==2.0 | dune-x4==1.0", "dune-x2==2.0 | dune-x5==2.0 | dune-x4==2.0", "dune-x3==2.0 | dune-x1==1.0 | dune-x5==1.0", "dune-x6==1.0 | dune-x2==1.0 | dune-x4==1.0", "dune-x6==2.0 | dune-x5==1.0 | dune-x3==2.0", "dune-x2==2.0 | dune-x4==2.0 | dune-x1==2.0", "dune-x5==1.0 | dune-x6==1.0 | dune-x4==2.0", "dune-x6==1.0 | dune-x1==1.0 | dune-x2==2.0", "dune-x4==1.0 | dune-x5==2.0 | dune-x6==1.0", "dune-x5==2.0 | dune-x2==2.0 | dune-x3==2.0", "dune-x2==1.0 | dune-x1==2.0 | dune-x6==1.0", "dune-x2==2.0 | dune-x3==1.0 | dune-x5==2.0", "dune-x3==2.0 | dune-x2==2.0 | dune-x6==2.0", "dune-x6==1.0 | dune-x1==1.0 | dune-x5==1.0", "dune-x5==1.0 | dune-x3==2.0 | dune-x1==1.0", "dune-x1==2.0 | dune-x3==1.0 | dune-x2==2.0", "dune-x4==1.0 | dune-x6==2.0 | dune-x3==1.0", "dune-x6==2.0 | dune-x2==2.0 | dune-x5==1.0", "dune-x5==2.0 | dune-x2==2.0 | dune-x3==2.0", "dune-x5==2.0 | dune-x4==1.0 | dune-x1==2.0", "dune-x4==2.0 | dune-x3==2.0 | dune-x5==2.0", "dune-x6==1.0 | dune-x3==2.0 | dune-x5==1.0", "dune-x6==2.0 | dune-x5==1.0 | dune-x4==2.0", "dune-x3==2.0 | dune-x2==2.0 | dune-x4==1.0"]}
+    }},
+    "dune-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "dune-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "dune-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "dune-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "dune-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "dune-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "Umbra.Io_Lib": {"versions": {
+      "1.9": {},
+      "1.10": {},
+      "2.0.1": {"requires": ["no-such-pkg"]},
+      "1.2": {},
+      "2": {}
+    }},
+    "comet-core": {"versions": {
+      "1.0": {"requires": ["UMBRA-IO-LIB >= 1.9"]},
+      "1.1": {"requires": ["umbra_io_lib>=1.10, !=2"]}
+    }},
+    "harbor-kit": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["h11"]},
+      "1.2": {"requires": ["h11 >=999"]},
+      "1.3": {"requires": ["h11 >=2.0 <1.0"]},
+      "2.0": {"requires": ["harbor-native"]}
+    }},
+    "mosaic-client": {"versions": {
+      "1.0": {"requires": ["pygments==2.17.1"]}
+    }},
+    "raven-sdk": {"versions": {
+      "1.0": {"requires": ["pygments >=2.21.0"]}
+    }}
+  }
+}

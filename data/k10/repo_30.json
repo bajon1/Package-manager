@@ -1,0 +1,259 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 10, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 10, "packages": 30},
+  "packages": {
+    "aiosignal": {"versions": {
+      "1.1.1": {"requires": ["frozenlist>=1.1.0"]},
+      "1.1.2": {"requires": ["frozenlist>=1.1.0"]},
+      "1.2.0": {"requires": ["frozenlist>=1.1.0"]},
+      "1.3.1": {"requires": ["frozenlist>=1.1.0"]},
+      "1.3.2": {"requires": ["frozenlist>=1.1.0"]},
+      "1.4.0": {"requires": ["frozenlist>=1.1.0", "typing-extensions>=4.2"]}
+    }},
+    "appdirs": {"versions": {
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.4.4": {}
+    }},
+    "attrs": {"versions": {
+      "22.2.0": {},
+      "23.1.0": {},
+      "23.2.0": {},
+      "24.1.0": {},
+      "24.2.0": {},
+      "24.3.0": {},
+      "25.1.0": {},
+      "25.2.0": {},
+      "25.3.0": {},
+      "25.4.0": {},
+      "26.1.0": {}
+    }},
+    "frozenlist": {"versions": {
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.1.1": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.3.1": {},
+      "1.3.3": {},
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.5.0": {},
+      "1.6.0": {},
+      "1.6.2": {},
+      "1.7.0": {},
+      "1.8.0": {}
+    }},
+    "fsspec": {"versions": {
+      "2025.12.0": {},
+      "2026.1.0": {},
+      "2026.2.0": {},
+      "2026.3.0": {},
+      "2026.4.0": {},
+      "2026.6.0": {},
+      "2026.7.0": {},
+      "2026.9.0": {}
+    }},
+    "h11": {"versions": {
+      "0.8.1": {},
+      "0.9.0": {},
+      "0.10.0": {},
+      "0.11.0": {},
+      "0.12.0": {},
+      "0.13.0": {},
+      "0.14.0": {},
+      "0.15.0": {},
+      "0.16.0": {}
+    }},
+    "hanzidentifier": {"versions": {
+      "1.0.1": {},
+      "1.0.2": {},
+      "1.1.0": {"requires": ["zhon>=1.1.3"]},
+      "1.2.0": {"requires": ["zhon>=2.0,<3"]},
+      "1.3.0": {"requires": ["zhon>=2.1,<3"]}
+    }},
+    "packaging": {"versions": {
+      "21.1": {"requires": ["pyparsing<3,>=2.0.2"]},
+      "21.2": {"requires": ["pyparsing<3,>=2.0.2"]},
+      "21.3": {"requires": ["pyparsing!=3.0.5,>=2.0.2"]},
+      "22.0": {},
+      "23.0": {},
+      "23.1": {},
+      "23.2": {},
+      "24.0": {},
+      "24.1": {},
+      "24.2": {},
+      "25.0": {},
+      "26.0": {},
+      "26.1": {},
+      "26.2": {},
+      "26.3": {}
+    }},
+    "pyparsing": {"versions": {
+      "3.1.0": {},
+      "3.1.1": {},
+      "3.1.2": {},
+      "3.1.3": {},
+      "3.1.4": {},
+      "3.2.0": {},
+      "3.2.1": {},
+      "3.2.2": {},
+      "3.2.3": {},
+      "3.2.4": {},
+      "3.2.5": {},
+      "3.3.0": {},
+      "3.3.1": {},
+      "3.3.2": {},
+      "3.3.3": {}
+    }},
+    "python-dotenv": {"versions": {
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {},
+      "1.1.1": {},
+      "1.2.0": {},
+      "1.2.1": {},
+      "1.2.2": {},
+      "1.2.3": {},
+      "1.2.4": {}
+    }},
+    "pyyaml": {"versions": {
+      "5.1.1": {},
+      "5.1.2": {},
+      "5.2": {},
+      "5.3": {},
+      "5.3.1": {},
+      "5.4": {},
+      "5.4.1": {},
+      "6.0": {},
+      "6.0.1": {},
+      "6.0.2": {},
+      "6.0.3": {}
+    }},
+    "setuptools": {"versions": {
+      "80.10.1": {},
+      "80.10.2": {},
+      "81.0.0": {},
+      "82.0.0": {},
+      "82.0.1": {},
+      "83.0.0": {},
+      "84.0.0": {}
+    }},
+    "six": {"versions": {
+      "1.9.0": {},
+      "1.10.0": {},
+      "1.11.0": {},
+      "1.12.0": {},
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "sniffio": {"versions": {
+      "0.0.0": {},
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.3.1": {}
+    }},
+    "typing": {"versions": {
+      "3.5.3.0": {},
+      "3.6.1": {},
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.11.0": {},
+      "4.12.0": {},
+      "4.12.1": {},
+      "4.12.2": {},
+      "4.13.0": {},
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "typing-inspection": {"versions": {
+      "0.3.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.3.1": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.1": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.2": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.3": {"requires": ["typing-extensions>=4.15.0"]},
+      "0.4.4": {"requires": ["typing-extensions>=4.15.0"]}
+    }},
+    "zhon": {"versions": {
+      "1.0": {},
+      "1.1": {},
+      "1.1.1": {},
+      "1.1.2": {},
+      "1.1.3": {},
+      "1.1.4": {},
+      "1.1.5": {},
+      "2.0.0": {"requires": ["appdirs"]},
+      "2.0.1": {},
+      "2.0.2": {},
+      "2.1.1": {}
+    }},
+    "saffron-utils": {"versions": {
+      "1.0": {"requires": ["saffron-x1", "saffron-x2", "saffron-x3", "saffron-x4", "saffron-x5", "saffron-x6", "saffron-x4==2.0 | saffron-x6==1.0 | saffron-x2==2.0", "saffron-x3==1.0 | saffron-x6==2.0 | saffron-x2==1.0", "saffron-x1==1.0 | saffron-x3==2.0 | saffron-x6==2.0", "saffron-x1==1.0 | saffron-x6==2.0 | saffron-x2==1.0", "saffron-x4==2.0 | saffron-x5==1.0 | saffron-x6==1.0", "saffron-x4==1.0 | saffron-x5==2.0 | saffron-x1==2.0", "saffron-x2==2.0 | saffron-x1==2.0 | saffron-x4==2.0", "saffron-x3==1.0 | saffron-x4==1.0 | saffron-x1==2.0", "saffron-x2==2.0 | saffron-x4==1.0 | saffron-x1==1.0", "saffron-x4==2.0 | saffron-x6==2.0 | saffron-x1==2.0", "saffron-x1==2.0 | saffron-x4==1.0 | saffron-x5==1.0", "saffron-x4==2.0 | saffron-x5==1.0 | saffron-x1==2.0", "saffron-x5==2.0 | saffron-x2==1.0 | saffron-x3==2.0", "saffron-x4==2.0 | saffron-x1==2.0 | saffron-x5==2.0", "saffron-x2==2.0 | saffron-x3==2.0 | saffron-x5==1.0", "saffron-x1==1.0 | saffron-x5==2.0 | saffron-x4==2.0", "saffron-x5==1.0 | saffron-x2==2.0 | saffron-x6==2.0", "saffron-x4==1.0 | saffron-x1==2.0 | saffron-x6==1.0", "saffron-x3==2.0 | saffron-x1==2.0 | saffron-x2==2.0", "saffron-x1==1.0 | saffron-x3==1.0 | saffron-x4==1.0", "saffron-x4==1.0 | saffron-x3==2.0 | saffron-x6==2.0", "saffron-x2==2.0 | saffron-x5==2.0 | saffron-x3==1.0", "saffron-x4==2.0 | saffron-x5==2.0 | saffron-x1==2.0", "saffron-x5==1.0 | saffron-x1==1.0 | saffron-x2==1.0", "saffron-x1==1.0 | saffron-x6==2.0 | saffron-x3==1.0", "saffron-x2==1.0 | saffron-x6==2.0 | saffron-x4==2.0"]}
+    }},
+    "saffron-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "saffron-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "saffron-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "saffron-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "saffron-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "saffron-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "glyph-io": {"versions": {
+      "1.0": {"requires": ["pyparsing==3.1.0"]}
+    }},
+    "birch-sdk": {"versions": {
+      "1.0": {"requires": ["pyparsing >=3.3.3"]}
+    }},
+    "harbor-utils": {"versions": {
+      "1.0": {"requires": ["umbra-cli <2.0"]},
+      "2.0": {"requires": ["umbra-cli>=2.0"]}
+    }},
+    "umbra-cli": {"versions": {
+      "1.0": {"requires": ["harbor-utils==1.0"]},
+      "2.0": {"requires": ["harbor-utils >=2.0"]}
+    }},
+    "nimbus-kit": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["attrs"]},
+      "1.2": {"requires": ["attrs >=999"]},
+      "1.3": {"requires": ["attrs >=2.0 <1.0"]},
+      "2.0": {"requires": ["nimbus-native"]}
+    }}
+  }
+}

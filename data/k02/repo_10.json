@@ -1,0 +1,75 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 2, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 2, "packages": 10},
+  "packages": {
+    "appdirs": {"versions": {
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.4.4": {}
+    }},
+    "filelock": {"versions": {
+      "4.0.11": {},
+      "4.0.12": {},
+      "4.1.0": {},
+      "4.1.1": {},
+      "4.1.2": {},
+      "4.2.0": {}
+    }},
+    "fsspec": {"versions": {
+      "2025.12.0": {},
+      "2026.1.0": {},
+      "2026.2.0": {},
+      "2026.3.0": {},
+      "2026.4.0": {},
+      "2026.6.0": {},
+      "2026.7.0": {},
+      "2026.9.0": {}
+    }},
+    "multidict": {"versions": {
+      "6.7.0": {},
+      "6.7.1": {},
+      "6.8.0": {},
+      "6.9.0": {},
+      "6.9.1": {},
+      "7.0.0": {},
+      "7.1.0": {}
+    }},
+    "pyjwt": {"versions": {
+      "2.12.0": {},
+      "2.12.1": {},
+      "2.13.0": {},
+      "2.14.0": {},
+      "2.15.0": {},
+      "2.15.1": {}
+    }},
+    "pyrsistent": {"versions": {
+      "0.19.2": {},
+      "0.19.3": {},
+      "0.20.0": {}
+    }},
+    "zhon": {"versions": {
+      "1.1.4": {},
+      "1.1.5": {},
+      "2.0.0": {"requires": ["appdirs"]},
+      "2.0.1": {},
+      "2.0.2": {},
+      "2.1.1": {}
+    }},
+    "zephyr-core": {"versions": {
+      "1.0": {"requires": ["yarrow-utils <2.0"]},
+      "2.0": {"requires": ["yarrow-utils>=2.0"]}
+    }},
+    "yarrow-utils": {"versions": {
+      "1.0": {"requires": ["zephyr-core==1.0"]},
+      "2.0": {"requires": ["zephyr-core >=2.0"]}
+    }},
+    "quill-tools": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["zhon"]},
+      "1.2": {"requires": ["zhon >=999"]},
+      "1.3": {"requires": ["zhon >=2.0 <1.0"]},
+      "2.0": {"requires": ["quill-native"]}
+    }}
+  }
+}

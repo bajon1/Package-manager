@@ -1,0 +1,68 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 19, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 19, "packages": 10},
+  "packages": {
+    "aiohappyeyeballs": {"versions": {
+      "2.4.8": {},
+      "2.5.0": {},
+      "2.6.0": {},
+      "2.6.1": {},
+      "2.6.2": {},
+      "2.7.1": {}
+    }},
+    "ansimarkup": {"versions": {
+      "1.5.0": {"requires": ["colorama"]},
+      "2.0.0": {"requires": ["colorama"]},
+      "2.1.0": {"requires": ["colorama"]},
+      "2.2.0": {"requires": ["colorama"]}
+    }},
+    "appdirs": {"versions": {
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.4.4": {}
+    }},
+    "colorama": {"versions": {
+      "0.4.1": {},
+      "0.4.3": {},
+      "0.4.4": {},
+      "0.4.5": {},
+      "0.4.6": {}
+    }},
+    "jmespath": {"versions": {
+      "0.9.3": {},
+      "0.9.4": {},
+      "0.9.5": {},
+      "0.10.0": {},
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {}
+    }},
+    "markupsafe": {"versions": {
+      "3.0.1": {},
+      "3.0.2": {},
+      "3.0.3": {},
+      "3.0.4": {}
+    }},
+    "zhon": {"versions": {
+      "2.0.0": {"requires": ["appdirs"]},
+      "2.0.1": {},
+      "2.0.2": {},
+      "2.1.1": {}
+    }},
+    "falcon-sdk": {"versions": {
+      "1.0": {"requires": ["ansimarkup==1.5.0"]}
+    }},
+    "kestrel-tools": {"versions": {
+      "1.0": {"requires": ["ansimarkup >=2.2.0"]}
+    }},
+    "krypton-core": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["zhon"]},
+      "1.2": {"requires": ["zhon >=999"]},
+      "1.3": {"requires": ["zhon >=2.0 <1.0"]},
+      "2.0": {"requires": ["krypton-native"]}
+    }}
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 12, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 12, "packages": 10},
+  "packages": {
+    "colorama": {"versions": {
+      "0.4.1": {},
+      "0.4.3": {},
+      "0.4.4": {},
+      "0.4.5": {},
+      "0.4.6": {}
+    }},
+    "hpack": {"versions": {
+      "2.1.1": {},
+      "2.2.0": {},
+      "2.3.0": {},
+      "3.0.0": {},
+      "4.0.0": {},
+      "4.1.0": {},
+      "4.2.0": {}
+    }},
+    "importlib-metadata": {"versions": {
+      "8.7.1": {"requires": ["zipp>=3.20"]},
+      "8.8.0": {"requires": ["zipp>=3.20"]},
+      "8.9.0": {"requires": ["zipp>=3.20"]},
+      "9.0.0": {"requires": ["zipp>=3.20"]},
+      "9.0.1": {"requires": ["zipp>=3.20"]}
+    }},
+    "more-itertools": {"versions": {
+      "10.8.0": {},
+      "11.0.0": {},
+      "11.0.1": {},
+      "11.0.2": {},
+      "11.1.0": {},
+      "11.2.0": {},
+      "11.2.1": {}
+    }},
+    "six": {"versions": {
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "tomli": {"versions": {
+      "2.3.2": {},
+      "2.4.0": {},
+      "2.4.1": {},
+      "2.5.0": {}
+    }},
+    "zipp": {"versions": {
+      "3.23.0": {},
+      "3.23.1": {},
+      "4.1.0": {},
+      "4.1.1": {}
+    }},
+    "comet-sdk": {"versions": {
+      "1.0": {"requires": ["orchid-compat | iris-io"]},
+      "2.0": {"requires": ["orchid-compat >=2.0 | iris-io >=1.1"], "conflicts": ["importlib-metadata <9.0.1"]}
+    }},
+    "orchid-compat": {"versions": {
+      "1.0": {"conflicts": ["iris-io"]},
+      "2.0": {"requires": ["importlib-metadata==9.0.1"], "conflicts": ["iris-io"]}
+    }},
+    "iris-io": {"versions": {
+      "0.9": {},
+      "1.0": {},
+      "1.1": {"conflicts": ["importlib-metadata >=9.0.1"]}
+    }}
+  }
+}

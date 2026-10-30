@@ -1,0 +1,277 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 31, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 31, "packages": 30},
+  "packages": {
+    "attrs": {"versions": {
+      "24.1.0": {},
+      "24.2.0": {},
+      "24.3.0": {},
+      "25.1.0": {},
+      "25.2.0": {},
+      "25.3.0": {},
+      "25.4.0": {},
+      "26.1.0": {}
+    }},
+    "fsspec": {"versions": {
+      "2025.3.0": {},
+      "2025.3.2": {},
+      "2025.5.0": {},
+      "2025.5.1": {},
+      "2025.7.0": {},
+      "2025.9.0": {},
+      "2025.10.0": {},
+      "2025.12.0": {},
+      "2026.1.0": {},
+      "2026.2.0": {},
+      "2026.3.0": {},
+      "2026.4.0": {},
+      "2026.6.0": {},
+      "2026.7.0": {},
+      "2026.9.0": {}
+    }},
+    "importlib-metadata": {"versions": {
+      "8.2.0": {"requires": ["zipp>=0.5"]},
+      "8.3.0": {"requires": ["zipp>=0.5"]},
+      "8.4.0": {"requires": ["zipp>=0.5"]},
+      "8.5.0": {"requires": ["zipp>=3.20"]},
+      "8.6.0": {"requires": ["zipp>=3.20"]},
+      "8.6.1": {"requires": ["zipp>=3.20"]},
+      "8.7.0": {"requires": ["zipp>=3.20"]},
+      "8.7.1": {"requires": ["zipp>=3.20"]},
+      "8.8.0": {"requires": ["zipp>=3.20"]},
+      "8.9.0": {"requires": ["zipp>=3.20"]},
+      "9.0.0": {"requires": ["zipp>=3.20"]},
+      "9.0.1": {"requires": ["zipp>=3.20"]}
+    }},
+    "iniconfig": {"versions": {
+      "0.1": {},
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {},
+      "1.1.1": {},
+      "2.0.0": {},
+      "2.1.0": {},
+      "2.2.0": {},
+      "2.3.0": {},
+      "2.3.1": {}
+    }},
+    "jinja2": {"versions": {
+      "3.0.0": {"requires": ["MarkupSafe"]},
+      "3.0.1": {"requires": ["MarkupSafe>=2.0"]},
+      "3.0.2": {"requires": ["MarkupSafe>=2.0"]},
+      "3.0.3": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.0": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.1": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.2": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.3": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.4": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.5": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.6": {"requires": ["MarkupSafe>=2.0"]}
+    }},
+    "markupsafe": {"versions": {
+      "2.1.4": {},
+      "2.1.5": {},
+      "3.0.0": {},
+      "3.0.1": {},
+      "3.0.2": {},
+      "3.0.3": {},
+      "3.0.4": {}
+    }},
+    "more-itertools": {"versions": {
+      "10.4.0": {},
+      "10.5.0": {},
+      "10.6.0": {},
+      "10.7.0": {},
+      "10.8.0": {},
+      "11.0.0": {},
+      "11.0.1": {},
+      "11.0.2": {},
+      "11.1.0": {},
+      "11.2.0": {},
+      "11.2.1": {}
+    }},
+    "packaging": {"versions": {
+      "23.1": {},
+      "23.2": {},
+      "24.0": {},
+      "24.1": {},
+      "24.2": {},
+      "25.0": {},
+      "26.0": {},
+      "26.1": {},
+      "26.2": {},
+      "26.3": {}
+    }},
+    "pluggy": {"versions": {
+      "0.10.0": {"requires": ["importlib-metadata>=0.9"]},
+      "0.11.0": {},
+      "0.12.0": {"requires": ["importlib-metadata>=0.12"]},
+      "0.13.0": {},
+      "0.13.1": {},
+      "1.0.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.5.0": {},
+      "1.6.0": {},
+      "1.7.0": {}
+    }},
+    "py": {"versions": {
+      "1.5.2": {},
+      "1.5.3": {},
+      "1.5.4": {},
+      "1.6.0": {},
+      "1.7.0": {},
+      "1.8.0": {},
+      "1.8.1": {},
+      "1.8.2": {},
+      "1.9.0": {},
+      "1.10.0": {},
+      "1.11.0": {}
+    }},
+    "pygments": {"versions": {
+      "2.13.0": {},
+      "2.14.0": {},
+      "2.15.0": {},
+      "2.15.1": {},
+      "2.16.0": {},
+      "2.16.1": {},
+      "2.17.0": {},
+      "2.17.1": {},
+      "2.17.2": {},
+      "2.18.0": {},
+      "2.19.0": {},
+      "2.19.1": {},
+      "2.19.2": {},
+      "2.20.0": {},
+      "2.21.0": {}
+    }},
+    "pyparsing": {"versions": {
+      "3.2.3": {},
+      "3.2.4": {},
+      "3.2.5": {},
+      "3.3.0": {},
+      "3.3.1": {},
+      "3.3.2": {},
+      "3.3.3": {}
+    }},
+    "pytest": {"versions": {
+      "8.3.5": {"requires": ["iniconfig", "packaging", "pluggy<2,>=1.5"]},
+      "8.4.0": {"requires": ["iniconfig>=1", "packaging>=20", "pluggy<2,>=1.5", "pygments>=2.7.2"]},
+      "8.4.1": {"requires": ["iniconfig>=1", "packaging>=20", "pluggy<2,>=1.5", "pygments>=2.7.2"]},
+      "8.4.2": {"requires": ["iniconfig>=1", "packaging>=20", "pluggy<2,>=1.5", "pygments>=2.7.2"]},
+      "9.0.0": {"requires": ["iniconfig>=1.0.1", "packaging>=22", "pluggy<2,>=1.5", "pygments>=2.7.2"]},
+      "9.0.1": {"requires": ["iniconfig>=1.0.1", "packaging>=22", "pluggy<2,>=1.5", "pygments>=2.7.2"]},
+      "9.0.2": {"requires": ["iniconfig>=1.0.1", "packaging>=22", "pluggy<2,>=1.5", "pygments>=2.7.2"]},
+      "9.0.3": {"requires": ["iniconfig>=1.0.1", "packaging>=22", "pluggy<2,>=1.5", "pygments>=2.7.2"]},
+      "9.1.0": {"requires": ["iniconfig>=1.0.1", "packaging>=22", "pluggy<2,>=1.5", "pygments>=2.7.2"]},
+      "9.1.1": {"requires": ["iniconfig>=1.0.1", "packaging>=22", "pluggy<2,>=1.5", "pygments>=2.7.2"]}
+    }},
+    "python-dateutil": {"versions": {
+      "2.8.0": {"requires": ["six>=1.5"]},
+      "2.8.1": {"requires": ["six>=1.5"]},
+      "2.8.2": {"requires": ["six>=1.5"]},
+      "2.9.0": {"requires": ["six>=1.5"]},
+      "2.9.0.1": {"requires": ["six>=1.5"]}
+    }},
+    "six": {"versions": {
+      "1.7.2": {},
+      "1.7.3": {},
+      "1.8.0": {},
+      "1.9.0": {},
+      "1.10.0": {},
+      "1.11.0": {},
+      "1.12.0": {},
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "toml": {"versions": {
+      "0.9.2": {},
+      "0.9.3": {},
+      "0.9.4": {},
+      "0.9.6": {},
+      "0.10.0": {},
+      "0.10.1": {},
+      "0.10.2": {}
+    }},
+    "tomli": {"versions": {
+      "2.0.2": {},
+      "2.1.0": {},
+      "2.2.1": {},
+      "2.3.0": {},
+      "2.3.1": {},
+      "2.3.2": {},
+      "2.4.0": {},
+      "2.4.1": {},
+      "2.5.0": {}
+    }},
+    "zipp": {"versions": {
+      "3.19.1": {},
+      "3.19.2": {},
+      "3.19.3": {},
+      "3.20.0": {},
+      "3.20.1": {},
+      "3.20.2": {},
+      "3.21.0": {},
+      "3.22.0": {},
+      "3.23.0": {},
+      "3.23.1": {},
+      "4.1.0": {},
+      "4.1.1": {}
+    }},
+    "garnet-sdk": {"versions": {
+      "1.0": {"requires": ["garnet-x1", "garnet-x2", "garnet-x3", "garnet-x4", "garnet-x5", "garnet-x6", "garnet-x5==2.0 | garnet-x1==1.0 | garnet-x6==2.0", "garnet-x3==1.0 | garnet-x6==1.0 | garnet-x1==2.0", "garnet-x5==2.0 | garnet-x2==1.0 | garnet-x1==1.0", "garnet-x2==1.0 | garnet-x4==1.0 | garnet-x6==1.0", "garnet-x2==1.0 | garnet-x4==2.0 | garnet-x5==2.0", "garnet-x1==2.0 | garnet-x6==2.0 | garnet-x3==1.0", "garnet-x3==1.0 | garnet-x1==1.0 | garnet-x2==2.0", "garnet-x6==2.0 | garnet-x3==2.0 | garnet-x4==2.0", "garnet-x3==1.0 | garnet-x5==2.0 | garnet-x2==1.0", "garnet-x4==1.0 | garnet-x5==2.0 | garnet-x1==2.0", "garnet-x3==2.0 | garnet-x6==1.0 | garnet-x5==2.0", "garnet-x4==2.0 | garnet-x1==2.0 | garnet-x5==1.0", "garnet-x3==2.0 | garnet-x2==2.0 | garnet-x6==2.0", "garnet-x4==2.0 | garnet-x3==1.0 | garnet-x5==2.0", "garnet-x3==2.0 | garnet-x1==1.0 | garnet-x4==2.0", "garnet-x4==1.0 | garnet-x1==1.0 | garnet-x5==2.0", "garnet-x1==1.0 | garnet-x3==1.0 | garnet-x5==1.0", "garnet-x5==1.0 | garnet-x1==2.0 | garnet-x3==1.0", "garnet-x1==2.0 | garnet-x5==1.0 | garnet-x6==1.0", "garnet-x4==2.0 | garnet-x3==1.0 | garnet-x6==1.0", "garnet-x3==1.0 | garnet-x5==1.0 | garnet-x2==1.0", "garnet-x5==2.0 | garnet-x2==2.0 | garnet-x1==1.0", "garnet-x1==2.0 | garnet-x3==2.0 | garnet-x2==1.0", "garnet-x2==2.0 | garnet-x3==1.0 | garnet-x1==2.0", "garnet-x1==2.0 | garnet-x2==2.0 | garnet-x6==2.0", "garnet-x3==1.0 | garnet-x2==1.0 | garnet-x5==1.0"]}
+    }},
+    "garnet-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "garnet-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "garnet-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "garnet-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "garnet-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "garnet-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "alder-utils": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["pygments"]},
+      "1.2": {"requires": ["pygments >=999"]},
+      "1.3": {"requires": ["pygments >=2.0 <1.0"]},
+      "2.0": {"requires": ["alder-native"]}
+    }},
+    "basalt-client": {"versions": {
+      "1.0": {"requires": ["vortex-tools | jasper-cli"]},
+      "2.0": {"requires": ["vortex-tools >=2.0 | jasper-cli >=1.1"], "conflicts": ["six <1.17.0"]}
+    }},
+    "vortex-tools": {"versions": {
+      "1.0": {"conflicts": ["jasper-cli"]},
+      "2.0": {"requires": ["six==1.17.0"], "conflicts": ["jasper-cli"]}
+    }},
+    "jasper-cli": {"versions": {
+      "0.9": {},
+      "1.0": {},
+      "1.1": {"conflicts": ["six >=1.17.0"]}
+    }},
+    "six-jasper": {"versions": {
+      "1.12.0": {},
+      "1.15.0": {},
+      "1.17.0": {}
+    }}
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 4, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 4, "packages": 10},
+  "packages": {
+    "ansimarkup": {"versions": {
+      "1.4.0": {},
+      "1.4.1": {"requires": ["colorama"]},
+      "1.5.0": {"requires": ["colorama"]},
+      "2.0.0": {"requires": ["colorama"]},
+      "2.1.0": {"requires": ["colorama"]},
+      "2.2.0": {"requires": ["colorama"]}
+    }},
+    "better-exceptions-fork": {"versions": {
+      "0.2.1.4": {},
+      "0.2.1.5": {"requires": ["ansimarkup>=1.3.0", "pygments>=2.2.0"]},
+      "0.2.1.6": {},
+      "0.2.1.7": {}
+    }},
+    "colorama": {"versions": {
+      "0.4.3": {},
+      "0.4.4": {},
+      "0.4.5": {},
+      "0.4.6": {}
+    }},
+    "hpack": {"versions": {
+      "4.0.0": {},
+      "4.1.0": {},
+      "4.2.0": {}
+    }},
+    "pygments": {"versions": {
+      "2.19.0": {},
+      "2.19.1": {},
+      "2.19.2": {},
+      "2.20.0": {},
+      "2.21.0": {}
+    }},
+    "pyjwt": {"versions": {
+      "2.13.0": {},
+      "2.14.0": {},
+      "2.15.0": {},
+      "2.15.1": {}
+    }},
+    "sniffio": {"versions": {
+      "0.0.0": {},
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.3.1": {}
+    }},
+    "zephyr-kit": {"versions": {
+      "1.0": {},
+      "1.1": {},
+      "2.0": {"requires": ["garnet-io <2.0"]}
+    }},
+    "garnet-io": {"versions": {
+      "1.0": {},
+      "2.0": {"requires": ["zephyr-kit <2.0"]}
+    }},
+    "juniper-client": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["better-exceptions-fork"]},
+      "1.2": {"requires": ["better-exceptions-fork >=999"]},
+      "1.3": {"requires": ["better-exceptions-fork >=2.0 <1.0"]},
+      "2.0": {"requires": ["juniper-native"]}
+    }}
+  }
+}

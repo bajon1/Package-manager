@@ -1,0 +1,239 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 8, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 8, "packages": 30},
+  "packages": {
+    "ansimarkup": {"versions": {
+      "1.4.1": {"requires": ["colorama"]},
+      "1.5.0": {"requires": ["colorama"]},
+      "2.0.0": {"requires": ["colorama"]},
+      "2.1.0": {"requires": ["colorama"]},
+      "2.2.0": {"requires": ["colorama"]}
+    }},
+    "anyio": {"versions": {
+      "4.12.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.12.1": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.13.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.1": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.2": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.15.0": {"requires": ["idna>=2.8", "typing_extensions>=4.16.0"]},
+      "4.15.1": {"requires": ["idna>=2.8", "typing_extensions>=4.16.0"]}
+    }},
+    "appdirs": {"versions": {
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.4.4": {}
+    }},
+    "async-generator": {"versions": {
+      "1.6": {},
+      "1.7": {},
+      "1.8": {},
+      "1.9": {},
+      "1.10": {}
+    }},
+    "cffi": {"versions": {
+      "1.16.0": {"requires": ["pycparser"]},
+      "1.17.0": {"requires": ["pycparser"]},
+      "1.17.1": {"requires": ["pycparser"]},
+      "2.0.0": {"requires": ["pycparser"]},
+      "2.1.0": {"requires": ["pycparser"]},
+      "2.1.1": {"requires": ["pycparser"]}
+    }},
+    "colorama": {"versions": {
+      "0.4.1": {},
+      "0.4.3": {},
+      "0.4.4": {},
+      "0.4.5": {},
+      "0.4.6": {}
+    }},
+    "cryptography": {"versions": {
+      "46.0.7": {"requires": ["cffi>=2.0.0"]},
+      "47.0.0": {"requires": ["cffi>=2.0.0"]},
+      "48.0.0": {"requires": ["cffi>=2.0.0"]},
+      "48.0.1": {"requires": ["cffi>=2.0.0"]},
+      "49.0.0": {"requires": ["cffi>=2.0.0"]},
+      "50.0.0": {"requires": ["cffi>=2.0.0"]},
+      "50.0.1": {"requires": ["cffi>=2.0.0"]},
+      "50.0.2": {"requires": ["cffi>=2.0.0"]}
+    }},
+    "idna": {"versions": {
+      "3.16": {},
+      "3.17": {},
+      "3.18": {},
+      "3.19": {},
+      "3.20": {}
+    }},
+    "jmespath": {"versions": {
+      "0.9.1": {},
+      "0.9.2": {},
+      "0.9.3": {},
+      "0.9.4": {},
+      "0.9.5": {},
+      "0.10.0": {},
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {}
+    }},
+    "markupsafe": {"versions": {
+      "3.0.0": {},
+      "3.0.1": {},
+      "3.0.2": {},
+      "3.0.3": {},
+      "3.0.4": {}
+    }},
+    "pycparser": {"versions": {
+      "2.12": {},
+      "2.13": {},
+      "2.14": {},
+      "2.15": {},
+      "2.16": {},
+      "2.17": {},
+      "2.18": {},
+      "2.19": {},
+      "2.20": {},
+      "2.21": {},
+      "2.22": {},
+      "2.23": {},
+      "3.0": {},
+      "3.1": {},
+      "3.11": {}
+    }},
+    "six": {"versions": {
+      "1.6.1": {},
+      "1.7.0": {},
+      "1.7.1": {},
+      "1.7.2": {},
+      "1.7.3": {},
+      "1.8.0": {},
+      "1.9.0": {},
+      "1.10.0": {},
+      "1.11.0": {},
+      "1.12.0": {},
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "sniffio": {"versions": {
+      "0.0.0": {},
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.3.1": {}
+    }},
+    "typing": {"versions": {
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "typing-inspection": {"versions": {
+      "0.0.0": {},
+      "0.1.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.2.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.3.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.3.1": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.1": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.2": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.3": {"requires": ["typing-extensions>=4.15.0"]},
+      "0.4.4": {"requires": ["typing-extensions>=4.15.0"]}
+    }},
+    "tzdata": {"versions": {
+      "2023.3": {},
+      "2023.4": {},
+      "2024.1": {},
+      "2024.2": {},
+      "2025.1": {},
+      "2025.2": {},
+      "2025.3": {},
+      "2026.1": {},
+      "2026.2": {},
+      "2026.3": {},
+      "2026.4": {},
+      "2026.5": {}
+    }},
+    "zhon": {"versions": {
+      "0.2.0": {},
+      "0.2.1": {},
+      "1.0": {},
+      "1.1": {},
+      "1.1.1": {},
+      "1.1.2": {},
+      "1.1.3": {},
+      "1.1.4": {},
+      "1.1.5": {},
+      "2.0.0": {"requires": ["appdirs"]},
+      "2.0.1": {},
+      "2.0.2": {},
+      "2.1.1": {}
+    }},
+    "nimbus-client": {"versions": {
+      "1.0": {"requires": ["nimbus-x1", "nimbus-x2", "nimbus-x3", "nimbus-x4", "nimbus-x5", "nimbus-x6", "nimbus-x5==2.0 | nimbus-x1==2.0 | nimbus-x6==1.0", "nimbus-x6==2.0 | nimbus-x3==2.0 | nimbus-x1==1.0", "nimbus-x4==2.0 | nimbus-x6==1.0 | nimbus-x1==2.0", "nimbus-x4==2.0 | nimbus-x1==2.0 | nimbus-x6==1.0", "nimbus-x1==2.0 | nimbus-x3==1.0 | nimbus-x6==2.0", "nimbus-x2==1.0 | nimbus-x3==2.0 | nimbus-x1==1.0", "nimbus-x6==2.0 | nimbus-x1==1.0 | nimbus-x3==2.0", "nimbus-x4==1.0 | nimbus-x5==1.0 | nimbus-x2==2.0", "nimbus-x5==2.0 | nimbus-x6==2.0 | nimbus-x1==2.0", "nimbus-x3==2.0 | nimbus-x5==2.0 | nimbus-x6==1.0", "nimbus-x6==1.0 | nimbus-x5==2.0 | nimbus-x1==2.0", "nimbus-x3==2.0 | nimbus-x4==1.0 | nimbus-x5==2.0", "nimbus-x5==2.0 | nimbus-x1==2.0 | nimbus-x4==1.0", "nimbus-x1==1.0 | nimbus-x2==2.0 | nimbus-x3==1.0", "nimbus-x4==2.0 | nimbus-x2==2.0 | nimbus-x1==1.0", "nimbus-x1==2.0 | nimbus-x5==2.0 | nimbus-x4==1.0", "nimbus-x2==2.0 | nimbus-x6==2.0 | nimbus-x3==2.0", "nimbus-x4==1.0 | nimbus-x1==2.0 | nimbus-x5==1.0", "nimbus-x3==1.0 | nimbus-x4==2.0 | nimbus-x5==1.0", "nimbus-x3==2.0 | nimbus-x4==1.0 | nimbus-x2==2.0", "nimbus-x6==2.0 | nimbus-x3==1.0 | nimbus-x1==1.0", "nimbus-x1==2.0 | nimbus-x3==1.0 | nimbus-x6==2.0", "nimbus-x1==2.0 | nimbus-x3==1.0 | nimbus-x5==2.0", "nimbus-x3==2.0 | nimbus-x5==2.0 | nimbus-x1==2.0", "nimbus-x5==1.0 | nimbus-x1==2.0 | nimbus-x4==2.0", "nimbus-x1==1.0 | nimbus-x3==1.0 | nimbus-x6==1.0"]}
+    }},
+    "nimbus-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "nimbus-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "nimbus-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "nimbus-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "nimbus-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "nimbus-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "Vortex.Client_Lib": {"versions": {
+      "1.9": {},
+      "1.10": {},
+      "2.0.1": {"requires": ["no-such-pkg"]},
+      "1.2": {},
+      "2": {}
+    }},
+    "prism-io": {"versions": {
+      "1.0": {"requires": ["VORTEX-CLIENT-LIB >= 1.9"]},
+      "1.1": {"requires": ["vortex_client_lib>=1.10, !=2"]}
+    }},
+    "pebble-compat": {"versions": {
+      "1.0": {},
+      "1.1": {},
+      "2.0": {"requires": ["delta-io <2.0"]}
+    }},
+    "delta-io": {"versions": {
+      "1.0": {},
+      "2.0": {"requires": ["pebble-compat <2.0"]}
+    }},
+    "fjord-tools": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["typing"]},
+      "1.2": {"requires": ["typing >=999"]},
+      "1.3": {"requires": ["typing >=2.0 <1.0"]},
+      "2.0": {"requires": ["fjord-native"]}
+    }}
+  }
+}

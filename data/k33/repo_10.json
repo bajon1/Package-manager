@@ -1,0 +1,74 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 33, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 33, "packages": 10},
+  "packages": {
+    "ansimarkup": {"versions": {
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.4.1": {"requires": ["colorama"]},
+      "1.5.0": {"requires": ["colorama"]},
+      "2.0.0": {"requires": ["colorama"]},
+      "2.1.0": {"requires": ["colorama"]},
+      "2.2.0": {"requires": ["colorama"]}
+    }},
+    "colorama": {"versions": {
+      "0.4.3": {},
+      "0.4.4": {},
+      "0.4.5": {},
+      "0.4.6": {}
+    }},
+    "frozenlist": {"versions": {
+      "1.6.2": {},
+      "1.7.0": {},
+      "1.8.0": {}
+    }},
+    "fsspec": {"versions": {
+      "2026.1.0": {},
+      "2026.2.0": {},
+      "2026.3.0": {},
+      "2026.4.0": {},
+      "2026.6.0": {},
+      "2026.7.0": {},
+      "2026.9.0": {}
+    }},
+    "platformdirs": {"versions": {
+      "4.12.2": {},
+      "4.12.3": {},
+      "4.12.4": {},
+      "4.13.0": {},
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.13.3": {}
+    }},
+    "typing": {"versions": {
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.12.2": {},
+      "4.13.0": {},
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "pebble-cli": {"versions": {
+      "1.0": {},
+      "1.1": {},
+      "2.0": {"requires": ["ember-compat <2.0"]}
+    }},
+    "ember-compat": {"versions": {
+      "1.0": {},
+      "2.0": {"requires": ["pebble-cli <2.0"]}
+    }},
+    "aurora-core": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["colorama"]},
+      "1.2": {"requires": ["colorama >=999"]},
+      "1.3": {"requires": ["colorama >=2.0 <1.0"]},
+      "2.0": {"requires": ["aurora-native"]}
+    }}
+  }
+}

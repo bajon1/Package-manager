@@ -1,0 +1,79 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 9, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 9, "packages": 10},
+  "packages": {
+    "filelock": {"versions": {
+      "4.0.9": {},
+      "4.0.10": {},
+      "4.0.11": {},
+      "4.0.12": {},
+      "4.1.0": {},
+      "4.1.1": {},
+      "4.1.2": {},
+      "4.2.0": {}
+    }},
+    "numpy": {"versions": {
+      "2.5.1": {},
+      "2.5.2": {},
+      "2.5.3": {},
+      "2.5.4": {}
+    }},
+    "pandas": {"versions": {
+      "2.3.3": {"requires": ["numpy>=1.26.0", "python-dateutil>=2.8.2", "pytz>=2020.1", "tzdata>=2022.7"]},
+      "3.0.0": {"requires": ["numpy>=1.26.0", "python-dateutil>=2.8.2"]},
+      "3.0.1": {"requires": ["numpy>=1.26.0", "python-dateutil>=2.8.2"]},
+      "3.0.2": {"requires": ["numpy>=1.26.0", "python-dateutil>=2.8.2"]},
+      "3.0.3": {"requires": ["numpy>=1.26.0", "python-dateutil>=2.8.2"]},
+      "3.0.5": {"requires": ["numpy>=1.26.0", "python-dateutil>=2.8.2"]},
+      "3.0.6": {"requires": ["numpy>=1.26.0", "python-dateutil>=2.8.2"]}
+    }},
+    "python-dateutil": {"versions": {
+      "2.8.0": {"requires": ["six>=1.5"]},
+      "2.8.1": {"requires": ["six>=1.5"]},
+      "2.8.2": {"requires": ["six>=1.5"]},
+      "2.9.0": {"requires": ["six>=1.5"]},
+      "2.9.0.1": {"requires": ["six>=1.5"]}
+    }},
+    "pytz": {"versions": {
+      "2025.2": {},
+      "2026.1": {},
+      "2026.1.2": {},
+      "2026.2": {},
+      "2026.3": {},
+      "2026.3.2": {},
+      "2026.4": {},
+      "2026.5": {}
+    }},
+    "six": {"versions": {
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "tzdata": {"versions": {
+      "2025.2": {},
+      "2025.3": {},
+      "2026.1": {},
+      "2026.2": {},
+      "2026.3": {},
+      "2026.4": {},
+      "2026.5": {}
+    }},
+    "Krypton.Cli_Lib": {"versions": {
+      "1.9": {},
+      "1.10": {},
+      "2.0.1": {"requires": ["no-such-pkg"]},
+      "1.2": {},
+      "2": {}
+    }},
+    "lynx-kit": {"versions": {
+      "1.0": {"requires": ["KRYPTON-CLI-LIB >= 1.9"]},
+      "1.1": {"requires": ["krypton_cli_lib>=1.10, !=2"]}
+    }},
+    "birch-api": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["pytz"]},
+      "1.2": {"requires": ["pytz >=999"]},
+      "1.3": {"requires": ["pytz >=2.0 <1.0"]},
+      "2.0": {"requires": ["birch-native"]}
+    }}
+  }
+}

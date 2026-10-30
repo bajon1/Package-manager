@@ -1,0 +1,62 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 30, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 30, "packages": 10},
+  "packages": {
+    "ansimarkup": {"versions": {
+      "2.0.0": {"requires": ["colorama"]},
+      "2.1.0": {"requires": ["colorama"]},
+      "2.2.0": {"requires": ["colorama"]}
+    }},
+    "cached-property": {"versions": {
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.5.1": {},
+      "1.5.2": {},
+      "2.0.1": {}
+    }},
+    "colorama": {"versions": {
+      "0.4.0": {},
+      "0.4.1": {},
+      "0.4.3": {},
+      "0.4.4": {},
+      "0.4.5": {},
+      "0.4.6": {}
+    }},
+    "hpack": {"versions": {
+      "2.1.1": {},
+      "2.2.0": {},
+      "2.3.0": {},
+      "3.0.0": {},
+      "4.0.0": {},
+      "4.1.0": {},
+      "4.2.0": {}
+    }},
+    "hyperframe": {"versions": {
+      "6.0.0": {},
+      "6.0.1": {},
+      "6.1.0": {}
+    }},
+    "protobuf": {"versions": {
+      "7.36.0": {},
+      "7.36.1": {},
+      "7.36.2": {}
+    }},
+    "tzdata": {"versions": {
+      "2026.3": {},
+      "2026.4": {},
+      "2026.5": {}
+    }},
+    "lumen-api": {"versions": {
+      "1.0": {"requires": ["colorama==0.4.0"]}
+    }},
+    "sierra-core": {"versions": {
+      "1.0": {"requires": ["colorama >=0.4.6"]}
+    }},
+    "dune-compat": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["colorama"]},
+      "1.2": {"requires": ["colorama >=999"]},
+      "1.3": {"requires": ["colorama >=2.0 <1.0"]},
+      "2.0": {"requires": ["dune-native"]}
+    }}
+  }
+}

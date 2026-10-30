@@ -1,0 +1,239 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 11, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 11, "packages": 30},
+  "packages": {
+    "appdirs": {"versions": {
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.4.4": {}
+    }},
+    "botocore": {"versions": {
+      "1.43.107": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.108": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.109": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.110": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.111": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.112": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.113": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]},
+      "1.43.114": {"requires": ["jmespath<2.0.0,>=0.7.1", "python-dateutil<3.0.0,>=2.1", "urllib3!=2.2.0,<3,>=1.25.4"]}
+    }},
+    "dragonmapper": {"versions": {
+      "0.2": {},
+      "0.2.1": {},
+      "0.2.2": {},
+      "0.2.3": {},
+      "0.2.4": {},
+      "0.2.5": {},
+      "0.2.6": {},
+      "0.2.7": {"requires": ["hanzidentifier>=1.2,<2", "zhon>=2.0,<3"]},
+      "0.3.0": {"requires": ["hanzidentifier>=1.2,<2", "zhon>=2.0,<3"]}
+    }},
+    "hanzidentifier": {"versions": {
+      "1.0.1": {},
+      "1.0.2": {},
+      "1.1.0": {"requires": ["zhon>=1.1.3"]},
+      "1.2.0": {"requires": ["zhon>=2.0,<3"]},
+      "1.3.0": {"requires": ["zhon>=2.1,<3"]}
+    }},
+    "importlib-metadata": {"versions": {
+      "8.5.0": {"requires": ["zipp>=3.20"]},
+      "8.6.0": {"requires": ["zipp>=3.20"]},
+      "8.6.1": {"requires": ["zipp>=3.20"]},
+      "8.7.0": {"requires": ["zipp>=3.20"]},
+      "8.7.1": {"requires": ["zipp>=3.20"]},
+      "8.8.0": {"requires": ["zipp>=3.20"]},
+      "8.9.0": {"requires": ["zipp>=3.20"]},
+      "9.0.0": {"requires": ["zipp>=3.20"]},
+      "9.0.1": {"requires": ["zipp>=3.20"]}
+    }},
+    "jmespath": {"versions": {
+      "0.9.4": {},
+      "0.9.5": {},
+      "0.10.0": {},
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {}
+    }},
+    "more-itertools": {"versions": {
+      "10.6.0": {},
+      "10.7.0": {},
+      "10.8.0": {},
+      "11.0.0": {},
+      "11.0.1": {},
+      "11.0.2": {},
+      "11.1.0": {},
+      "11.2.0": {},
+      "11.2.1": {}
+    }},
+    "multidict": {"versions": {
+      "6.4.4": {},
+      "6.5.1": {},
+      "6.6.2": {},
+      "6.6.3": {},
+      "6.6.4": {},
+      "6.7.0": {},
+      "6.7.1": {},
+      "6.8.0": {},
+      "6.9.0": {},
+      "6.9.1": {},
+      "7.0.0": {},
+      "7.1.0": {}
+    }},
+    "pluggy": {"versions": {
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.5.0": {},
+      "1.6.0": {},
+      "1.7.0": {}
+    }},
+    "prettytable": {"versions": {
+      "3.10.1": {"requires": ["wcwidth"]},
+      "3.10.2": {"requires": ["wcwidth"]},
+      "3.11.0": {"requires": ["wcwidth"]},
+      "3.12.0": {"requires": ["wcwidth"]},
+      "3.13.0": {"requires": ["wcwidth"]},
+      "3.14.0": {"requires": ["wcwidth"]},
+      "3.15.0": {"requires": ["wcwidth"]},
+      "3.15.1": {"requires": ["wcwidth"]},
+      "3.16.0": {"requires": ["wcwidth"]},
+      "3.17.0": {"requires": ["wcwidth"]},
+      "3.18.0": {"requires": ["wcwidth>=0.3.5"]}
+    }},
+    "python-dateutil": {"versions": {
+      "2.5.3": {},
+      "2.6.0": {},
+      "2.6.1": {"requires": ["six>=1.5"]},
+      "2.7.0": {"requires": ["six>=1.5"]},
+      "2.7.1": {"requires": ["six>=1.5"]},
+      "2.7.2": {"requires": ["six>=1.5"]},
+      "2.7.3": {"requires": ["six>=1.5"]},
+      "2.7.4": {"requires": ["six>=1.5"]},
+      "2.7.5": {"requires": ["six>=1.5"]},
+      "2.8.0": {"requires": ["six>=1.5"]},
+      "2.8.1": {"requires": ["six>=1.5"]},
+      "2.8.2": {"requires": ["six>=1.5"]},
+      "2.9.0": {"requires": ["six>=1.5"]},
+      "2.9.0.1": {"requires": ["six>=1.5"]}
+    }},
+    "rfc3986": {"versions": {
+      "1.3.1": {},
+      "1.3.2": {},
+      "1.4.0": {},
+      "1.5.0": {},
+      "2.0.0": {}
+    }},
+    "setuptools": {"versions": {
+      "81.0.0": {},
+      "82.0.0": {},
+      "82.0.1": {},
+      "83.0.0": {},
+      "84.0.0": {}
+    }},
+    "six": {"versions": {
+      "1.10.0": {},
+      "1.11.0": {},
+      "1.12.0": {},
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "urllib3": {"versions": {
+      "2.4.0": {},
+      "2.5.0": {},
+      "2.6.0": {},
+      "2.6.1": {},
+      "2.6.2": {},
+      "2.6.3": {},
+      "2.7.0": {},
+      "2.8.0": {}
+    }},
+    "wcwidth": {"versions": {
+      "0.8.3": {},
+      "0.8.4": {},
+      "0.8.5": {},
+      "0.9.0": {},
+      "0.9.1": {},
+      "0.9.2": {}
+    }},
+    "zhon": {"versions": {
+      "1.1.5": {},
+      "2.0.0": {"requires": ["appdirs"]},
+      "2.0.1": {},
+      "2.0.2": {},
+      "2.1.1": {}
+    }},
+    "zipp": {"versions": {
+      "3.19.0": {},
+      "3.19.1": {},
+      "3.19.2": {},
+      "3.19.3": {},
+      "3.20.0": {},
+      "3.20.1": {},
+      "3.20.2": {},
+      "3.21.0": {},
+      "3.22.0": {},
+      "3.23.0": {},
+      "3.23.1": {},
+      "4.1.0": {},
+      "4.1.1": {}
+    }},
+    "lynx-compat": {"versions": {
+      "1.0": {"requires": ["lynx-x1", "lynx-x2", "lynx-x3", "lynx-x4", "lynx-x5", "lynx-x6", "lynx-x2==2.0 | lynx-x6==2.0 | lynx-x1==1.0", "lynx-x3==1.0 | lynx-x2==1.0 | lynx-x6==1.0", "lynx-x4==1.0 | lynx-x2==2.0 | lynx-x1==2.0", "lynx-x4==2.0 | lynx-x5==1.0 | lynx-x3==2.0", "lynx-x1==2.0 | lynx-x2==1.0 | lynx-x6==1.0", "lynx-x4==2.0 | lynx-x3==2.0 | lynx-x1==1.0", "lynx-x4==1.0 | lynx-x6==1.0 | lynx-x1==2.0", "lynx-x6==2.0 | lynx-x2==1.0 | lynx-x1==1.0", "lynx-x4==2.0 | lynx-x6==2.0 | lynx-x2==2.0", "lynx-x3==2.0 | lynx-x5==1.0 | lynx-x6==2.0", "lynx-x3==1.0 | lynx-x4==1.0 | lynx-x1==1.0", "lynx-x4==1.0 | lynx-x6==2.0 | lynx-x3==2.0", "lynx-x1==2.0 | lynx-x2==1.0 | lynx-x4==1.0", "lynx-x3==1.0 | lynx-x5==1.0 | lynx-x1==1.0", "lynx-x4==1.0 | lynx-x1==2.0 | lynx-x6==1.0", "lynx-x3==1.0 | lynx-x2==1.0 | lynx-x4==2.0", "lynx-x1==2.0 | lynx-x2==2.0 | lynx-x3==1.0", "lynx-x4==1.0 | lynx-x2==2.0 | lynx-x1==1.0", "lynx-x2==1.0 | lynx-x6==1.0 | lynx-x5==2.0", "lynx-x6==1.0 | lynx-x4==1.0 | lynx-x5==2.0", "lynx-x5==2.0 | lynx-x6==2.0 | lynx-x4==1.0", "lynx-x2==2.0 | lynx-x4==1.0 | lynx-x3==1.0", "lynx-x2==2.0 | lynx-x1==2.0 | lynx-x6==2.0", "lynx-x3==2.0 | lynx-x6==2.0 | lynx-x1==2.0", "lynx-x1==1.0 | lynx-x2==2.0 | lynx-x5==1.0", "lynx-x5==2.0 | lynx-x6==1.0 | lynx-x4==1.0"]}
+    }},
+    "lynx-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lynx-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lynx-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lynx-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lynx-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lynx-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "umbra-io": {"versions": {
+      "1.0": {"requires": ["alder-kit <2.0"]},
+      "2.0": {"requires": ["alder-kit>=2.0"]}
+    }},
+    "alder-kit": {"versions": {
+      "1.0": {"requires": ["umbra-io==1.0"]},
+      "2.0": {"requires": ["umbra-io >=2.0"]}
+    }},
+    "Kestrel.Kit_Lib": {"versions": {
+      "1.9": {},
+      "1.10": {},
+      "2.0.1": {"requires": ["no-such-pkg"]},
+      "1.2": {},
+      "2": {}
+    }},
+    "sierra-sdk": {"versions": {
+      "1.0": {"requires": ["KESTREL-KIT-LIB >= 1.9"]},
+      "1.1": {"requires": ["kestrel_kit_lib>=1.10, !=2"]}
+    }},
+    "indigo-kit": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["prettytable"]},
+      "1.2": {"requires": ["prettytable >=999"]},
+      "1.3": {"requires": ["prettytable >=2.0 <1.0"]},
+      "2.0": {"requires": ["indigo-native"]}
+    }}
+  }
+}

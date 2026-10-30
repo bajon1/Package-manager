@@ -1,0 +1,4 @@
+# Żądania do zadania 4.5 dla repo_1000.json (instalacja do pustego środowiska)
+annotated-types
+rfc3987-xenon
+tundra-api

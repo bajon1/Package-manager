@@ -1,0 +1,4 @@
+# Żądania do zadania 4.5 dla repo_100.json (instalacja do pustego środowiska)
+referencing
+ansimarkup
+delta-kit

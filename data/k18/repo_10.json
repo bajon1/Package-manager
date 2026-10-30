@@ -1,0 +1,75 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 18, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 18, "packages": 10},
+  "packages": {
+    "appdirs": {"versions": {
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.4.4": {}
+    }},
+    "dragonmapper": {"versions": {
+      "0.2.1": {},
+      "0.2.2": {},
+      "0.2.3": {},
+      "0.2.4": {},
+      "0.2.5": {},
+      "0.2.6": {},
+      "0.2.7": {"requires": ["hanzidentifier>=1.2,<2", "zhon>=2.0,<3"]},
+      "0.3.0": {"requires": ["hanzidentifier>=1.2,<2", "zhon>=2.0,<3"]}
+    }},
+    "hanzidentifier": {"versions": {
+      "1.0.1": {},
+      "1.0.2": {},
+      "1.1.0": {"requires": ["zhon>=1.1.3"]},
+      "1.2.0": {"requires": ["zhon>=2.0,<3"]},
+      "1.3.0": {"requires": ["zhon>=2.1,<3"]}
+    }},
+    "platformdirs": {"versions": {
+      "4.12.2": {},
+      "4.12.3": {},
+      "4.12.4": {},
+      "4.13.0": {},
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.13.3": {}
+    }},
+    "python-dateutil": {"versions": {
+      "2.8.1": {"requires": ["six>=1.5"]},
+      "2.8.2": {"requires": ["six>=1.5"]},
+      "2.9.0": {"requires": ["six>=1.5"]},
+      "2.9.0.1": {"requires": ["six>=1.5"]}
+    }},
+    "six": {"versions": {
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "zhon": {"versions": {
+      "1.1.3": {},
+      "1.1.4": {},
+      "1.1.5": {},
+      "2.0.0": {"requires": ["appdirs"]},
+      "2.0.1": {},
+      "2.0.2": {},
+      "2.1.1": {}
+    }},
+    "garnet-client": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["zhon"]},
+      "1.2": {"requires": ["zhon >=999"]},
+      "1.3": {"requires": ["zhon >=2.0 <1.0"]},
+      "2.0": {"requires": ["garnet-native"]}
+    }},
+    "ember-io": {"versions": {
+      "1.0": {"requires": ["fjord-core <2.0"]},
+      "2.0": {"requires": ["fjord-core>=2.0"]}
+    }},
+    "fjord-core": {"versions": {
+      "1.0": {"requires": ["ember-io==1.0"]},
+      "2.0": {"requires": ["ember-io >=2.0"]}
+    }}
+  }
+}

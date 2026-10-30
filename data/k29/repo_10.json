@@ -1,0 +1,75 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 29, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 29, "packages": 10},
+  "packages": {
+    "attrs": {"versions": {
+      "24.1.0": {},
+      "24.2.0": {},
+      "24.3.0": {},
+      "25.1.0": {},
+      "25.2.0": {},
+      "25.3.0": {},
+      "25.4.0": {},
+      "26.1.0": {}
+    }},
+    "more-itertools": {"versions": {
+      "11.0.2": {},
+      "11.1.0": {},
+      "11.2.0": {},
+      "11.2.1": {}
+    }},
+    "numpy": {"versions": {
+      "2.5.1": {},
+      "2.5.2": {},
+      "2.5.3": {},
+      "2.5.4": {}
+    }},
+    "python-dateutil": {"versions": {
+      "2.8.0": {"requires": ["six>=1.5"]},
+      "2.8.1": {"requires": ["six>=1.5"]},
+      "2.8.2": {"requires": ["six>=1.5"]},
+      "2.9.0": {"requires": ["six>=1.5"]},
+      "2.9.0.1": {"requires": ["six>=1.5"]}
+    }},
+    "six": {"versions": {
+      "1.10.0": {},
+      "1.11.0": {},
+      "1.12.0": {},
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "typing": {"versions": {
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "urllib3": {"versions": {
+      "2.6.0": {},
+      "2.6.1": {},
+      "2.6.2": {},
+      "2.6.3": {},
+      "2.7.0": {},
+      "2.8.0": {}
+    }},
+    "tundra-cli": {"versions": {
+      "1.0": {"requires": ["pebble-io <2.0"]},
+      "2.0": {"requires": ["pebble-io>=2.0"]}
+    }},
+    "pebble-io": {"versions": {
+      "1.0": {"requires": ["tundra-cli==1.0"]},
+      "2.0": {"requires": ["tundra-cli >=2.0"]}
+    }},
+    "dune-cli": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["attrs"]},
+      "1.2": {"requires": ["attrs >=999"]},
+      "1.3": {"requires": ["attrs >=2.0 <1.0"]},
+      "2.0": {"requires": ["dune-native"]}
+    }}
+  }
+}

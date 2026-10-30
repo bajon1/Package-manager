@@ -1,0 +1,68 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 25, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 25, "packages": 10},
+  "packages": {
+    "cached-property": {"versions": {
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.5.1": {},
+      "1.5.2": {},
+      "2.0.1": {}
+    }},
+    "importlib-metadata": {"versions": {
+      "8.7.1": {"requires": ["zipp>=3.20"]},
+      "8.8.0": {"requires": ["zipp>=3.20"]},
+      "8.9.0": {"requires": ["zipp>=3.20"]},
+      "9.0.0": {"requires": ["zipp>=3.20"]},
+      "9.0.1": {"requires": ["zipp>=3.20"]}
+    }},
+    "more-itertools": {"versions": {
+      "11.0.0": {},
+      "11.0.1": {},
+      "11.0.2": {},
+      "11.1.0": {},
+      "11.2.0": {},
+      "11.2.1": {}
+    }},
+    "pluggy": {"versions": {
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.5.0": {},
+      "1.6.0": {},
+      "1.7.0": {}
+    }},
+    "rfc3987": {"versions": {
+      "1.3.4": {},
+      "1.3.5": {},
+      "1.3.6": {},
+      "1.3.7": {},
+      "1.3.8": {}
+    }},
+    "six": {"versions": {
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "zipp": {"versions": {
+      "3.22.0": {},
+      "3.23.0": {},
+      "3.23.1": {},
+      "4.1.0": {},
+      "4.1.1": {}
+    }},
+    "quartz-io": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["more-itertools"]},
+      "1.2": {"requires": ["more-itertools >=999"]},
+      "1.3": {"requires": ["more-itertools >=2.0 <1.0"]},
+      "2.0": {"requires": ["quartz-native"]}
+    }},
+    "vortex-core": {"versions": {
+      "1.0": {"requires": ["importlib-metadata==8.7.1"]}
+    }},
+    "willow-core": {"versions": {
+      "1.0": {"requires": ["importlib-metadata >=9.0.1"]}
+    }}
+  }
+}

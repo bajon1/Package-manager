@@ -1,0 +1,82 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 38, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 38, "packages": 10},
+  "packages": {
+    "cached-property": {"versions": {
+      "1.3.1": {},
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.4.2": {},
+      "1.4.3": {},
+      "1.5.1": {},
+      "1.5.2": {},
+      "2.0.1": {}
+    }},
+    "hyperframe": {"versions": {
+      "5.0.0": {},
+      "5.1.0": {},
+      "5.2.0": {},
+      "6.0.0": {},
+      "6.0.1": {},
+      "6.1.0": {}
+    }},
+    "pydantic-core": {"versions": {
+      "2.46.3": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.4": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.5": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.47.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.48.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.49.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.1": {"requires": ["typing-extensions>=4.16.0"]}
+    }},
+    "pyjwt": {"versions": {
+      "2.12.0": {},
+      "2.12.1": {},
+      "2.13.0": {},
+      "2.14.0": {},
+      "2.15.0": {},
+      "2.15.1": {}
+    }},
+    "typing": {"versions": {
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "typing-inspection": {"versions": {
+      "0.4.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.1": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.2": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.3": {"requires": ["typing-extensions>=4.15.0"]},
+      "0.4.4": {"requires": ["typing-extensions>=4.15.0"]}
+    }},
+    "Juniper.Tools_Lib": {"versions": {
+      "1.9": {},
+      "1.10": {},
+      "2.0.1": {"requires": ["no-such-pkg"]},
+      "1.2": {},
+      "2": {}
+    }},
+    "harbor-kit": {"versions": {
+      "1.0": {"requires": ["JUNIPER-TOOLS-LIB >= 1.9"]},
+      "1.1": {"requires": ["juniper_tools_lib>=1.10, !=2"]}
+    }},
+    "saffron-io": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["hyperframe"]},
+      "1.2": {"requires": ["hyperframe >=999"]},
+      "1.3": {"requires": ["hyperframe >=2.0 <1.0"]},
+      "2.0": {"requires": ["saffron-native"]}
+    }}
+  }
+}

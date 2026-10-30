@@ -1,0 +1,4 @@
+# Żądania do zadania 4.5 dla repo_10.json (instalacja do pustego środowiska)
+yarl
+propcache
+umbra-tools

@@ -1,0 +1,247 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 2, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 2, "packages": 30},
+  "packages": {
+    "anyio": {"versions": {
+      "4.13.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.0": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.1": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.14.2": {"requires": ["idna>=2.8", "typing_extensions>=4.5"]},
+      "4.15.0": {"requires": ["idna>=2.8", "typing_extensions>=4.16.0"]},
+      "4.15.1": {"requires": ["idna>=2.8", "typing_extensions>=4.16.0"]}
+    }},
+    "async-generator": {"versions": {
+      "1.4": {},
+      "1.5": {},
+      "1.6": {},
+      "1.7": {},
+      "1.8": {},
+      "1.9": {},
+      "1.10": {}
+    }},
+    "certifi": {"versions": {
+      "2025.1.31": {},
+      "2025.4.26": {},
+      "2025.6.15": {},
+      "2025.7.9": {},
+      "2025.7.14": {},
+      "2025.8.3": {},
+      "2025.10.5": {},
+      "2025.11.12": {},
+      "2026.1.4": {},
+      "2026.2.25": {},
+      "2026.4.22": {},
+      "2026.5.20": {},
+      "2026.6.17": {},
+      "2026.7.22": {}
+    }},
+    "filelock": {"versions": {
+      "4.0.4": {},
+      "4.0.5": {},
+      "4.0.6": {},
+      "4.0.7": {},
+      "4.0.8": {},
+      "4.0.9": {},
+      "4.0.10": {},
+      "4.0.11": {},
+      "4.0.12": {},
+      "4.1.0": {},
+      "4.1.1": {},
+      "4.1.2": {},
+      "4.2.0": {}
+    }},
+    "h11": {"versions": {
+      "0.12.0": {},
+      "0.13.0": {},
+      "0.14.0": {},
+      "0.15.0": {},
+      "0.16.0": {}
+    }},
+    "h2": {"versions": {
+      "2.6.2": {"requires": ["hyperframe!=4.0.0,<6,>=3.1", "hpack>=2.2,<4"]},
+      "3.0.0": {"requires": ["hyperframe<6,>=5.0", "hpack<3,>=2.3"]},
+      "3.0.1": {"requires": ["hyperframe<6,>=5.0", "hpack<4,>=2.3"]},
+      "3.1.0": {"requires": ["hyperframe<6,>=5.2.0", "hpack<4,>=2.3"]},
+      "3.1.1": {"requires": ["hyperframe<6,>=5.2.0", "hpack<4,>=2.3"]},
+      "3.2.0": {"requires": ["hyperframe<6,>=5.2.0", "hpack<4,>=3.0"]},
+      "4.0.0": {"requires": ["hyperframe<7,>=6.0", "hpack<5,>=4.0"]},
+      "4.1.0": {"requires": ["hyperframe<7,>=6.0", "hpack<5,>=4.0"]},
+      "4.2.0": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.1"]},
+      "4.3.0": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.1"]},
+      "4.4.0": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.2"]},
+      "4.4.1": {"requires": ["hyperframe<7,>=6.1", "hpack<5,>=4.2"]}
+    }},
+    "hpack": {"versions": {
+      "2.0.0": {},
+      "2.0.1": {},
+      "2.1.0": {},
+      "2.1.1": {},
+      "2.2.0": {},
+      "2.3.0": {},
+      "3.0.0": {},
+      "4.0.0": {},
+      "4.1.0": {},
+      "4.2.0": {}
+    }},
+    "httpcore": {"versions": {
+      "1.0.1": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.2": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.3": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.4": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.5": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.6": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.7": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.8": {"requires": ["certifi", "h11<0.15,>=0.13"]},
+      "1.0.9": {"requires": ["certifi", "h11>=0.16"]}
+    }},
+    "hyperframe": {"versions": {
+      "3.1.1": {},
+      "3.2.0": {},
+      "4.0.0": {},
+      "4.0.1": {},
+      "4.0.2": {},
+      "5.0.0": {},
+      "5.1.0": {},
+      "5.2.0": {},
+      "6.0.0": {},
+      "6.0.1": {},
+      "6.1.0": {}
+    }},
+    "idna": {"versions": {
+      "3.12": {},
+      "3.13": {},
+      "3.14": {},
+      "3.15": {},
+      "3.16": {},
+      "3.17": {},
+      "3.18": {},
+      "3.19": {},
+      "3.20": {}
+    }},
+    "importlib-metadata": {"versions": {
+      "8.6.1": {"requires": ["zipp>=3.20"]},
+      "8.7.0": {"requires": ["zipp>=3.20"]},
+      "8.7.1": {"requires": ["zipp>=3.20"]},
+      "8.8.0": {"requires": ["zipp>=3.20"]},
+      "8.9.0": {"requires": ["zipp>=3.20"]},
+      "9.0.0": {"requires": ["zipp>=3.20"]},
+      "9.0.1": {"requires": ["zipp>=3.20"]}
+    }},
+    "more-itertools": {"versions": {
+      "10.5.0": {},
+      "10.6.0": {},
+      "10.7.0": {},
+      "10.8.0": {},
+      "11.0.0": {},
+      "11.0.1": {},
+      "11.0.2": {},
+      "11.1.0": {},
+      "11.2.0": {},
+      "11.2.1": {}
+    }},
+    "pluggy": {"versions": {
+      "0.13.1": {},
+      "1.0.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.4.0": {},
+      "1.5.0": {},
+      "1.6.0": {},
+      "1.7.0": {}
+    }},
+    "six": {"versions": {
+      "1.11.0": {},
+      "1.12.0": {},
+      "1.13.0": {},
+      "1.14.0": {},
+      "1.15.0": {},
+      "1.16.0": {},
+      "1.17.0": {}
+    }},
+    "sniffio": {"versions": {
+      "0.0.0": {},
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.3.1": {}
+    }},
+    "typing": {"versions": {
+      "3.5.0.1": {},
+      "3.5.1.0": {},
+      "3.5.2": {},
+      "3.5.3.0": {},
+      "3.6.1": {},
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.12.2": {},
+      "4.13.0": {},
+      "4.13.1": {},
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "zipp": {"versions": {
+      "3.20.1": {},
+      "3.20.2": {},
+      "3.21.0": {},
+      "3.22.0": {},
+      "3.23.0": {},
+      "3.23.1": {},
+      "4.1.0": {},
+      "4.1.1": {}
+    }},
+    "lumen-tools": {"versions": {
+      "1.0": {"requires": ["lumen-x1", "lumen-x2", "lumen-x3", "lumen-x4", "lumen-x5", "lumen-x6", "lumen-x5==1.0 | lumen-x4==1.0 | lumen-x2==1.0", "lumen-x6==1.0 | lumen-x2==2.0 | lumen-x1==2.0", "lumen-x6==2.0 | lumen-x5==1.0 | lumen-x3==2.0", "lumen-x2==2.0 | lumen-x1==2.0 | lumen-x6==1.0", "lumen-x4==1.0 | lumen-x2==2.0 | lumen-x1==1.0", "lumen-x4==1.0 | lumen-x5==1.0 | lumen-x1==1.0", "lumen-x1==2.0 | lumen-x5==1.0 | lumen-x2==1.0", "lumen-x6==2.0 | lumen-x5==2.0 | lumen-x1==2.0", "lumen-x5==1.0 | lumen-x3==1.0 | lumen-x1==1.0", "lumen-x6==2.0 | lumen-x1==2.0 | lumen-x2==1.0", "lumen-x6==2.0 | lumen-x4==2.0 | lumen-x5==2.0", "lumen-x2==2.0 | lumen-x5==1.0 | lumen-x3==2.0", "lumen-x1==2.0 | lumen-x4==2.0 | lumen-x5==2.0", "lumen-x5==1.0 | lumen-x6==2.0 | lumen-x2==1.0", "lumen-x5==2.0 | lumen-x2==2.0 | lumen-x6==1.0", "lumen-x1==2.0 | lumen-x2==2.0 | lumen-x4==2.0", "lumen-x6==1.0 | lumen-x4==2.0 | lumen-x2==1.0", "lumen-x6==2.0 | lumen-x2==1.0 | lumen-x1==1.0", "lumen-x5==1.0 | lumen-x4==2.0 | lumen-x1==1.0", "lumen-x6==1.0 | lumen-x4==2.0 | lumen-x3==2.0", "lumen-x1==2.0 | lumen-x4==1.0 | lumen-x3==2.0", "lumen-x4==1.0 | lumen-x6==2.0 | lumen-x5==1.0", "lumen-x3==1.0 | lumen-x5==1.0 | lumen-x4==2.0", "lumen-x1==1.0 | lumen-x6==1.0 | lumen-x3==2.0", "lumen-x4==1.0 | lumen-x6==2.0 | lumen-x2==1.0", "lumen-x6==1.0 | lumen-x2==1.0 | lumen-x5==1.0"]}
+    }},
+    "lumen-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lumen-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lumen-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lumen-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lumen-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "lumen-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "vortex-sdk": {"versions": {
+      "1.0": {"requires": ["ember-utils", "indigo-io"]}
+    }},
+    "ember-utils": {"versions": {
+      "1.0": {"requires": ["more-itertools"]},
+      "2.0": {"requires": ["more-itertools <11.0.1"]}
+    }},
+    "indigo-io": {"versions": {
+      "1.0": {"requires": ["more-itertools"]},
+      "1.5": {"requires": ["more-itertools>=11.0.1"]},
+      "2.0": {"requires": ["more-itertools >= 11.0.1"]}
+    }},
+    "falcon-sdk": {"versions": {
+      "1.0": {"requires": ["async-generator==1.4"]}
+    }},
+    "nova-tools": {"versions": {
+      "1.0": {"requires": ["async-generator >=1.10"]}
+    }}
+  }
+}

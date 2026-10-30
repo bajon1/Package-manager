@@ -1,0 +1,270 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 1, N = 30) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 1, "packages": 30},
+  "packages": {
+    "aiosignal": {"versions": {
+      "1.0.0": {"requires": ["frozenlist>=1.0.0"]},
+      "1.1.0": {"requires": ["frozenlist>=1.1.0"]},
+      "1.1.1": {"requires": ["frozenlist>=1.1.0"]},
+      "1.1.2": {"requires": ["frozenlist>=1.1.0"]},
+      "1.2.0": {"requires": ["frozenlist>=1.1.0"]},
+      "1.3.1": {"requires": ["frozenlist>=1.1.0"]},
+      "1.3.2": {"requires": ["frozenlist>=1.1.0"]},
+      "1.4.0": {"requires": ["frozenlist>=1.1.0", "typing-extensions>=4.2"]}
+    }},
+    "attrs": {"versions": {
+      "23.1.0": {},
+      "23.2.0": {},
+      "24.1.0": {},
+      "24.2.0": {},
+      "24.3.0": {},
+      "25.1.0": {},
+      "25.2.0": {},
+      "25.3.0": {},
+      "25.4.0": {},
+      "26.1.0": {}
+    }},
+    "filelock": {"versions": {
+      "4.0.5": {},
+      "4.0.6": {},
+      "4.0.7": {},
+      "4.0.8": {},
+      "4.0.9": {},
+      "4.0.10": {},
+      "4.0.11": {},
+      "4.0.12": {},
+      "4.1.0": {},
+      "4.1.1": {},
+      "4.1.2": {},
+      "4.2.0": {}
+    }},
+    "frozenlist": {"versions": {
+      "1.0.0": {},
+      "1.1.0": {},
+      "1.1.1": {},
+      "1.2.0": {},
+      "1.3.0": {},
+      "1.3.1": {},
+      "1.3.3": {},
+      "1.4.0": {},
+      "1.4.1": {},
+      "1.5.0": {},
+      "1.6.0": {},
+      "1.6.2": {},
+      "1.7.0": {},
+      "1.8.0": {}
+    }},
+    "hyperframe": {"versions": {
+      "4.0.1": {},
+      "4.0.2": {},
+      "5.0.0": {},
+      "5.1.0": {},
+      "5.2.0": {},
+      "6.0.0": {},
+      "6.0.1": {},
+      "6.1.0": {}
+    }},
+    "jinja2": {"versions": {
+      "2.11.0": {"requires": ["MarkupSafe>=0.23"]},
+      "2.11.1": {"requires": ["MarkupSafe>=0.23"]},
+      "2.11.2": {"requires": ["MarkupSafe>=0.23"]},
+      "2.11.3": {"requires": ["MarkupSafe>=0.23"]},
+      "3.0.0": {"requires": ["MarkupSafe"]},
+      "3.0.1": {"requires": ["MarkupSafe>=2.0"]},
+      "3.0.2": {"requires": ["MarkupSafe>=2.0"]},
+      "3.0.3": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.0": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.1": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.2": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.3": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.4": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.5": {"requires": ["MarkupSafe>=2.0"]},
+      "3.1.6": {"requires": ["MarkupSafe>=2.0"]}
+    }},
+    "jsonschema-specifications": {"versions": {
+      "2023.11.1": {"requires": ["referencing>=0.31.0"]},
+      "2023.11.2": {"requires": ["referencing>=0.31.0"]},
+      "2023.12.1": {"requires": ["referencing>=0.31.0"]},
+      "2024.10.1": {"requires": ["referencing>=0.31.0"]},
+      "2025.4.1": {"requires": ["referencing>=0.31.0"]},
+      "2025.9.1": {"requires": ["referencing>=0.31.0"]}
+    }},
+    "markupsafe": {"versions": {
+      "2.0.0": {},
+      "2.0.1": {},
+      "2.1.0": {},
+      "2.1.1": {},
+      "2.1.2": {},
+      "2.1.3": {},
+      "2.1.4": {},
+      "2.1.5": {},
+      "3.0.0": {},
+      "3.0.1": {},
+      "3.0.2": {},
+      "3.0.3": {},
+      "3.0.4": {}
+    }},
+    "pycparser": {"versions": {
+      "2.16": {},
+      "2.17": {},
+      "2.18": {},
+      "2.19": {},
+      "2.20": {},
+      "2.21": {},
+      "2.22": {},
+      "2.23": {},
+      "3.0": {},
+      "3.1": {},
+      "3.11": {}
+    }},
+    "pydantic-core": {"versions": {
+      "2.47.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.48.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.49.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.1": {"requires": ["typing-extensions>=4.16.0"]}
+    }},
+    "pyrsistent": {"versions": {
+      "0.16.1": {},
+      "0.17.3": {},
+      "0.18.0": {},
+      "0.18.1": {},
+      "0.19.1": {},
+      "0.19.2": {},
+      "0.19.3": {},
+      "0.20.0": {}
+    }},
+    "python-dotenv": {"versions": {
+      "0.19.0": {},
+      "0.19.1": {},
+      "0.19.2": {},
+      "0.20.0": {},
+      "0.21.0": {},
+      "0.21.1": {},
+      "1.0.0": {},
+      "1.0.1": {},
+      "1.1.0": {},
+      "1.1.1": {},
+      "1.2.0": {},
+      "1.2.1": {},
+      "1.2.2": {},
+      "1.2.3": {},
+      "1.2.4": {}
+    }},
+    "referencing": {"versions": {
+      "0.34.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0"]},
+      "0.35.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0"]},
+      "0.35.1": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0"]},
+      "0.36.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0", "typing-extensions"]},
+      "0.36.1": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0", "typing-extensions>=4.4.0"]},
+      "0.36.2": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0", "typing-extensions>=4.4.0"]},
+      "0.37.0": {"requires": ["attrs>=22.2.0", "rpds-py>=0.7.0", "typing-extensions>=4.4.0"]}
+    }},
+    "rfc3986": {"versions": {
+      "1.3.1": {},
+      "1.3.2": {},
+      "1.4.0": {},
+      "1.5.0": {},
+      "2.0.0": {}
+    }},
+    "rpds-py": {"versions": {
+      "0.22.3": {},
+      "0.23.0": {},
+      "0.23.1": {},
+      "0.24.0": {},
+      "0.25.0": {},
+      "0.25.1": {},
+      "0.26.0": {},
+      "0.27.0": {},
+      "0.27.1": {},
+      "0.28.0": {},
+      "0.29.0": {},
+      "0.30.0": {},
+      "2026.5.1": {},
+      "2026.6.3": {},
+      "2026.9.1": {}
+    }},
+    "typing": {"versions": {
+      "3.5.0": {},
+      "3.5.0.1": {},
+      "3.5.1.0": {},
+      "3.5.2": {},
+      "3.5.3.0": {},
+      "3.6.1": {},
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.13.2": {},
+      "4.14.0": {},
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "tzdata": {"versions": {
+      "2023.3": {},
+      "2023.4": {},
+      "2024.1": {},
+      "2024.2": {},
+      "2025.1": {},
+      "2025.2": {},
+      "2025.3": {},
+      "2026.1": {},
+      "2026.2": {},
+      "2026.3": {},
+      "2026.4": {},
+      "2026.5": {}
+    }},
+    "quill-api": {"versions": {
+      "1.0": {"requires": ["quill-x1", "quill-x2", "quill-x3", "quill-x4", "quill-x5", "quill-x6", "quill-x4==1.0 | quill-x1==1.0 | quill-x2==1.0", "quill-x6==2.0 | quill-x2==2.0 | quill-x4==2.0", "quill-x1==1.0 | quill-x4==2.0 | quill-x3==1.0", "quill-x3==2.0 | quill-x4==2.0 | quill-x5==2.0", "quill-x2==2.0 | quill-x3==1.0 | quill-x4==2.0", "quill-x1==1.0 | quill-x2==1.0 | quill-x5==2.0", "quill-x6==1.0 | quill-x3==1.0 | quill-x4==2.0", "quill-x2==1.0 | quill-x3==2.0 | quill-x6==1.0", "quill-x5==1.0 | quill-x3==1.0 | quill-x6==2.0", "quill-x1==1.0 | quill-x4==1.0 | quill-x2==2.0", "quill-x6==2.0 | quill-x2==2.0 | quill-x1==1.0", "quill-x3==2.0 | quill-x6==2.0 | quill-x2==1.0", "quill-x1==2.0 | quill-x4==1.0 | quill-x3==1.0", "quill-x1==2.0 | quill-x2==1.0 | quill-x6==1.0", "quill-x6==2.0 | quill-x5==2.0 | quill-x3==1.0", "quill-x4==2.0 | quill-x3==2.0 | quill-x2==1.0", "quill-x6==2.0 | quill-x3==2.0 | quill-x5==2.0", "quill-x1==2.0 | quill-x4==2.0 | quill-x6==2.0", "quill-x6==2.0 | quill-x1==2.0 | quill-x3==1.0", "quill-x5==1.0 | quill-x3==1.0 | quill-x2==1.0", "quill-x5==1.0 | quill-x1==1.0 | quill-x6==2.0", "quill-x5==2.0 | quill-x3==1.0 | quill-x1==2.0", "quill-x4==1.0 | quill-x6==2.0 | quill-x5==1.0", "quill-x2==2.0 | quill-x6==2.0 | quill-x1==1.0", "quill-x2==2.0 | quill-x1==2.0 | quill-x5==2.0", "quill-x3==1.0 | quill-x6==1.0 | quill-x2==1.0"]}
+    }},
+    "quill-x1": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "quill-x2": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "quill-x3": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "quill-x4": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "quill-x5": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "quill-x6": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "delta-api": {"versions": {
+      "1.0": {"requires": ["typing==3.5.0"]}
+    }},
+    "saffron-compat": {"versions": {
+      "1.0": {"requires": ["typing >=3.7.4.3"]}
+    }},
+    "jasper-io": {"versions": {
+      "1.0": {"requires": ["xenon-api <2.0"]},
+      "2.0": {"requires": ["xenon-api>=2.0"]}
+    }},
+    "xenon-api": {"versions": {
+      "1.0": {"requires": ["jasper-io==1.0"]},
+      "2.0": {"requires": ["jasper-io >=2.0"]}
+    }},
+    "krypton-cli": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["pyrsistent"]},
+      "1.2": {"requires": ["pyrsistent >=999"]},
+      "1.3": {"requires": ["pyrsistent >=2.0 <1.0"]},
+      "2.0": {"requires": ["krypton-native"]}
+    }}
+  }
+}

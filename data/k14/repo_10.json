@@ -1,0 +1,73 @@
+{
+  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 14, N = 10) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 14, "packages": 10},
+  "packages": {
+    "annotated-types": {"versions": {
+      "0.6.0": {},
+      "0.7.0": {},
+      "0.8.0": {}
+    }},
+    "pydantic": {"versions": {
+      "2.13.1": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.1", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.2": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.2", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.3": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.3", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.4": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.4", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.13.5": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.46.5", "typing-extensions>=4.14.1", "typing-inspection>=0.4.2"]},
+      "2.14.0": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.50.0", "typing-extensions>=4.16.0", "typing-inspection>=0.4.4"]},
+      "2.14.1": {"requires": ["annotated-types>=0.6.0", "pydantic-core==2.50.1", "typing-extensions>=4.16.0", "typing-inspection>=0.4.4"]}
+    }},
+    "pydantic-core": {"versions": {
+      "2.46.3": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.4": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.46.5": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.47.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.48.0": {"requires": ["typing-extensions>=4.14.1"]},
+      "2.49.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.0": {"requires": ["typing-extensions>=4.16.0"]},
+      "2.50.1": {"requires": ["typing-extensions>=4.16.0"]}
+    }},
+    "typing": {"versions": {
+      "3.6.2": {},
+      "3.6.4": {},
+      "3.6.6": {},
+      "3.7.4": {},
+      "3.7.4.1": {},
+      "3.7.4.3": {}
+    }},
+    "typing-extensions": {"versions": {
+      "4.14.1": {},
+      "4.15.0": {},
+      "4.16.0": {}
+    }},
+    "typing-inspection": {"versions": {
+      "0.2.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.3.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.3.1": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.0": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.1": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.2": {"requires": ["typing-extensions>=4.12.0"]},
+      "0.4.3": {"requires": ["typing-extensions>=4.15.0"]},
+      "0.4.4": {"requires": ["typing-extensions>=4.15.0"]}
+    }},
+    "tzdata": {"versions": {
+      "2026.2": {},
+      "2026.3": {},
+      "2026.4": {},
+      "2026.5": {}
+    }},
+    "prism-io": {"versions": {
+      "1.0": {"requires": ["zephyr-sdk <2.0"]},
+      "2.0": {"requires": ["zephyr-sdk>=2.0"]}
+    }},
+    "zephyr-sdk": {"versions": {
+      "1.0": {"requires": ["prism-io==1.0"]},
+      "2.0": {"requires": ["prism-io >=2.0"]}
+    }},
+    "garnet-utils": {"versions": {
+      "1.0": {},
+      "1.1": {"requires": ["typing-inspection"]},
+      "1.2": {"requires": ["typing-inspection >=999"]},
+      "1.3": {"requires": ["typing-inspection >=2.0 <1.0"]},
+      "2.0": {"requires": ["garnet-native"]}
+    }}
+  }
+}
