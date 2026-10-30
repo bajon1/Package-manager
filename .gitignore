@@ -1,0 +1,13 @@
+.idea
+.env
+.venv
+*.pdf
+*.iml
+.uv-cache
+_data*
+__pycache__/
+.pytest_cache/
+tmp/
+*.json
+*.zip
+*.txt
