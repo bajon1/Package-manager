@@ -7,3 +7,12 @@ requires-python = ">=3.13"
 dependencies = [
     "z3-solver>=5.3.3.0",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
