@@ -51,7 +51,7 @@ _OP = r"(?:==|!=|<=|>=|<|>)"
 _VER = r"[0-9]+(?:\.[0-9]+)*"
 _ONE = rf"{_OP}\s*{_VER}"
 _NAME_RE = re.compile(r"\s*([A-Za-z0-9._-]+)(.*)", re.S)
-_TAIL_RE = re.compile(rf"\s*(?:{_ONE}(?:\s*,?\s*{_ONE})*)?\s*")
+_TAIL_RE = re.compile(rf"\s*(?:{_ONE}(?:(?:\s*,\s*|\s+){_ONE})*)?\s*")
 _CONSTRAINT_RE = re.compile(rf"({_OP})\s*({_VER})")
 
 

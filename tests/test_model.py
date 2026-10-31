@@ -66,7 +66,8 @@ def test_alternative():
         parse_alternative("a |")
 
 
-def make_repo():
+@pytest.fixture
+def repo():
     def pv(p, v, requires=(), conflicts=()):
         return PackageVersion(p, V(v), tuple(parse_alternative(t) for t in requires),
                               tuple(Requirement.parse(c) for c in conflicts))
@@ -76,8 +77,7 @@ def make_repo():
     ])
 
 
-def test_repository_order_and_obsolescence():
-    repo = make_repo()
+def test_repository_order_and_obsolescence(repo):
     assert [str(v.version) for v in repo.versions("lib")] == ["2.0", "1.5", "1.0"]
     assert repo.obsolescence("lib", V("2.0")) == 0
     assert repo.obsolescence("lib", V("1.0")) == 2
@@ -85,15 +85,14 @@ def test_repository_order_and_obsolescence():
     assert sorted(repo.package_names()) == ["app", "lib"]
 
 
-def test_repository_matching():
-    repo = make_repo()
+def test_repository_matching(repo):
     got = repo.matching(Requirement.parse("lib <2.0"))
     assert [str(p) for p in got] == ["lib==1.5", "lib==1.0"]
     assert repo.matching(Requirement.parse("ghost")) == []
 
 
-def test_repository_warnings():
-    w = make_repo().warnings()
+def test_repository_warnings(repo):
+    w = repo.warnings()
     assert len(w) == 1 and "ghost" in w[0] and "app==1.0" in w[0]
 
 
