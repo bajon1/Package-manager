@@ -7,18 +7,19 @@ from .explanations import explain
 from .knowledge_base import KnowledgeBase
 from .model import State
 from .parser import load_package_names, load_repository, load_requests, load_state, save_state
-from .solver import install, remove
+from .solver import install, remove, update
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Manage packages and their dependencies.")
     commands = parser.add_subparsers(dest="command", required=True)
-    for name in ("install", "remove", "explain"):
+    for name in ("install", "remove", "explain", "update"):
         command = commands.add_parser(name, help=f"{name.capitalize()} packages from a text file.")
-        command.add_argument("requests", type=Path, help="Request file; package names only for removal.")
+        command.add_argument("requests", type=Path, nargs="?" if name == "update" else None,
+                             help="Request file; names only for removal/update, omitted update file means all.")
         command.add_argument("--repo", type=Path, required=True, help="Repository JSON file.")
         if name != "explain":
-            command.add_argument("--state", type=Path, required=name == "remove",
+            command.add_argument("--state", type=Path, required=name in {"remove", "update"},
                                  help="Initial state; updated unless --output is given.")
             command.add_argument("--output", type=Path, help="Save the resulting state to this file.")
         if name == "remove":
@@ -40,6 +41,9 @@ def main(argv=None):
         before = load_state(args.state, repository) if args.state is not None else State()
         if args.command == "remove":
             solution = remove(kb, load_package_names(args.requests), before, autoremove=args.autoremove)
+        elif args.command == "update":
+            packages = load_package_names(args.requests) if args.requests is not None else None
+            solution = update(kb, packages, before)
         else:
             solution = install(kb, load_requests(args.requests), state=before)
         if solution is None:
