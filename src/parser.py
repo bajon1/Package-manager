@@ -3,7 +3,8 @@ import re
 import sys
 from pathlib import Path
 
-from .model import PackageVersion, Repository, Requirement, Version, normalize_name, parse_alternative
+from .model import PackageVersion, Repository, Requirement, State, Version, normalize_name, parse_alternative
+from .validator import validate_state
 
 
 
@@ -101,5 +102,35 @@ def load_requests():
     pass
 
 
-def load_state():
-    pass
+def load_state(path, repository=None):
+    path = Path(path)
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except (OSError, UnicodeError) as error:
+        raise ValueError(f"{path}: {error}") from error
+
+    state = State()
+    for line_number, line in enumerate(lines, start=1):
+        text = line.split("#", 1)[0].strip()
+        if not text:
+            continue
+        try:
+            fields = text.split()
+            if len(fields) not in (2, 3) or (len(fields) == 3 and fields[2] != "manual"):
+                raise ValueError("expected NAME VERSION or NAME VERSION manual")
+            name, version_text = fields[:2]
+            if not re.fullmatch(r"[A-Za-z0-9._-]+", name):
+                raise ValueError(f"invalid package name: {name!r}")
+            package = normalize_name(name)
+            version = Version.parse(version_text)
+            if package in state.installed:
+                raise ValueError(f"duplicate package: {package!r}")
+            state.install(package, version, manual=len(fields) == 3)
+        except ValueError as error:
+            raise ValueError(f"{path}: line {line_number}: {error}") from error
+
+    if repository is not None:
+        errors = validate_state(repository, state)
+        if errors:
+            raise ValueError(f"{path}: invalid state:\n" + "\n".join(errors))
+    return state
