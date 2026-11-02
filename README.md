@@ -24,3 +24,16 @@ print(repository.package_names())
 
 An invalid file raises a `ValueError` with the filename and error location.
 Warnings about requirements without matching versions are written to standard error.
+
+## Validating an installed state
+
+`validate_state(repository, state, requests=())` checks installed versions,
+dependencies, conflicts, and optional requests without a solver. It returns all
+violations, or an empty list for a valid state.
+
+```python
+from src.validator import validate_state
+
+for error in validate_state(repository, state):
+    print(error)
+```
