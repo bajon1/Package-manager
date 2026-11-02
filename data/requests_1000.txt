@@ -1,4 +1,4 @@
-# Żądania do zadania 4.5 dla repo_1000.json (instalacja do pustego środowiska)
+# Requests for task 4.5 using repo_1000.json (installation into an empty environment)
 uvicorn
 certifi-yarrow
 tundra-sdk

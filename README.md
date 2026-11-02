@@ -1,18 +1,18 @@
 # Packet-manager
 Packet manager
 
-## Testy
+## Tests
 
-Zainstaluj zależności developerskie i uruchom testy z katalogu projektu:
+Install the development dependencies and run the tests from the project directory:
 
 ```sh
 uv sync --dev
 uv run pytest
 ```
 
-Testy znajdują się w katalogu `tests/`, w plikach `test_*.py`.
+Tests are located in the `tests/` directory, in `test_*.py` files.
 
-## Wczytywanie repozytorium
+## Loading a repository
 
 ```python
 from src.parser import load_repository
@@ -21,5 +21,5 @@ repository = load_repository("data/repo_10.json")
 print(repository.package_names())
 ```
 
-Niepoprawny plik powoduje `ValueError` z nazwą pliku i lokalizacją błędu.
-Ostrzeżenia o wymaganiach bez pasujących wersji są wypisywane na standardowe wyjście błędów.
+An invalid file raises a `ValueError` with the filename and error location.
+Warnings about requirements without matching versions are written to standard error.

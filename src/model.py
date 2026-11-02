@@ -131,7 +131,7 @@ class Repository:
                     for requirement in alternative:
                         if not self.matching(requirement):
                             messages.append(
-                                f"{pv}: wymaganie '{requirement}' nie pasuje do żadnej wersji w repozytorium")
+                                f"{pv}: requirement '{requirement}' does not match any version in the repository")
         return messages
 
 

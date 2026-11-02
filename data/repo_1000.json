@@ -1,5 +1,5 @@
 {
-  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 16, N = 1000) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 16, "packages": 1000},
+  "meta": {"description": "Pseudorandom repository for project 2 (group k = 16, N = 1000) based on PyPI data.", "generator": "generate_repos.py", "seed": 2026, "group": 16, "packages": 1000},
   "packages": {
     "aiobotocore": {"versions": {
       "2.11.2": {"requires": ["botocore<1.34.35,>=1.33.2", "aiohttp", "wrapt<2.0.0,>=1.10.10", "aioitertools<1.0.0,>=0.5.1"]},

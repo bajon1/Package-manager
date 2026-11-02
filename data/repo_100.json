@@ -1,5 +1,5 @@
 {
-  "meta": {"description": "Pseudolosowe repozytorium do projektu 2 (grupa k = 16, N = 100) na podstawie danych z PyPI.", "generator": "generate_repos.py", "seed": 2026, "group": 16, "packages": 100},
+  "meta": {"description": "Pseudorandom repository for project 2 (group k = 16, N = 100) based on PyPI data.", "generator": "generate_repos.py", "seed": 2026, "group": 16, "packages": 100},
   "packages": {
     "aiohappyeyeballs": {"versions": {
       "2.3.2": {},
