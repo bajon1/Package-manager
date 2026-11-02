@@ -1,4 +1,4 @@
-# Requests for task 4.5 using repo_30.json (installation into an empty environment)
+# Żądania do zadania 4.5 dla repo_30.json (instalacja do pustego środowiska)
 uvicorn
 typing-extensions
 basalt-sdk

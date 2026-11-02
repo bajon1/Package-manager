@@ -1,4 +1,4 @@
-# Requests for task 4.5 using repo_300.json (installation into an empty environment)
+# Żądania do zadania 4.5 dla repo_300.json (instalacja do pustego środowiska)
 yarl
 aiohttp-pebble
 nova-cli

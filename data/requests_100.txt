@@ -1,4 +1,4 @@
-# Requests for task 4.5 using repo_100.json (installation into an empty environment)
+# Żądania do zadania 4.5 dla repo_100.json (instalacja do pustego środowiska)
 h2
 tomli-umbra
 nova-api
