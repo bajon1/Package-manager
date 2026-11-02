@@ -1,5 +1,6 @@
 # Package-manager
-Package manager
+
+Package-manager is a Python project for modeling packages, their versions, dependencies, and conflicts. It loads JSON repositories and validates their structure, reporting errors and requirements without matching versions.
 
 ## Tests
 
