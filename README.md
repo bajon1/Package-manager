@@ -1,18 +1,19 @@
-# Packet-manager
-Packet manager
+# Package-manager
 
-## Testy
+Package-manager is a Python project for modeling packages, their versions, dependencies, and conflicts. It loads JSON repositories and validates their structure, reporting errors and requirements without matching versions.
 
-Zainstaluj zależności developerskie i uruchom testy z katalogu projektu:
+## Tests
+
+Install the development dependencies and run the tests from the project directory:
 
 ```sh
 uv sync --dev
 uv run pytest
 ```
 
-Testy znajdują się w katalogu `tests/`, w plikach `test_*.py`.
+Tests are located in the `tests/` directory, in `test_*.py` files.
 
-## Wczytywanie repozytorium
+## Loading a repository
 
 ```python
 from src.parser import load_repository
@@ -21,5 +22,5 @@ repository = load_repository("data/repo_10.json")
 print(repository.package_names())
 ```
 
-Niepoprawny plik powoduje `ValueError` z nazwą pliku i lokalizacją błędu.
-Ostrzeżenia o wymaganiach bez pasujących wersji są wypisywane na standardowe wyjście błędów.
+An invalid file raises a `ValueError` with the filename and error location.
+Warnings about requirements without matching versions are written to standard error.

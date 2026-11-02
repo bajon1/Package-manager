@@ -35,7 +35,7 @@ def test_requirement_matches():
     r = Requirement.parse("lib >=1.0 <2.0")
     assert r.matches(V("1.0")) and r.matches(V("1.5"))
     assert not r.matches(V("2.0")) and not r.matches(V("0.9"))
-    assert Requirement.parse("lib").matches(V("3.7"))          # brak ograniczeń
+    assert Requirement.parse("lib").matches(V("3.7"))
 
 
 @pytest.mark.parametrize("text", ["lib>=1.0,<2.0", "lib >= 1.0 < 2.0", "LIB >=1.0   <2.0", "lib>=1.0 , <2.0"])
@@ -81,7 +81,7 @@ def test_repository_order_and_obsolescence(repo):
     assert [str(v.version) for v in repo.versions("lib")] == ["2.0", "1.5", "1.0"]
     assert repo.obsolescence("lib", V("2.0")) == 0
     assert repo.obsolescence("lib", V("1.0")) == 2
-    assert repo.versions("nie-ma") == []
+    assert repo.versions("missing") == []
     assert sorted(repo.package_names()) == ["app", "lib"]
 
 
@@ -93,7 +93,7 @@ def test_repository_matching(repo):
 
 def test_repository_warnings(repo):
     w = repo.warnings()
-    assert len(w) == 1 and "ghost" in w[0] and "app==1.0" in w[0]
+    assert w == ["app==1.0: requirement 'ghost' does not match any version in the repository"]
 
 
 def test_state():

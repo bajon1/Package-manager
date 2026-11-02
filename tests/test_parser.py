@@ -106,7 +106,7 @@ def test_json_syntax_error_has_line_and_filename(write_repository):
     path = write_repository('{\n"packages": {\n}\n')
     with pytest.raises(ValueError) as error:
         load_repository(path)
-    assert "4" in str(error.value)
+    assert "invalid JSON, line 4, column 1" in str(error.value)
     assert "repo.json" in str(error.value)
 
 
@@ -132,8 +132,10 @@ def test_missing_requirements_warn_without_rejecting_repository(write_repository
     repo = load_repository(write_repository(data))
     assert len(repo.warnings()) == 2
     stderr = capsys.readouterr().err
-    assert "ghost" in stderr and "app-lib >=9" in stderr
-    assert "app==1" in stderr
+    assert stderr.splitlines() == [
+        "Warning: app==1: requirement 'ghost' does not match any version in the repository",
+        "Warning: app==1: requirement 'app-lib >=9' does not match any version in the repository",
+    ]
 
 
 @pytest.mark.parametrize("path", sorted((Path(__file__).resolve().parents[1] / "data").glob("repo_*.json")), ids=lambda p: p.name)
