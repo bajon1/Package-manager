@@ -1,0 +1,3 @@
+# Przykładowy plik żądań: jedno żądanie w linii
+app==2.0
+tool

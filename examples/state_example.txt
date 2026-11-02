@@ -1,0 +1,5 @@
+# Przykładowy stan środowiska: pakiet wersja [manual]
+tool 1.1 manual
+lib 1.0
+json-slow 1.0
+app 1.0 manual

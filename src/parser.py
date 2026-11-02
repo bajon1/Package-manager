@@ -3,7 +3,8 @@ import re
 import sys
 from pathlib import Path
 
-from .model import PackageVersion, Repository, Requirement, Version, normalize_name, parse_alternative
+from .model import PackageVersion, Repository, Requirement, State, Version, normalize_name, parse_alternative
+from .validator import validate_state
 
 
 
@@ -46,15 +47,19 @@ def parse_dependencies(value, path, package, alternatives):
     return tuple(result)
 
 
-def reject_json_constant(value):
-    raise ValueError(f"$: invalid JSON constant {value}")
+def reject_json_constant(value, source):
+    tokens = re.finditer(r'"(?:\\.|[^"\\])*"|(-?Infinity|NaN)', source)
+    position = next(token.start() for token in tokens if token.group(1) == value)
+    raise json.JSONDecodeError(f"invalid JSON constant {value}", source, position)
 
 
 def load_repository(path):
     path = Path(path)
     try:
         with path.open(encoding="utf-8") as file:
-            document = json.load(file, object_pairs_hook=tuple, parse_constant=reject_json_constant)
+            source = file.read()
+        document = json.loads(source, object_pairs_hook=tuple,
+                              parse_constant=lambda value: reject_json_constant(value, source))
     except json.JSONDecodeError as error:
         raise ValueError(f"{path}: invalid JSON, line {error.lineno}, column {error.colno}: {error.msg}") from error
     except (OSError, ValueError) as error:
@@ -97,9 +102,66 @@ def load_repository(path):
     return repository
 
 
-def load_requests():
-    pass
+def load_requests(path):
+    path = Path(path)
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except (OSError, UnicodeError) as error:
+        raise ValueError(f"{path}: {error}") from error
+
+    requests = []
+    for line_number, line in enumerate(lines, start=1):
+        text = line.split("#", 1)[0].strip()
+        if not text:
+            continue
+        try:
+            requests.append(Requirement.parse(text))
+        except ValueError as error:
+            raise ValueError(f"{path}: line {line_number}: {error}") from error
+    return requests
 
 
-def load_state():
-    pass
+def load_state(path, repository=None):
+    path = Path(path)
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except (OSError, UnicodeError) as error:
+        raise ValueError(f"{path}: {error}") from error
+
+    state = State()
+    for line_number, line in enumerate(lines, start=1):
+        text = line.split("#", 1)[0].strip()
+        if not text:
+            continue
+        try:
+            fields = text.split()
+            if len(fields) not in (2, 3) or (len(fields) == 3 and fields[2] != "manual"):
+                raise ValueError("expected NAME VERSION or NAME VERSION manual")
+            name, version_text = fields[:2]
+            if not re.fullmatch(r"[A-Za-z0-9._-]+", name):
+                raise ValueError(f"invalid package name: {name!r}")
+            package = normalize_name(name)
+            version = Version.parse(version_text)
+            if package in state.installed:
+                raise ValueError(f"duplicate package: {package!r}")
+            state.install(package, version, manual=len(fields) == 3)
+        except ValueError as error:
+            raise ValueError(f"{path}: line {line_number}: {error}") from error
+
+    if repository is not None:
+        errors = validate_state(repository, state)
+        if errors:
+            raise ValueError(f"{path}: invalid state:\n" + "\n".join(errors))
+    return state
+
+
+def save_state(state, path):
+    path = Path(path)
+    text = "".join(
+        f"{package} {version}{' manual' if package in state.manual else ''}\n"
+        for package, version in sorted(state.installed.items())
+    )
+    try:
+        path.write_text(text, encoding="utf-8")
+    except (OSError, UnicodeError) as error:
+        raise ValueError(f"{path}: {error}") from error

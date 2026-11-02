@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "description": [
+      "Przykładowe repozytorium do projektu 2 – manager pakietów.",
+      "requires: lista zależności; każda to wymaganie albo alternatywa wymagań oddzielonych `|`.",
+      "conflicts: lista wymagań; wersja nie może być zainstalowana razem z pasującą wersją.",
+      "Wymaganie: nazwa pakietu i zero lub więcej ograniczeń (koniunkcja), np. `lib >=1.0 <2.0`.",
+      "Pakiety a i b: wzajemny konflikt przy aktualizacji (najnowsze a wymaga starego b i odwrotnie)."
+    ]
+  },
+  "packages": {
+    "app": {"versions": {
+      "1.0": {"requires": ["lib <2.0"]},
+      "2.0": {"requires": ["lib >=2.0", "util"]}
+    }},
+    "lib": {"versions": {
+      "1.0": {},
+      "1.5": {"requires": ["util"]},
+      "2.0": {"requires": ["util >=2.0"]}
+    }},
+    "util": {"versions": {
+      "1.0": {},
+      "2.0": {}
+    }},
+    "tool": {"versions": {
+      "1.0": {"requires": ["lib <2.0"]},
+      "1.1": {"requires": ["lib <2.0", "json-fast | json-slow >=1.0"]}
+    }},
+    "json-fast": {"versions": {
+      "1.0": {"conflicts": ["json-slow"]},
+      "2.0": {"requires": ["util >=2.0"], "conflicts": ["json-slow"]}
+    }},
+    "json-slow": {"versions": {
+      "1.0": {}
+    }},
+    "legacy": {"versions": {
+      "1.0": {"conflicts": ["util >=2.0"]}
+    }},
+    "web": {"versions": {
+      "1.0": {"requires": ["util"]},
+      "2.0": {"requires": ["util >=2.0"]}
+    }},
+    "a": {"versions": {
+      "1.0": {},
+      "1.1": {},
+      "2.0": {"requires": ["b <2.0"]}
+    }},
+    "b": {"versions": {
+      "1.0": {},
+      "2.0": {"requires": ["a <2.0"]}
+    }}
+  }
+}
