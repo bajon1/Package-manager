@@ -25,20 +25,6 @@ print(repository.package_names())
 An invalid file raises a `ValueError` with the filename and error location.
 Warnings about requirements without matching versions are written to standard error.
 
-## Loading installation requests
-
-```python
-from src.parser import load_requests
-
-requests = load_requests("data/requests_10.txt")
-print([str(requirement) for requirement in requests])
-```
-
-Each line contains a package name with optional version constraints, such as
-`app >=1, <2`. Blank lines and comments starting with `#` are ignored, including
-comments after a request. Invalid requests raise `ValueError` with the filename
-and original line number; unreadable files report the filename and cause.
-
 ## Validating an installed state
 
 `validate_state(repository, state, requests=())` checks installed versions,
