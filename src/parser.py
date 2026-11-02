@@ -98,8 +98,23 @@ def load_repository(path):
     return repository
 
 
-def load_requests():
-    pass
+def load_requests(path):
+    path = Path(path)
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except (OSError, UnicodeError) as error:
+        raise ValueError(f"{path}: {error}") from error
+
+    requests = []
+    for line_number, line in enumerate(lines, start=1):
+        text = line.split("#", 1)[0].strip()
+        if not text:
+            continue
+        try:
+            requests.append(Requirement.parse(text))
+        except ValueError as error:
+            raise ValueError(f"{path}: line {line_number}: {error}") from error
+    return requests
 
 
 def load_state(path, repository=None):
