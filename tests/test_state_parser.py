@@ -1,7 +1,7 @@
 import pytest
 
 from src.model import PackageVersion, Repository, Requirement, State, Version, parse_alternative
-from src.parser import load_state
+from src.parser import load_state, save_state
 
 
 def test_load_state_normalizes_names_and_preserves_manual_markers(tmp_path):
@@ -106,3 +106,35 @@ def test_load_state_checks_versions_even_in_empty_repository(tmp_path):
 
     with pytest.raises(ValueError, match="version does not exist"):
         load_state(path, repository=Repository([]))
+
+
+@pytest.mark.parametrize("state", [
+    State(),
+    State({"lib": Version.parse("2.0"), "app": Version.parse("1")}, {"app"}),
+    State({"app": Version.parse("1")}, {"app"}),
+])
+def test_save_state_round_trip(tmp_path, state):
+    path = tmp_path / "state.txt"
+    save_state(state, path)
+
+    assert load_state(path) == state
+
+
+def test_save_state_writes_sorted_entries_and_replaces_previous_contents(tmp_path):
+    path = tmp_path / "state.txt"
+    path.write_text("old 9 manual\n", encoding="utf-8")
+    state = State({"lib": Version.parse("2.0"), "app": Version.parse("1")}, {"app"})
+
+    save_state(state, str(path))
+
+    assert path.read_text(encoding="utf-8") == "app 1 manual\nlib 2.0\n"
+
+
+def test_save_state_reports_write_error(tmp_path):
+    path = tmp_path / "missing-directory" / "state.txt"
+
+    with pytest.raises(ValueError) as error:
+        save_state(State(), path)
+
+    assert str(path) in str(error.value)
+    assert isinstance(error.value.__cause__, OSError)

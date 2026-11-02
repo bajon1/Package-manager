@@ -134,3 +134,15 @@ def load_state(path, repository=None):
         if errors:
             raise ValueError(f"{path}: invalid state:\n" + "\n".join(errors))
     return state
+
+
+def save_state(state, path):
+    path = Path(path)
+    text = "".join(
+        f"{package} {version}{' manual' if package in state.manual else ''}\n"
+        for package, version in sorted(state.installed.items())
+    )
+    try:
+        path.write_text(text, encoding="utf-8")
+    except (OSError, UnicodeError) as error:
+        raise ValueError(f"{path}: {error}") from error
