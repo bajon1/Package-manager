@@ -1,0 +1,47 @@
+Installation into an empty or existing environment (4.3 and 6.1)
+
+Run from the project root after uv sync --dev:
+
+uv run python manager.py install examples/requests_example.txt --repo examples/repo_example.json --state examples/state_example.txt --output result.txt
+
+The example inputs are reconstructed from the description in projekt2.pdf;
+the original supplied example files were not present in this repository.
+
+Expected changes:
+Upgrade app: 1.0 -> 2.0
+Upgrade lib: 1.0 -> 2.0
+Remove tool==1.1
+Install util==2.0
+
+Resulting state:
+app 2.0 manual
+json-slow 1.0
+lib 2.0
+util 2.0
+
+The previously installed json-slow is retained: installation minimizes removals.
+Requested app is manual; tool is removed, so its manual marker disappears.
+
+For an empty environment, omit --state:
+
+uv run python manager.py install examples/requests_example.txt --repo examples/repo_example.json --output result.txt
+
+Here app, lib and util are installed, and only app is manual.
+Requests come exclusively from a file, with one requirement per line.
+
+--state reads the current state. --output chooses a separate destination.
+If --output is omitted, an existing --state file is updated after success.
+Without either option, the result is printed without saving a file.
+No solution or invalid input leaves the state/output files unchanged.
+
+Existing-state installation minimizes, in order: removed packages, version
+changes in retained packages, obsolescence of new requested packages, new
+package count, and obsolescence of other new packages. Empty-state installation
+uses the original 4.3 criteria: requested obsolescence, package count, other
+obsolescence. Retained manual markers are preserved; requested packages become
+manual. Every solver result is checked by the direct validator.
+
+Exit codes: 0 success, 1 no solution, 2 invalid input/output or validation error,
+3 solver unknown. Unknown is reported separately from no solution.
+
+Tests: uv run pytest

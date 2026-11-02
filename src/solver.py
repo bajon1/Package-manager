@@ -4,6 +4,7 @@ import z3
 
 from src.knowledge_base import KnowledgeBase
 from src.model import State
+from src.validator import validate_state
 
 
 @dataclass
@@ -31,8 +32,11 @@ def solve_lex(kb, hard, objectives):
     for objective in objectives:
         if objective.terms:
             opt.minimize(objective.expr())
-    if opt.check() != z3.sat:
+    status = opt.check()
+    if status == z3.unsat:
         return None
+    if status != z3.sat:
+        raise RuntimeError(f"Solver returned unknown: {opt.reason_unknown()}")
     model = opt.model()
 
     def is_true(lit):
@@ -60,10 +64,43 @@ def install_objectives(kb, requested):
             Objective("other package obsolescence", other_terms)]
 
 
-def install(kb: KnowledgeBase, requests):
+def existing_install_objectives(kb, requested, state):
+    removed_terms, changed_terms = [], []
+    for package, version in state.installed.items():
+        installed = kb.inst(package)
+        removed_terms.append((1, z3.Not(installed)))
+        changed_terms.append((1, z3.And(installed, z3.Not(kb.x[(package, version)]))))
+
+    requested_terms, new_terms, other_terms = [], [], []
+    for (package, version), lit in kb.x.items():
+        if package in state.installed:
+            continue
+        new_terms.append((1, lit))
+        weight = kb.obs[(package, version)]
+        if weight:
+            target = requested_terms if package in requested else other_terms
+            target.append((weight, lit))
+    return [Objective("removed packages", removed_terms),
+            Objective("version changes", changed_terms),
+            Objective("new requested package obsolescence", requested_terms),
+            Objective("new packages", new_terms),
+            Objective("other new package obsolescence", other_terms)]
+
+
+def install(kb: KnowledgeBase, requests, state=None):
+    requests = list(requests)
+    state = state if state is not None else State()
+    errors = validate_state(kb.repo, state)
+    if errors:
+        raise ValueError("Invalid initial state:\n" + "\n".join(errors))
     requested = {r.package for r in requests}
     hard = [kb.request_axiom(r) for r in requests]
-    solution = solve_lex(kb, hard, install_objectives(kb, requested))
+    objectives = (existing_install_objectives(kb, requested, state) if state.installed
+                  else install_objectives(kb, requested))
+    solution = solve_lex(kb, hard, objectives)
     if solution is not None:
-        solution.state.manual = set(requested)
+        solution.state.manual = (state.manual & solution.state.installed.keys()) | requested
+        errors = validate_state(kb.repo, solution.state, requests)
+        if errors:
+            raise ValueError("Invalid solver result:\n" + "\n".join(errors))
     return solution

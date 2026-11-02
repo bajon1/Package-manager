@@ -1,0 +1,2 @@
+# Upgrade app in the existing example state.
+app==2.0
