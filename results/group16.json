@@ -1,0 +1,182 @@
+{
+  "group": 16,
+  "recorded_at": "2026-11-02T20:27:31.919012+00:00",
+  "python": "3.13.16",
+  "z3": "5.3.3",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "timing_scope": {
+    "build_seconds": "Repository loading, validation and knowledge-base construction.",
+    "solve_seconds": "Installation solver invocation, model extraction and mandatory result validation."
+  },
+  "results": [
+    {
+      "group": 16,
+      "size": 10,
+      "repository_file": "repo_10.json",
+      "requests_file": "requests_10.txt",
+      "repository_sha256": "d1821d63d1e7b874505208985dc014e01e511c53655f722c881a2bb9cf81a376",
+      "requests_sha256": "81c3e091bbdb5c4d0d5aab128b5f10ffff5246933276bac77cc284d749cee0a2",
+      "versions": 45,
+      "axioms": 22,
+      "requests": [
+        "attrs",
+        "filelock",
+        "quartz-kit"
+      ],
+      "status": "sat",
+      "package_count": 4,
+      "obsolescence": 2,
+      "build_seconds": 0.0071829999797046185,
+      "solve_seconds": 0.012232900015078485,
+      "validation_errors": [],
+      "state": {
+        "attrs": "26.1.0",
+        "filelock": "4.2.0",
+        "quartz-kit": "1.1",
+        "quill-kit-lib": "1.10"
+      },
+      "manual": [
+        "attrs",
+        "filelock",
+        "quartz-kit"
+      ]
+    },
+    {
+      "group": 16,
+      "size": 30,
+      "repository_file": "repo_30.json",
+      "requests_file": "requests_30.txt",
+      "repository_sha256": "bfc67d46d7de759154673d5786e988aa0232e283c3a90f6096755fff0666919d",
+      "requests_sha256": "b0ef3611c0807e3193133ab6bfcba11ddf64d39f3a24cdea56e91db25746c443",
+      "versions": 202,
+      "axioms": 149,
+      "requests": [
+        "uvicorn",
+        "typing-extensions",
+        "basalt-sdk"
+      ],
+      "status": "sat",
+      "package_count": 11,
+      "obsolescence": 2,
+      "build_seconds": 0.011752999969758093,
+      "solve_seconds": 0.04588809993583709,
+      "validation_errors": [],
+      "state": {
+        "basalt-sdk": "1.0",
+        "basalt-x1": "1.0",
+        "basalt-x2": "2.0",
+        "basalt-x3": "2.0",
+        "basalt-x4": "2.0",
+        "basalt-x5": "2.0",
+        "basalt-x6": "1.0",
+        "click": "8.5.0",
+        "h11": "0.16.0",
+        "typing-extensions": "4.16.0",
+        "uvicorn": "0.54.0"
+      },
+      "manual": [
+        "basalt-sdk",
+        "typing-extensions",
+        "uvicorn"
+      ]
+    },
+    {
+      "group": 16,
+      "size": 100,
+      "repository_file": "repo_100.json",
+      "requests_file": "requests_100.txt",
+      "repository_sha256": "50bc6c2d91be19246a1de761633307701d66f0a13d620cd28ca9ac896f6febc5",
+      "requests_sha256": "38b6f05565e17005f890bf9b6c27d7614e661e818399491e035f6ff7ce0e76c3",
+      "versions": 1284,
+      "axioms": 1124,
+      "requests": [
+        "h2",
+        "tomli-umbra",
+        "nova-api"
+      ],
+      "status": "unsat",
+      "package_count": null,
+      "obsolescence": null,
+      "build_seconds": 0.11412359995301813,
+      "solve_seconds": 0.08249900001101196,
+      "validation_errors": null,
+      "state": null,
+      "manual": null
+    },
+    {
+      "group": 16,
+      "size": 300,
+      "repository_file": "repo_300.json",
+      "requests_file": "requests_300.txt",
+      "repository_sha256": "dd0a0c9b53fe68cdef922151267288b2bbe92c487c0201d738799f97b851e8e2",
+      "requests_sha256": "ed3f166f37456095d855c3a283fc9df1e854b73b3a44f83ae47cadb2e325dca8",
+      "versions": 6636,
+      "axioms": 5779,
+      "requests": [
+        "yarl",
+        "aiohttp-pebble",
+        "nova-cli"
+      ],
+      "status": "sat",
+      "package_count": 13,
+      "obsolescence": 1,
+      "build_seconds": 0.8258872999576852,
+      "solve_seconds": 3.2516916999593377,
+      "validation_errors": [],
+      "state": {
+        "aiohappyeyeballs": "2.7.1",
+        "aiohttp-pebble": "3.14.5",
+        "aiosignal-pebble": "1.4.0",
+        "attrs-pebble": "26.1.0",
+        "frozenlist-pebble": "1.8.0",
+        "idna": "3.20",
+        "multidict": "7.1.0",
+        "multidict-pebble": "7.1.0",
+        "nova-cli": "2.0",
+        "pebble-kit": "1.0",
+        "propcache": "0.5.4",
+        "typing-extensions-pebble": "4.16.0",
+        "yarl": "1.25.1"
+      },
+      "manual": [
+        "aiohttp-pebble",
+        "nova-cli",
+        "yarl"
+      ]
+    },
+    {
+      "group": 16,
+      "size": 1000,
+      "repository_file": "repo_1000.json",
+      "requests_file": "requests_1000.txt",
+      "repository_sha256": "a2eca274a4b9a105575e9907f15397a5660b87b4f26b86219e0589b8fd1155a1",
+      "requests_sha256": "5caea62351829028d1286662f50cd2e1d32748021eb017f28121e037f3922a31",
+      "versions": 21193,
+      "axioms": 17477,
+      "requests": [
+        "uvicorn",
+        "certifi-yarrow",
+        "tundra-sdk"
+      ],
+      "status": "sat",
+      "package_count": 6,
+      "obsolescence": 0,
+      "build_seconds": 4.691203200025484,
+      "solve_seconds": 5.700600899988785,
+      "validation_errors": [],
+      "state": {
+        "certifi-yarrow": "2026.7.22",
+        "click": "8.5.0",
+        "h11": "0.16.0",
+        "mosaic-api": "2.0",
+        "tundra-sdk": "2.0",
+        "uvicorn": "0.54.0"
+      },
+      "manual": [
+        "certifi-yarrow",
+        "tundra-sdk",
+        "uvicorn"
+      ]
+    }
+  ]
+}

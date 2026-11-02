@@ -47,15 +47,19 @@ def parse_dependencies(value, path, package, alternatives):
     return tuple(result)
 
 
-def reject_json_constant(value):
-    raise ValueError(f"$: invalid JSON constant {value}")
+def reject_json_constant(value, source):
+    tokens = re.finditer(r'"(?:\\.|[^"\\])*"|(-?Infinity|NaN)', source)
+    position = next(token.start() for token in tokens if token.group(1) == value)
+    raise json.JSONDecodeError(f"invalid JSON constant {value}", source, position)
 
 
 def load_repository(path):
     path = Path(path)
     try:
         with path.open(encoding="utf-8") as file:
-            document = json.load(file, object_pairs_hook=tuple, parse_constant=reject_json_constant)
+            source = file.read()
+        document = json.loads(source, object_pairs_hook=tuple,
+                              parse_constant=lambda value: reject_json_constant(value, source))
     except json.JSONDecodeError as error:
         raise ValueError(f"{path}: invalid JSON, line {error.lineno}, column {error.colno}: {error.msg}") from error
     except (OSError, ValueError) as error:

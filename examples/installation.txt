@@ -53,3 +53,24 @@ Exit codes: 0 success, 1 no solution, 2 invalid input/output or validation error
 3 solver unknown. Unknown is reported separately from no solution.
 
 Tests: uv run pytest
+
+Required group experiments (4.5; raw measurements, not the report):
+
+uv run python -m src.experiments --data data --group 16 --output results/group16.json
+
+This runs N = 10, 30, 100, 300, 1000. data/ matches repos/k16/ in the
+instructor's repos.zip after normalizing Windows/Linux line endings.
+Input SHA-256 hashes in the results also normalize these line endings.
+The group number in each repository is checked before running it.
+
+results/group16.json records the requests, version/axiom counts, outcome,
+installed state, obsolescence, direct verification and measured times.
+build_seconds includes repository loading/validation and knowledge-base
+construction. solve_seconds includes the installation solver call, model
+extraction and mandatory result verification. The optional extra direct
+verification used to record validation_errors is outside that measurement.
+For no solution, state-related fields are null: no state exists to verify.
+
+The experiment command saves each completed case before starting the next;
+a complete required run contains all five sizes. Missing dependencies in
+repository versions produce the required warnings and are not input errors.

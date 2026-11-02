@@ -116,6 +116,17 @@ def test_non_json_constants_rejected(write_repository, constant):
         load_repository(write_repository('{"packages": {}, "meta": ' + constant + '}'))
 
 
+@pytest.mark.parametrize("constant", ["NaN", "Infinity", "-Infinity"])
+def test_non_json_constant_reports_actual_line_and_column(write_repository, constant):
+    text = ('{\n"meta": {"description": "NaN Infinity -Infinity",\n'
+            '"value": ' + constant + '},\n"packages": {}\n}')
+    path = write_repository(text)
+    with pytest.raises(ValueError) as error:
+        load_repository(path)
+    assert str(path) in str(error.value)
+    assert "invalid JSON, line 3, column 10" in str(error.value)
+
+
 def test_empty_repository_is_allowed(write_repository):
     assert load_repository(write_repository({"packages": {}})).package_names() == []
 
