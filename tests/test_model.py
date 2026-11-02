@@ -35,7 +35,7 @@ def test_requirement_matches():
     r = Requirement.parse("lib >=1.0 <2.0")
     assert r.matches(V("1.0")) and r.matches(V("1.5"))
     assert not r.matches(V("2.0")) and not r.matches(V("0.9"))
-    assert Requirement.parse("lib").matches(V("3.7"))          # no constraints
+    assert Requirement.parse("lib").matches(V("3.7"))
 
 
 @pytest.mark.parametrize("text", ["lib>=1.0,<2.0", "lib >= 1.0 < 2.0", "LIB >=1.0   <2.0", "lib>=1.0 , <2.0"])

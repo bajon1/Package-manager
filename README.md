@@ -1,5 +1,5 @@
-# Packet-manager
-Packet manager
+# Package-manager
+Package manager
 
 ## Tests
 
