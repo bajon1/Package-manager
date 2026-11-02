@@ -1,2 +1,0 @@
-# Install app 2.0 without the conflicting request for tool.
-app==2.0

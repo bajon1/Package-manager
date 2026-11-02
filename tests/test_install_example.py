@@ -16,7 +16,9 @@ V = Version.parse
 def test_install_app_2_example_from_instruction(tmp_path):
     repo = load_repository(EXAMPLES / "repo_example.json")
     before = load_state(EXAMPLES / "state_example.txt", repo)
-    requests = load_requests(EXAMPLES / "requests_install_app.txt")
+    request_path = tmp_path / "requests.txt"
+    request_path.write_text("app==2.0\n", encoding="utf-8")
+    requests = load_requests(request_path)
 
     result = install(KnowledgeBase(repo), requests, state=before)
 

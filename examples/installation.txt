@@ -2,11 +2,18 @@ Installation into an empty or existing environment (4.3 and 6.1)
 
 Run from the project root after uv sync --dev:
 
-uv run package-manager install examples/requests_install_app.txt --repo examples/repo_example.json --state examples/state_example.txt --output result.txt
+uv run package-manager install examples/requests_example.txt --repo examples/repo_example.json --state examples/state_example.txt --output result.txt
 
 repo_example.json, state_example.txt and requests_example.txt are the original
-files supplied by the instructor. requests_install_app.txt contains the single
-request used in the successful existing-state installation scenario from 6.1.
+files supplied by the instructor.
+
+The original requests_example.txt asks for both app==2.0 and tool.
+Expected: no solution (exit code 1), because app 2.0 requires lib >=2.0,
+whereas every version of tool requires lib <2.0. State and output are unchanged.
+
+The separate successful install app==2.0 scenario described in section 6.1 is
+covered by test_install_app_2_example_from_instruction. That test creates its
+own temporary request file containing only app==2.0.
 
 Expected changes:
 Upgrade app: 1.0 -> 2.0
@@ -25,17 +32,10 @@ Requested app is manual; tool is removed, so its manual marker disappears.
 
 For an empty environment, omit --state:
 
-uv run package-manager install examples/requests_install_app.txt --repo examples/repo_example.json --output result.txt
+uv run package-manager install examples/requests_example.txt --repo examples/repo_example.json --output result.txt
 
-Here app, lib and util are installed, and only app is manual.
+These same conflicting requests also have no solution in an empty environment.
 Requests come exclusively from a file, with one requirement per line.
-
-The original requests_example.txt asks for both app==2.0 and tool:
-
-uv run package-manager install examples/requests_example.txt --repo examples/repo_example.json --state examples/state_example.txt --output result.txt
-
-Expected: no solution (exit code 1), because app 2.0 requires lib >=2.0,
-whereas every version of tool requires lib <2.0. State and output are unchanged.
 
 --state reads the current state. --output chooses a separate destination.
 If --output is omitted, an existing --state file is updated after success.
