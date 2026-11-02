@@ -8,6 +8,7 @@ from .knowledge_base import KnowledgeBase
 from .model import State
 from .parser import load_package_names, load_repository, load_requests, load_state, save_state
 from .solver import install, remove, update
+from .updates import analyze_update
 
 
 def main(argv=None):
@@ -30,7 +31,7 @@ def main(argv=None):
         repository = load_repository(args.repo)
         kb = KnowledgeBase(repository)
         if args.command == "explain":
-            core = explain(kb, load_requests(args.requests))
+            core = explain(kb, load_requests(args.requests, repository))
             if core is None:
                 print("Requests are satisfiable; no conflict.")
                 return 0
@@ -39,13 +40,15 @@ def main(argv=None):
                 print(f"[{axiom.kind}] {axiom.label}")
             return 1
         before = load_state(args.state, repository) if args.state is not None else State()
+        analysis = None
         if args.command == "remove":
             solution = remove(kb, load_package_names(args.requests), before, autoremove=args.autoremove)
         elif args.command == "update":
             packages = load_package_names(args.requests) if args.requests is not None else None
+            analysis = analyze_update(kb, packages, before)
             solution = update(kb, packages, before)
         else:
-            solution = install(kb, load_requests(args.requests), state=before)
+            solution = install(kb, load_requests(args.requests, repository), state=before)
         if solution is None:
             print("No solution: installation requests cannot be satisfied.")
             return 1
@@ -65,4 +68,14 @@ def main(argv=None):
     for package, version in sorted(solution.state.installed.items()):
         marker = " manual" if package in solution.state.manual else ""
         print(f"{package} {version}{marker}")
+    if analysis is not None:
+        print("Individually newest reachable versions:")
+        for package, version in analysis.newest.items():
+            print(f"{package}=={version}")
+        if analysis.conflict:
+            print("Individually newest versions conflict; the saved state is the lexicographic choice.")
+            for axiom in analysis.conflict:
+                print(f"[{axiom.kind}] {axiom.label}")
+            for index, alternative in enumerate(analysis.frontier, start=1):
+                print(f"Pareto alternative {index}: {alternative.state}")
     return 0

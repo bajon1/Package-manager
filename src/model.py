@@ -101,7 +101,11 @@ class PackageVersion:
 
 
 class Repository:
-    def __init__(self, package_versions):
+    def __init__(self, package_versions, *, parse_version=Version.parse,
+                 parse_requirement=Requirement.parse, environment=None):
+        self.parse_version = parse_version
+        self.parse_requirement = parse_requirement
+        self.environment = dict(environment) if environment is not None else None
         grouped = {}
         for pv in package_versions:
             grouped.setdefault(pv.package, []).append(pv)

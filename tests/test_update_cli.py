@@ -40,3 +40,20 @@ def test_update_uninstalled_target_does_not_overwrite_state(tmp_path, capsys):
                  "--state", str(state)]) == 2
     assert state.read_bytes() == original
     assert "not installed" in capsys.readouterr().err
+
+
+def test_update_command_prints_conflict_and_all_pareto_alternatives(tmp_path, capsys):
+    from src.cli import main
+    state = tmp_path / "state.txt"
+    state.write_text("a 1.0 manual\nb 1.0 manual\n", encoding="utf-8")
+    output = tmp_path / "result.txt"
+    assert main(["update", "--repo", str(EXAMPLES / "repo_example.json"),
+                 "--state", str(state), "--output", str(output)]) == 0
+    captured = capsys.readouterr().out
+    assert "Individually newest versions conflict" in captured
+    assert "[NEWEST]" in captured
+    assert "Pareto alternative 1" in captured
+    assert "Pareto alternative 2" in captured
+    assert "Pareto alternative 3" not in captured
+    result = load_state(output)
+    assert (str(result.installed["a"]), str(result.installed["b"])) in {("2.0", "1.0"), ("1.1", "2.0")}

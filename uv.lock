@@ -34,6 +34,7 @@ name = "packet-manager"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "packaging" },
     { name = "z3-solver" },
 ]
 
@@ -43,7 +44,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "z3-solver", specifier = ">=5.3.3.0" }]
+requires-dist = [
+    { name = "packaging", specifier = ">=24" },
+    { name = "z3-solver", specifier = ">=5.3.3.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=9.2.0" }]

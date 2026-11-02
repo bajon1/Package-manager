@@ -1,0 +1,90 @@
+{
+  "update_all": {
+    "changes": [
+      "Upgrade lib: 1.0 -> 1.5",
+      "Install util==2.0"
+    ],
+    "state": {
+      "app": "1.0",
+      "json-slow": "1.0",
+      "lib": "1.5",
+      "tool": "1.1",
+      "util": "2.0"
+    },
+    "manual": [
+      "app",
+      "tool"
+    ],
+    "validation_errors": []
+  },
+  "a_and_b": {
+    "newest": {
+      "a": "2.0",
+      "b": "2.0"
+    },
+    "conflicting_packages": [
+      "a",
+      "b"
+    ],
+    "core": [
+      {
+        "kind": "A2",
+        "label": "a==2.0 requires b <2.0"
+      },
+      {
+        "kind": "A1",
+        "label": "at most one version of package b"
+      },
+      {
+        "kind": "NEWEST",
+        "label": "newest reachable: a==2.0"
+      },
+      {
+        "kind": "NEWEST",
+        "label": "newest reachable: b==2.0"
+      }
+    ],
+    "frontier": [
+      {
+        "state": {
+          "a": "2.0",
+          "b": "1.0"
+        },
+        "manual": [
+          "a",
+          "b"
+        ],
+        "validation_errors": []
+      },
+      {
+        "state": {
+          "a": "1.1",
+          "b": "2.0"
+        },
+        "manual": [
+          "a",
+          "b"
+        ],
+        "validation_errors": []
+      }
+    ],
+    "selected": {
+      "a": "1.1",
+      "b": "2.0"
+    },
+    "validation_errors": []
+  },
+  "a_only": {
+    "newest": {
+      "a": "2.0"
+    },
+    "conflicting_packages": [],
+    "core": [],
+    "frontier": [],
+    "selected": {
+      "a": "2.0",
+      "b": "1.0"
+    },
+    "validation_errors": []
+  }
+}
