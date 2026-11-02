@@ -6,6 +6,7 @@
 .uv-cache
 _data*
 __pycache__/
+*.egg-info/
 .pytest_cache/
 tmp/
 *.zip
