@@ -1,0 +1,62 @@
+Updates, Pareto conflicts and PyPI import (8.1–8.3)
+
+Update all installed packages from the original state:
+
+uv run package-manager update --repo examples/repo_example.json --state examples/state_example.txt --output result.txt
+
+Expected: lib 1.0 -> 1.5 and installation of util 2.0; other packages and manual
+markers are preserved. To update only selected installed packages, put their
+names in update.txt (one per line) and supply that file after update:
+
+uv run package-manager update update.txt --repo examples/repo_example.json --state examples/state_example.txt --output result.txt
+
+Both manual packages and the update set must remain installed. The five
+lexicographic criteria are updated-package obsolescence, removed packages,
+retained-version changes outside the update set, new packages, total
+obsolescence. Updating a previously automatic package keeps it automatic.
+
+For the original Pareto example, create a state file containing:
+a 1.0 manual
+b 1.0 manual
+
+Run update without a package file. Individually newest a 2.0 and b 2.0 cannot
+coexist. The command reports a subset-minimal conflict and both Pareto
+alternatives: {a 2.0, b 1.0} and {a 1.1, b 2.0}. It also identifies and saves
+the ordinary lexicographic update choice. A package file containing only a
+updates a to 2.0 without conflict. Other independent conflicts are included
+in the complete Pareto frontier as well; equivalent objective points are
+represented by an ordinary lexicographic optimum for the other packages.
+Recorded original examples: results/eight-point-examples.json.
+
+PyPI repositories use requires_dist and requires_python. The loader detects
+those fields and interprets versions/specifiers using packaging (PEP440/508).
+It filters versions against meta.environment's Python, evaluates markers in
+that target environment with extra="", and ignores requested extras.
+All environment fields referenced by markers must be defined in metadata;
+missing fields are rejected rather than filled from the execution machine.
+Null requires_dist/requires_python fields are allowed. The simplified repository
+format remains supported and strict. Requests/state files use the selected
+repository's parsers; install/remove/update/explain keep the same CLI syntax.
+
+Run the full required scenario on the ORIGINAL instructor-provided dataset:
+
+uv run python -m src.pypi_scenario --repo PATH_TO/pypi_data.json --output results/pypi-scenario.json
+
+This installs oldest available pandas/requests, then boto3 and aiobotocore,
+updates requests, updates everything, removes botocore and explains the
+newest-boto3/oldest-botocore request. It records target environment, input hash,
+loading/knowledge-base time, per-operation timings, changes and verified states.
+Updates include newest-version/Pareto analysis. The final explanation is checked
+for subset-minimality. Failed setup operations do not produce a falsely
+successful scenario result.
+
+Original pypi_data.json is currently missing from the supplied inputs. The
+importer and complete scenario are tested with explicit synthetic fixtures
+inside tests only; they are not presented as instructor-data experiment results.
+PR #27 stays draft until the real 8.3 scenario is run and verified.
+
+Library semantics: https://packaging.pypa.io/en/stable/requirements.html
+https://packaging.pypa.io/en/stable/specifiers.html
+https://packaging.pypa.io/en/stable/markers.html
+
+Tests: uv run pytest

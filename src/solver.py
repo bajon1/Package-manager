@@ -137,3 +137,51 @@ def remove(kb: KnowledgeBase, packages, state, autoremove=False):
         if errors:
             raise ValueError("Invalid solver result:\n" + "\n".join(errors))
     return solution
+
+
+def update_constraints(kb, packages, state):
+    errors = validate_state(kb.repo, state)
+    if errors:
+        raise ValueError("Invalid initial state:\n" + "\n".join(errors))
+    packages = set(state.installed) if packages is None else set(packages)
+    missing = packages - state.installed.keys()
+    if missing:
+        raise ValueError("Update packages are not installed: " + ", ".join(sorted(missing)))
+    hard = [Axiom("KEEP", f"keep installed: {p}", kb.inst(p)) for p in sorted(state.manual | packages)]
+    return packages, hard
+
+
+def update_objectives(kb, packages, state):
+    removed_terms, _ = state_change_terms(kb, state)
+    _, changed_terms = state_change_terms(kb, State({p: v for p, v in state.installed.items() if p not in packages}))
+    requested_terms, new_terms, total_terms = [], [], []
+    for (package, version), lit in kb.x.items():
+        weight = kb.obs[(package, version)]
+        if weight:
+            total_terms.append((weight, lit))
+            if package in packages:
+                requested_terms.append((weight, lit))
+        if package not in state.installed:
+            new_terms.append((1, lit))
+    return [Objective("updated package obsolescence", requested_terms),
+            Objective("removed packages", removed_terms),
+            Objective("version changes outside update", changed_terms),
+            Objective("new packages", new_terms),
+            Objective("total obsolescence", total_terms)]
+
+
+def verify_update(kb, solution, packages, state):
+    if solution is not None:
+        solution.state.manual = state.manual & solution.state.installed.keys()
+        errors = validate_state(kb.repo, solution.state)
+        errors.extend(f"Protected package is missing: {p}"
+                      for p in sorted((state.manual | packages) - solution.state.installed.keys()))
+        if errors:
+            raise ValueError("Invalid solver result:\n" + "\n".join(errors))
+    return solution
+
+
+def update(kb: KnowledgeBase, packages, state):
+    packages, hard = update_constraints(kb, packages, state)
+    solution = solve_lex(kb, hard, update_objectives(kb, packages, state))
+    return verify_update(kb, solution, packages, state)

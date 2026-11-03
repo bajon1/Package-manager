@@ -53,7 +53,18 @@ def reject_json_constant(value, source):
     raise json.JSONDecodeError(f"invalid JSON constant {value}", source, position)
 
 
-def load_repository(path):
+def has_pypi_fields(packages):
+    for data in packages.values():
+        if isinstance(data, tuple):
+            for key, versions in data:
+                if key == "versions" and isinstance(versions, tuple):
+                    for _, details in versions:
+                        if isinstance(details, tuple) and any(k in {"requires_dist", "requires_python"} for k, _ in details):
+                            return True
+    return False
+
+
+def load_repository(path, *, pypi=False):
     path = Path(path)
     try:
         with path.open(encoding="utf-8") as file:
@@ -68,6 +79,12 @@ def load_repository(path):
     root_path = f"{path}: $"
     root = validate_object(document, root_path, allowed={"packages", "meta"}, required=("packages",))
     packages = validate_object(root["packages"], f"{root_path}.packages")
+    if pypi or has_pypi_fields(packages):
+        from .pypi import parse_repository
+        repository = parse_repository(packages, root.get("meta"), root_path)
+        for message in repository.warnings():
+            print(f"Warning: {message}", file=sys.stderr)
+        return repository
     names = set()
     package_versions = []
     for name, data in packages.items():
@@ -102,7 +119,7 @@ def load_repository(path):
     return repository
 
 
-def load_requests(path):
+def load_requests(path, repository=None):
     path = Path(path)
     try:
         lines = path.read_text(encoding="utf-8").splitlines()
@@ -115,7 +132,9 @@ def load_requests(path):
         if not text:
             continue
         try:
-            requests.append(Requirement.parse(text))
+            requirement = repository.parse_requirement(text) if repository is not None else Requirement.parse(text)
+            if requirement is not None:
+                requests.append(requirement)
         except ValueError as error:
             raise ValueError(f"{path}: line {line_number}: {error}") from error
     return requests
@@ -158,7 +177,7 @@ def load_state(path, repository=None):
             if not re.fullmatch(r"[A-Za-z0-9._-]+", name):
                 raise ValueError(f"invalid package name: {name!r}")
             package = normalize_name(name)
-            version = Version.parse(version_text)
+            version = repository.parse_version(version_text) if repository is not None else Version.parse(version_text)
             if package in state.installed:
                 raise ValueError(f"duplicate package: {package!r}")
             state.install(package, version, manual=len(fields) == 3)
