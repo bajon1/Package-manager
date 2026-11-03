@@ -1,0 +1,323 @@
+{
+  "group": 16,
+  "seed": 2026,
+  "repository_file": "repo_200.json",
+  "repository_sha256": "f131af358bdf74ff98045c7677502cbded0815083a73cf4f27c7b70aae7f4914",
+  "timing_scope": "Each solver operation includes model extraction and mandatory result validation.",
+  "results": [
+    {
+      "step": 1,
+      "operation": "install",
+      "package": "yarl-prism",
+      "status": "sat",
+      "changes": [
+        "Install idna-prism==3.20",
+        "Install multidict==7.1.0",
+        "Install propcache-prism==0.5.4",
+        "Install yarl-prism==1.25.1"
+      ],
+      "change_count": 4,
+      "package_count": 4,
+      "manual_count": 1,
+      "seconds": 1.8416310000466183,
+      "validation_errors": [],
+      "state": {
+        "idna-prism": "3.20",
+        "multidict": "7.1.0",
+        "propcache-prism": "0.5.4",
+        "yarl-prism": "1.25.1"
+      },
+      "manual": [
+        "yarl-prism"
+      ]
+    },
+    {
+      "step": 2,
+      "operation": "remove",
+      "package": "yarl-prism",
+      "autoremove": false,
+      "status": "sat",
+      "changes": [
+        "Remove yarl-prism==1.25.1"
+      ],
+      "change_count": 1,
+      "package_count": 3,
+      "manual_count": 0,
+      "seconds": 0.6518421000801027,
+      "validation_errors": [],
+      "state": {
+        "idna-prism": "3.20",
+        "multidict": "7.1.0",
+        "propcache-prism": "0.5.4"
+      },
+      "manual": []
+    },
+    {
+      "step": 3,
+      "operation": "remove",
+      "package": "idna-prism",
+      "autoremove": false,
+      "status": "sat",
+      "changes": [
+        "Remove idna-prism==3.20"
+      ],
+      "change_count": 1,
+      "package_count": 2,
+      "manual_count": 0,
+      "seconds": 0.6236306999344379,
+      "validation_errors": [],
+      "state": {
+        "multidict": "7.1.0",
+        "propcache-prism": "0.5.4"
+      },
+      "manual": []
+    },
+    {
+      "step": 4,
+      "operation": "install",
+      "package": "aiobotocore",
+      "status": "sat",
+      "changes": [
+        "Install aiobotocore==3.9.2",
+        "Install aiohappyeyeballs==2.7.1",
+        "Install aiohttp==3.14.5",
+        "Install aioitertools==0.13.0",
+        "Install aiosignal==1.4.0",
+        "Install attrs==26.1.0",
+        "Install botocore==1.43.106",
+        "Install frozenlist==1.8.0",
+        "Install idna==3.20",
+        "Install jmespath==1.1.0",
+        "Downgrade multidict: 7.1.0 -> 6.4.3",
+        "Install propcache==0.5.4",
+        "Install python-dateutil==2.6.0",
+        "Install typing-extensions==4.16.0",
+        "Install urllib3==2.8.0",
+        "Install wrapt==2.5.1",
+        "Install yarl==1.25.1"
+      ],
+      "change_count": 17,
+      "package_count": 18,
+      "manual_count": 1,
+      "seconds": 1.4514993999619037,
+      "validation_errors": [],
+      "state": {
+        "aiobotocore": "3.9.2",
+        "aiohappyeyeballs": "2.7.1",
+        "aiohttp": "3.14.5",
+        "aioitertools": "0.13.0",
+        "aiosignal": "1.4.0",
+        "attrs": "26.1.0",
+        "botocore": "1.43.106",
+        "frozenlist": "1.8.0",
+        "idna": "3.20",
+        "jmespath": "1.1.0",
+        "multidict": "6.4.3",
+        "propcache": "0.5.4",
+        "propcache-prism": "0.5.4",
+        "python-dateutil": "2.6.0",
+        "typing-extensions": "4.16.0",
+        "urllib3": "2.8.0",
+        "wrapt": "2.5.1",
+        "yarl": "1.25.1"
+      },
+      "manual": [
+        "aiobotocore"
+      ]
+    },
+    {
+      "step": 5,
+      "operation": "remove",
+      "package": "aiobotocore",
+      "autoremove": false,
+      "status": "sat",
+      "changes": [
+        "Remove aiobotocore==3.9.2"
+      ],
+      "change_count": 1,
+      "package_count": 17,
+      "manual_count": 0,
+      "seconds": 0.6807930999202654,
+      "validation_errors": [],
+      "state": {
+        "aiohappyeyeballs": "2.7.1",
+        "aiohttp": "3.14.5",
+        "aioitertools": "0.13.0",
+        "aiosignal": "1.4.0",
+        "attrs": "26.1.0",
+        "botocore": "1.43.106",
+        "frozenlist": "1.8.0",
+        "idna": "3.20",
+        "jmespath": "1.1.0",
+        "multidict": "6.4.3",
+        "propcache": "0.5.4",
+        "propcache-prism": "0.5.4",
+        "python-dateutil": "2.6.0",
+        "typing-extensions": "4.16.0",
+        "urllib3": "2.8.0",
+        "wrapt": "2.5.1",
+        "yarl": "1.25.1"
+      },
+      "manual": []
+    },
+    {
+      "step": 6,
+      "operation": "remove",
+      "package": "cffi",
+      "autoremove": false,
+      "status": "sat",
+      "changes": [],
+      "change_count": 0,
+      "package_count": 17,
+      "manual_count": 0,
+      "seconds": 0.6937809999799356,
+      "validation_errors": [],
+      "state": {
+        "aiohappyeyeballs": "2.7.1",
+        "aiohttp": "3.14.5",
+        "aioitertools": "0.13.0",
+        "aiosignal": "1.4.0",
+        "attrs": "26.1.0",
+        "botocore": "1.43.106",
+        "frozenlist": "1.8.0",
+        "idna": "3.20",
+        "jmespath": "1.1.0",
+        "multidict": "6.4.3",
+        "propcache": "0.5.4",
+        "propcache-prism": "0.5.4",
+        "python-dateutil": "2.6.0",
+        "typing-extensions": "4.16.0",
+        "urllib3": "2.8.0",
+        "wrapt": "2.5.1",
+        "yarl": "1.25.1"
+      },
+      "manual": []
+    },
+    {
+      "step": 7,
+      "operation": "remove",
+      "package": "jsonschema",
+      "autoremove": true,
+      "status": "sat",
+      "changes": [
+        "Remove aiohappyeyeballs==2.7.1",
+        "Remove aiohttp==3.14.5",
+        "Remove aioitertools==0.13.0",
+        "Remove aiosignal==1.4.0",
+        "Remove attrs==26.1.0",
+        "Remove botocore==1.43.106",
+        "Remove frozenlist==1.8.0",
+        "Remove idna==3.20",
+        "Remove jmespath==1.1.0",
+        "Remove multidict==6.4.3",
+        "Remove propcache==0.5.4",
+        "Remove propcache-prism==0.5.4",
+        "Remove python-dateutil==2.6.0",
+        "Remove typing-extensions==4.16.0",
+        "Remove urllib3==2.8.0",
+        "Remove wrapt==2.5.1",
+        "Remove yarl==1.25.1"
+      ],
+      "change_count": 17,
+      "package_count": 0,
+      "manual_count": 0,
+      "seconds": 1.177126899943687,
+      "validation_errors": [],
+      "state": {},
+      "manual": []
+    },
+    {
+      "step": 8,
+      "operation": "remove",
+      "package": "botocore-prism",
+      "autoremove": true,
+      "status": "sat",
+      "changes": [],
+      "change_count": 0,
+      "package_count": 0,
+      "manual_count": 0,
+      "seconds": 1.1615339999552816,
+      "validation_errors": [],
+      "state": {},
+      "manual": []
+    },
+    {
+      "step": 9,
+      "operation": "remove",
+      "package": "packaging-prism",
+      "autoremove": true,
+      "status": "sat",
+      "changes": [],
+      "change_count": 0,
+      "package_count": 0,
+      "manual_count": 0,
+      "seconds": 1.18928789999336,
+      "validation_errors": [],
+      "state": {},
+      "manual": []
+    },
+    {
+      "step": 10,
+      "operation": "install",
+      "package": "aiohappyeyeballs-prism",
+      "status": "sat",
+      "changes": [
+        "Install aiohappyeyeballs-prism==2.7.1"
+      ],
+      "change_count": 1,
+      "package_count": 1,
+      "manual_count": 1,
+      "seconds": 1.6002093000570312,
+      "validation_errors": [],
+      "state": {
+        "aiohappyeyeballs-prism": "2.7.1"
+      },
+      "manual": [
+        "aiohappyeyeballs-prism"
+      ]
+    },
+    {
+      "step": 11,
+      "operation": "install",
+      "package": "tomli-garnet",
+      "status": "sat",
+      "changes": [
+        "Install tomli-garnet==2.5.0"
+      ],
+      "change_count": 1,
+      "package_count": 2,
+      "manual_count": 2,
+      "seconds": 1.767264600028284,
+      "validation_errors": [],
+      "state": {
+        "aiohappyeyeballs-prism": "2.7.1",
+        "tomli-garnet": "2.5.0"
+      },
+      "manual": [
+        "aiohappyeyeballs-prism",
+        "tomli-garnet"
+      ]
+    },
+    {
+      "step": 12,
+      "operation": "remove",
+      "package": "tomli-garnet",
+      "autoremove": true,
+      "status": "sat",
+      "changes": [
+        "Remove tomli-garnet==2.5.0"
+      ],
+      "change_count": 1,
+      "package_count": 1,
+      "manual_count": 1,
+      "seconds": 1.2548389999428764,
+      "validation_errors": [],
+      "state": {
+        "aiohappyeyeballs-prism": "2.7.1"
+      },
+      "manual": [
+        "aiohappyeyeballs-prism"
+      ]
+    }
+  ]
+}

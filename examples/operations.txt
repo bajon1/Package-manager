@@ -1,0 +1,53 @@
+Package removal, conflict explanations and random operations (6.2–6.4)
+
+Removal names are supplied through a text file, one name per line.
+To reproduce the instructor's remove lib example, create remove.txt containing:
+lib
+
+uv run package-manager remove remove.txt --repo examples/repo_example.json --state examples/state_example.txt --output result.txt
+
+Expected: remove lib, app and tool; json-slow remains installed automatically.
+To reproduce remove tool with autoremove, put tool in remove.txt and run:
+
+uv run package-manager remove remove.txt --repo examples/repo_example.json --state examples/state_example.txt --output result.txt --autoremove
+
+Expected: remove tool and json-slow; app 1.0 manual and lib 1.0 remain.
+Each run reads the original state; --output avoids modifying the supplied file.
+
+Removal minimizes lexicographically: removed manual packages outside the
+removal set, version changes in retained packages, new packages, removed
+packages. --autoremove replaces only the final criterion with installed count.
+Names are normalized; constraints in removal files are invalid. Retained
+manual markers are preserved, and every result is directly validated.
+
+Explain the supplied conflicting requests (app==2.0 and tool):
+
+uv run package-manager explain examples/requests_example.txt --repo examples/repo_example.json
+
+Explain the unsatisfiable group-16 case from 4.5:
+
+uv run package-manager explain data/requests_100.txt --repo data/repo_100.json
+
+The returned axioms and requests form a subset-minimal conflict: they are
+unsatisfiable together, and deleting any one reported element makes the
+remaining core satisfiable. This does not claim the globally smallest core.
+Exit code 1 means a conflict was found; satisfiable requests return 0.
+Solver unknown is reported separately with exit code 3.
+Verified original removal results and both required conflicts are recorded
+in results/six-point-examples.json for later use in the report.
+
+Reproduce the 12-operation scenario on the group's original repo_200.json:
+
+uv run python -m src.scenario --repo data/repo_200.json --group 16 --seed 2026 --steps 12 --output results/random-group16.json
+
+The scenario starts empty and mixes installation, removal and autoremove.
+The seed fixes operation inputs independently of solver ties. Every
+intermediate state is verified; the results record actual changes, package
+and manual-package counts, states and per-operation elapsed seconds.
+An unsatisfiable installation leaves the preceding state unchanged.
+Timings include solver invocation, model extraction and its mandatory
+validation; the additional recorded intermediate-state check is separate.
+Generated operations reproduce exactly; equally optimal solver states and
+timings need not be identical across solver versions or machines.
+
+Run all tests: uv run pytest

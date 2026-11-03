@@ -1,0 +1,255 @@
+{
+  "removals": [
+    {
+      "package": "lib",
+      "autoremove": false,
+      "changes": [
+        "Remove app==1.0",
+        "Remove lib==1.0",
+        "Remove tool==1.1"
+      ],
+      "state": {
+        "json-slow": "1.0"
+      },
+      "manual": [],
+      "validation_errors": []
+    },
+    {
+      "package": "tool",
+      "autoremove": true,
+      "changes": [
+        "Remove json-slow==1.0",
+        "Remove tool==1.1"
+      ],
+      "state": {
+        "app": "1.0",
+        "lib": "1.0"
+      },
+      "manual": [
+        "app"
+      ],
+      "validation_errors": []
+    }
+  ],
+  "conflicts": [
+    {
+      "repository": "examples/repo_example.json",
+      "request_file": "examples/requests_example.txt",
+      "requests": [
+        "app ==2.0",
+        "tool"
+      ],
+      "core": [
+        {
+          "kind": "A2",
+          "label": "app==2.0 requires lib >=2.0"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package lib"
+        },
+        {
+          "kind": "A2",
+          "label": "tool==1.1 requires lib <2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "tool==1.0 requires lib <2.0"
+        },
+        {
+          "kind": "REQUEST",
+          "label": "request: app ==2.0"
+        },
+        {
+          "kind": "REQUEST",
+          "label": "request: tool"
+        }
+      ],
+      "subset_minimal_verified": true
+    },
+    {
+      "repository": "data/repo_100.json",
+      "request_file": "data/requests_100.txt",
+      "requests": [
+        "h2",
+        "tomli-umbra",
+        "nova-api"
+      ],
+      "core": [
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x6 ==2.0 | nova-x8 ==1.0 | nova-x4 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x10 ==2.0 | nova-x3 ==2.0 | nova-x9 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x6 ==1.0 | nova-x2 ==1.0 | nova-x3 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x5 ==1.0 | nova-x15 ==1.0 | nova-x10 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x3 ==2.0 | nova-x1 ==2.0 | nova-x4 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x6 ==1.0 | nova-x14 ==2.0 | nova-x10 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x5 ==2.0 | nova-x4 ==1.0 | nova-x2 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x13 ==2.0 | nova-x11 ==2.0 | nova-x10 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x2 ==1.0 | nova-x11 ==2.0 | nova-x3 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x4 ==2.0 | nova-x10 ==2.0 | nova-x3 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x9 ==2.0 | nova-x10 ==1.0 | nova-x13 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x2 ==2.0 | nova-x10 ==1.0 | nova-x14 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x3 ==2.0 | nova-x9 ==1.0 | nova-x13 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x3 ==1.0 | nova-x7 ==2.0 | nova-x14 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x3 ==2.0 | nova-x14 ==2.0 | nova-x15 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x1 ==1.0 | nova-x11 ==1.0 | nova-x14 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x8 ==1.0 | nova-x14 ==1.0 | nova-x13 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x14 ==1.0 | nova-x4 ==2.0 | nova-x8 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x9 ==1.0 | nova-x7 ==1.0 | nova-x8 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x3 ==1.0 | nova-x2 ==1.0 | nova-x10 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x3 ==2.0 | nova-x9 ==2.0 | nova-x2 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x11 ==2.0 | nova-x7 ==1.0 | nova-x2 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x11 ==1.0 | nova-x9 ==1.0 | nova-x14 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x8 ==2.0 | nova-x14 ==1.0 | nova-x3 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x8 ==1.0 | nova-x14 ==1.0 | nova-x7 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x9 ==2.0 | nova-x8 ==2.0 | nova-x15 ==1.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x15 ==2.0 | nova-x8 ==2.0 | nova-x9 ==2.0"
+        },
+        {
+          "kind": "A2",
+          "label": "nova-api==1.0 requires nova-x9 ==2.0 | nova-x10 ==2.0 | nova-x4 ==1.0"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x1"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x2"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x3"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x4"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x5"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x6"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x7"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x8"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x9"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x10"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x11"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x13"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x14"
+        },
+        {
+          "kind": "A1",
+          "label": "at most one version of package nova-x15"
+        },
+        {
+          "kind": "REQUEST",
+          "label": "request: nova-api"
+        }
+      ],
+      "subset_minimal_verified": true
+    }
+  ]
+}

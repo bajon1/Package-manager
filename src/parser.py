@@ -121,6 +121,23 @@ def load_requests(path):
     return requests
 
 
+def load_package_names(path):
+    path = Path(path)
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except (OSError, UnicodeError) as error:
+        raise ValueError(f"{path}: {error}") from error
+    packages = set()
+    for line_number, line in enumerate(lines, start=1):
+        name = line.split("#", 1)[0].strip()
+        if not name:
+            continue
+        if not re.fullmatch(r"[A-Za-z0-9._-]+", name):
+            raise ValueError(f"{path}: line {line_number}: expected a package name, got {name!r}")
+        packages.add(normalize_name(name))
+    return packages
+
+
 def load_state(path, repository=None):
     path = Path(path)
     try:
