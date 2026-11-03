@@ -4,26 +4,13 @@ Autorzy: Piotr Matusiewicz, Dominik Mika. Numer grupy: **k = 16**.
 
 ## Uruchomienie i dane wejściowe
 
-Wymagany jest Python 3.13 lub nowszy. Z katalogu projektu:
+Python ≥3.13; polecenia PowerShell z katalogu projektu:
 
 ```sh
 uv sync --dev
-uv run package-manager install examples/requests_example.txt --repo examples/repo_example.json --output wynik.txt
-uv run pytest
 ```
 
-Żądania podaje się wyłącznie w pliku, po jednym w wierszu; puste wiersze i komentarze `#` są pomijane. Stan ma format `NAZWA WERSJA [manual]`. Pliki usuwania i aktualizacji zawierają same nazwy. Dane grupy znajdują się w `data/`, a przykłady prowadzącego w `examples/`.
-
-```sh
-uv run package-manager install zadania.txt --repo examples/repo_example.json --state examples/state_example.txt --output wynik.txt
-uv run package-manager remove usun.txt --repo examples/repo_example.json --state examples/state_example.txt --output wynik.txt
-uv run package-manager remove usun.txt --repo examples/repo_example.json --state examples/state_example.txt --output wynik.txt --autoremove
-uv run package-manager update aktualizuj.txt --repo examples/repo_example.json --state examples/state_example.txt --output wynik.txt
-uv run package-manager update --repo examples/repo_example.json --state examples/state_example.txt --output wynik.txt
-uv run package-manager explain examples/requests_example.txt --repo examples/repo_example.json
-```
-
-`zadania.txt`, `usun.txt` i `aktualizuj.txt` przygotowuje użytkownik. `--state` wczytuje stan, a `--output` zapisuje wynik osobno. Bez pliku aktualizacji aktualizowane są wszystkie pakiety. Program wypisuje plan zmian i stan albo brak rozwiązania; `unknown` zgłasza odrębnie.
+Żądania podaje się w pliku, po jednym w wierszu; puste wiersze i komentarze `#` są pomijane. Stan ma format `NAZWA WERSJA [manual]`. Pliki usuwania i aktualizacji zawierają same nazwy. `--state` wczytuje stan, a `--output` zapisuje wynik osobno. Dane `data/` odpowiadają `repos/k16/`; `examples/` zawiera przykłady prowadzącego.
 
 ## 4.2. Kodowanie bazy wiedzy
 
@@ -44,7 +31,7 @@ x[legacy,1.0] → ¬x[util,2.0]
 
 ## 4.3, 6.1–6.2 i 8.1. Operacje i optymalizacja
 
-Z3 minimalizuje kryteria leksykograficznie, zachowując optimum wcześniejszych kryteriów. Przestarzałość to pozycja wersji od najnowszej, od zera; dla zbioru jest sumowana.
+Z3 minimalizuje kryteria leksykograficznie. Przestarzałość to pozycja wersji od najnowszej, od zera; dla zbioru jest sumowana.
 
 | Operacja | Kolejność minimalizowanych kryteriów |
 |---|---|
@@ -55,7 +42,21 @@ Z3 minimalizuje kryteria leksykograficznie, zachowując optimum wcześniejszych 
 
 Instalowane na żądanie pakiety stają się ręczne. Usuwanie wymusza nieobecność P. Aktualizacja zachowuje pakiety ręczne i P. Pozostałe oznaczenia ręczne/automatyczne są zachowywane.
 
-Wyniki dla pustego stanu na przykładzie prowadzącego:
+### 4.3. Instalacja do pustego środowiska
+
+Brak `--state` oznacza pusty stan. Polecenia odtwarzające pięć przykładów:
+
+```powershell
+Set-Content zadania.txt 'app' -Encoding ascii
+uv run package-manager install zadania.txt --repo examples/repo_example.json
+Set-Content zadania.txt 'tool' -Encoding ascii
+uv run package-manager install zadania.txt --repo examples/repo_example.json
+Set-Content zadania.txt @('app', 'tool') -Encoding ascii
+uv run package-manager install zadania.txt --repo examples/repo_example.json
+Set-Content zadania.txt @('app', 'legacy') -Encoding ascii
+uv run package-manager install zadania.txt --repo examples/repo_example.json
+uv run package-manager install examples/requests_example.txt --repo examples/repo_example.json
+```
 
 | Żądania | Stan wynikowy |
 |---|---|
@@ -65,7 +66,21 @@ Wyniki dla pustego stanu na przykładzie prowadzącego:
 | `app`, `legacy` | `app 1.0`, `legacy 1.0`, `lib 1.0` |
 | `app==2.0`, `tool` | Brak rozwiązania. |
 
-Wyniki operacji rozpoczynanych osobno od `state_example.txt`:
+### 6.1–6.2 i 8.1. Operacje na istniejącym stanie
+
+Każde polecenie zaczyna od oryginalnego `state_example.txt`:
+
+```powershell
+Set-Content zadania.txt 'app==2.0' -Encoding ascii
+uv run package-manager install zadania.txt --repo examples/repo_example.json --state examples/state_example.txt --output wynik.txt
+Set-Content usun.txt 'lib' -Encoding ascii
+uv run package-manager remove usun.txt --repo examples/repo_example.json --state examples/state_example.txt --output wynik.txt
+Set-Content usun.txt 'tool' -Encoding ascii
+uv run package-manager remove usun.txt --repo examples/repo_example.json --state examples/state_example.txt --output wynik.txt --autoremove
+uv run package-manager update --repo examples/repo_example.json --state examples/state_example.txt --output wynik.txt
+```
+
+Plik nazw podany po `update` ogranicza aktualizację do wskazanych pakietów; brak pliku oznacza wszystkie.
 
 | Zapytanie | Zmiany |
 |---|---|
@@ -83,7 +98,7 @@ Bez użycia solvera sprawdzane są istnienie wersji, zależności, konflikty i �
 Pomiary wykonano 2 listopada 2026 r. na Windows 11, Pythonie 3.13.16 i Z3 5.3.3. Polecenie odtwarzające eksperyment:
 
 ```sh
-uv run python -m src.experiments --data data --group 16 --output results/group16.json
+uv run python -m src.experiments --data data --group 16 --output tmp/wyniki45.json
 ```
 
 | N | Wersje | Aksjomaty | Żądania | Pakiety | Przestarzałość | Budowa [s] | Rozwiązanie [s] | Weryfikacja |
@@ -101,6 +116,11 @@ Czas budowy rósł z liczbą wersji i aksjomatów. Czas rozwiązania zależał r
 ## 6.3. Wyjaśnienia braku rozwiązania
 
 Śledzone są aksjomaty i żądania. Z rdzenia usuwa się zbędne elementy, aż usunięcie dowolnego pozostałego elementu daje spełnialny zestaw. Jest to minimalność przez zawieranie, nie najmniejsza liczba elementów.
+
+```sh
+uv run package-manager explain examples/requests_example.txt --repo examples/repo_example.json
+uv run package-manager explain data/requests_100.txt --repo data/repo_100.json
+```
 
 ### Przykład `app==2.0` i `tool`
 
@@ -126,7 +146,7 @@ Sprzeczność powoduje samo żądanie `nova-api`; `h2` i `tomli-umbra` nie nale�
 Scenariusz rozpoczyna się od pustego stanu i korzysta z `repo_200.json` grupy 16. Ziarno generatora: **2026**. Polecenie:
 
 ```sh
-uv run python -m src.scenario --repo data/repo_200.json --group 16 --seed 2026 --steps 12 --output results/random-group16.json
+uv run python -m src.scenario --repo data/repo_200.json --group 16 --seed 2026 --steps 12 --output tmp/wyniki64.json
 ```
 
 | Krok | Operacja | Pakiet | Autoremove | Liczba zmian | Pakiety (ręczne) | Czas [s] |
@@ -148,7 +168,14 @@ Każdy stan pośredni przeszedł weryfikację. Zmiany obejmują instalacje, usun
 
 ## 8.2. Konflikt aktualizacji i front Pareto
 
-Dla stanu `a 1.0 manual`, `b 1.0 manual` najnowsze wersje osiągalne osobno to `a 2.0` i `b 2.0`. Nie można ich zainstalować jednocześnie. Otrzymany minimalny rdzeń zawiera:
+Dla stanu `a 1.0 manual`, `b 1.0 manual` najnowsze wersje osiągalne osobno to `a 2.0` i `b 2.0`. Nie można ich zainstalować jednocześnie.
+
+```powershell
+Set-Content stan-ab.txt @('a 1.0 manual', 'b 1.0 manual') -Encoding ascii
+uv run package-manager update --repo examples/repo_example.json --state stan-ab.txt --output wynik-ab.txt
+```
+
+Minimalny rdzeń sprzeczności:
 
 ```text
 x[a,2.0] → x[b,1.0]
@@ -164,12 +191,15 @@ Przy zachowaniu obu pakietów ręcznych front Pareto składa się z:
 | `a 2.0`, `b 1.0` | 0 | 1 |
 | `a 1.1`, `b 2.0` | 1 | 0 |
 
-Żaden punkt nie dominuje drugiego. Aktualizacja samego `a` daje `a 2.0`, `b 1.0` bez konfliktu. Wyniki i weryfikacja: [results/eight-point-examples.json](results/eight-point-examples.json).
+Żaden punkt nie dominuje drugiego. Aktualizacja samego `a` daje `a 2.0`, `b 1.0` bez konfliktu:
 
-## 8.3. Dane PyPI
-
-Importer używa `packaging` dla PEP 440/508, filtruje `requires_python`, ocenia znaczniki według `meta.environment` i pomija extras. Polecenie scenariusza:
-
-```sh
-uv run python -m src.pypi_scenario --repo pypi_data.json --output results/pypi-scenario.json
+```powershell
+Set-Content aktualizuj.txt 'a' -Encoding ascii
+uv run package-manager update aktualizuj.txt --repo examples/repo_example.json --state stan-ab.txt --output wynik-a.txt
 ```
+
+Wyniki i weryfikacja: [results/eight-point-examples.json](results/eight-point-examples.json).
+
+## Pytanie dodatkowe — NP-zupełność
+
+Problem należy do NP, bo podany stan można zweryfikować w czasie wielomianowym. Redukcja z 3-SAT: zmiennej przypisujemy pakiet `Xi` o wersjach `0` i `1`, a klauzuli — pakiet `Cj` o trzech wersjach. Każda wersja `Cj` wymaga wersji `Xi` odpowiadającej jednemu literałowi: `==1` dla dodatniego, `==0` dla ujemnego. Żądamy wszystkich `Cj`. A1 zapewnia spójne wartości zmiennych, a wybrana wersja każdej klauzuli wskazuje prawdziwy literał; odwrotnie, każde spełniające wartościowanie daje poprawną instalację. Konstrukcja jest wielomianowa, więc problem jest NP-zupełny. W tej redukcji wystarczą wielowersyjność i ograniczenia `==`: problem pozostaje NP-zupełny także **bez konfliktów i bez alternatyw `|`**, ponieważ alternatywę zapewnia wybór wersji pakietu.
